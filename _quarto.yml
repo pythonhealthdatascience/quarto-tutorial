@@ -34,4 +34,6 @@ format:
   html:
     theme:
       - cosmo
-      - theme.scss
+      - styles/theme.scss
+    css:
+      - styles/styles.css
