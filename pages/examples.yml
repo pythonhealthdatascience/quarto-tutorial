@@ -1,3 +1,25 @@
+- category: Research projects
+  description: |
+    Projects that document and share a single, well-defined piece of research, usually with its own paper, report, or case study, plus code and/or interactive outputs.
+  tiles:
+    - title: "Computational Reproducibility Assessments: Summary"
+      subtitle: Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.
+      href: https://pythonhealthdatascience.github.io/stars_wp1_summary/
+      code: https://github.com/pythonhealthdatascience/stars_wp1_summary
+      thumbnail: examples/stars_wp1.png
+      categories: [University of Exeter]
+    - title: "Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)"
+      subtitle: Documentation for EOM-RCC,a platform cost-effectiveness model encompassing each decision node in the disease area for advanced renal cell carcinoma.
+      href: https://pythonhealthdatascience.github.io/stars-eom-rcc/
+      code: https://github.com/pythonhealthdatascience/stars-eom-rcc/
+      thumbnail: examples/eom_rcc.png
+      categories: [University of Exeter]
+    - title: nordatlantisk-ft
+      subtitle: Website for an open voting-records dataset, with a data overview, detailed codebook of all variables, and information about the repository.
+      href: https://mtwente.github.io/nordatlantisk-ft/
+      code: https://github.com/mtwente/nordatlantisk-ft/
+      thumbnail: examples/nordatlantisk-ft.png
+
 - category: Homepage for research programme or team
   description: |
     Overarching homepages that present an entire project, programme, lab, or community, bringing together people, research, resources, news, and key links in one place.
@@ -45,28 +67,6 @@
       code: https://github.com/nhs-r-community/nhs-r-community
       thumbnail: examples/nhsr.png
 
-- category: Specific project
-  description: |
-    like a singular specific research thingy
-  tiles:
-    - title: "Computational Reproducibility Assessments: Summary"
-      subtitle: Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.
-      href: https://pythonhealthdatascience.github.io/stars_wp1_summary/
-      code: https://github.com/pythonhealthdatascience/stars_wp1_summary
-      thumbnail: examples/stars_wp1.png
-      categories: [University of Exeter]
-    - title: "Exeter Oncology Model: Renal Cell Carcinoma edition"
-      subtitle: 
-      href: https://pythonhealthdatascience.github.io/stars-eom-rcc/
-      code: 
-      thumbnail:
-      categories: [University of Exeter]
-    - title:
-      subtitle: 
-      href: https://mtwente.github.io/nordatlantisk-ft/
-      code: 
-      thumbnail:
-
 - category: Training / Modules / Courses / Etc.
   description: |
     TODO.
@@ -95,51 +95,56 @@
       code: https://github.com/hsma-programme/hsma6_des_book
       thumbnail: examples/little_book_of_des.png
       categories: [University of Exeter]
-    - title:
+    - title: "STA 210: Regression Analysis"
+      subtitle:
+      href: https://sta210-s22.github.io/website/
+      code: https://github.com/sta210-s22/website
+      thumbnail: examples/sta210.png
+    - title: TASO Interactive Technical Guides
       subtitle: 
       href: https://taso-he.github.io/technicalguide/
       code: https://github.com/taso-he/technicalguide
-      thumbnail:
-    - title:
+      thumbnail: examples/taso_technical.png
+    - title: Reproducibility at Urban
       subtitle: 
       href: https://ui-research.github.io/reproducibility-at-urban/
       code: https://github.com/UI-Research/reproducibility-at-urban
-      thumbnail:
+      thumbnail: examples/reproducibility_urban.png
 
 - category: Researcher profiles
   description: |
     Personal websites and blogs for researchers.
   tiles:
-    - title:
+    - title: Andrew Heiss
       subtitle: 
       href: https://www.andrewheiss.com/
-      code: 
-      thumbnail:
-    - title:
+      code: https://github.com/andrewheiss/ath-quarto
+      thumbnail: examples/andrew_heiss.png
+    - title: Drew Dimmery
       subtitle: 
       href: https://ddimmery.com/
-      code: 
-      thumbnail:
-    - title:
+      code: https://github.com/ddimmery/quarto-website
+      thumbnail: examples/drew_dimmery.png
+    - title: Beatriz Milz
       subtitle: 
       href: https://beamilz.com/
-      code: 
-      thumbnail:
-    - title:
+      code: https://github.com/beatrizmilz/blog-en
+      thumbnail: examples/beatriz_milz.png
+    - title: Mike Mahoney
       subtitle: 
       href: https://www.mm218.dev/
-      code: 
-      thumbnail:
-    - title:
+      code: https://github.com/mikemahoney218/mm218.dev
+      thumbnail: examples/mike_mahoney.png
+    - title: Chris von Csefalvay
       subtitle: 
       href: https://chrisvoncsefalvay.com/
-      code: 
-      thumbnail:
-    - title:
+      code: https://github.com/chrisvoncsefalvay/chrisvoncsefalvay.github.io
+      thumbnail: examples/chris_von_csefalvay.png
+    - title: Salman Naqvi
       subtitle: 
       href: https://forbo7.github.io/
-      code: 
-      thumbnail:
+      code: https://github.com/ForBo7/forbo7.github.io
+      thumbnail: examples/salman_naqvi.png
 
 - category: Conferences
   description: |
@@ -147,7 +152,7 @@
   tiles:
     - title:
       subtitle: 
-      href: https://sta210-s22.github.io/website/
+      href:
       code: 
       thumbnail:
 

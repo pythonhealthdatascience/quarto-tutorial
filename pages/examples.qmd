@@ -1,5 +1,9 @@
 ---
 title: "Examples"
+format: 
+  html:
+    toc: false
+    page-layout: full
 listing:
   - id: examples
     contents: examples.yml
@@ -8,4 +12,3 @@ listing:
 
 ::: {#examples}
 :::
-
