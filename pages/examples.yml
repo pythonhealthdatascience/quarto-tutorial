@@ -1,62 +1,66 @@
-- category: Homepage for big project or team
+- category: Homepage for research programme or team
   description: |
-    not specific part of project... more overarching... whole team... whole project with many moving parts...
+    Overarching homepages that present an entire project, programme, lab, or community, bringing together people, research, resources, news, and key links in one place.
   tiles:
     - title: STARS
-      subtitle: Website for the STARS project, summarising all research and publications.
+      subtitle: Summary site for the STARS research project, with dedicated pages describing each component of the project and separate pages for every associated publication, including links to code and embedded papers.
       href: https://pythonhealthdatascience.github.io/stars/
       code: https://github.com/pythonhealthdatascience/stars
       thumbnail: examples/stars.png
+      categories: [University of Exeter]
     - title: HSMA
-      subtitle: Homepage for the Health Service Modelling Associates (HSMA) Programme.
+      subtitle: Programme homepage describing the HSMA training scheme, with resources, guidance, news, and pages on each and every HSMA student project.
       href: https://hsma.co.uk/
       code: https://github.com/hsma-programme/hsma_site
       thumbnail: examples/hsma.png
-    - title:
-      subtitle: 
+      categories: [University of Exeter]
+    - title: Affective Communication & Computing Lab
+      subtitle: Lab website with blog posts containing latest news, and with pages listing the team, research themes, publications, resources and opportunities.
       href: https://affcom.ku.edu/
-      code: 
-      thumbnail:
-    - title:
-      subtitle: 
+      code: https://github.com/jmgirard/affcomlab
+      thumbnail: examples/affcom.png
+    - title: Computational Cognition Lab
+      subtitle: Research group site listing publications, people, opportunities. Also has latest news and links to their learning resources, including open textbooks and teaching materials built with tools like Bookdown and Quarto.
       href: https://www.crumplab.com/
-      code: 
-      thumbnail:
-    - title:
-      subtitle: 
+      code: https://github.com/CrumpLab/CrumpLab.github.io
+      thumbnail: examples/crumplab.png
+    - title: Digital Humanities Bern
+      subtitle: Centre homepage with news and event listings, and individual pages on their research areas and services.
       href: https://dhbern.github.io/
-      code: 
-      thumbnail:
-    - title:
-      subtitle: 
+      code: https://github.com/DHBern/dhbern.github.io
+      thumbnail: examples/dhbern.png
+    - title: Hertie Coding Club
+      subtitle: Club site introducing the group's mission, events, and workshops, with interactive resources, coding materials, and a polished, animated homepage experience.
       href: https://www.hertiecodingclub.com/
-      code: 
-      thumbnail:
+      code: https://github.com/jurjoroa/hcc-website
+      thumbnail: examples/hertie.png
     - title: Masiello Research Group
-      subtitle: 
+      subtitle: Group homepage with detailed researcher profiles, plus research area overviews, publications, software links, and news.
       href: https://faculty.washington.edu/masiello/
-      code: 
+      code: https://github.com/MasielloGroup/MasielloGroupWebsite
       thumbnail: examples/masiello.png
     - title: NHS-R Community
-      subtitle: 
+      subtitle: Community site sharing reports, blog posts, events, resources, and information about fellows and contributors, supporting users of R across the NHS.
       href: https://nhsrcommunity.com/
-      code: 
-      thumbnail:
+      code: https://github.com/nhs-r-community/nhs-r-community
+      thumbnail: examples/nhsr.png
 
 - category: Specific project
   description: |
     like a singular specific research thingy
   tiles:
-    - title: STARS WP1 summary
-      subtitle: 
+    - title: "Computational Reproducibility Assessments: Summary"
+      subtitle: Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.
       href: https://pythonhealthdatascience.github.io/stars_wp1_summary/
-      code:
-      thumbnail:
-    - title:
+      code: https://github.com/pythonhealthdatascience/stars_wp1_summary
+      thumbnail: examples/stars_wp1.png
+      categories: [University of Exeter]
+    - title: "Exeter Oncology Model: Renal Cell Carcinoma edition"
       subtitle: 
       href: https://pythonhealthdatascience.github.io/stars-eom-rcc/
       code: 
       thumbnail:
+      categories: [University of Exeter]
     - title:
       subtitle: 
       href: https://mtwente.github.io/nordatlantisk-ft/
@@ -67,16 +71,30 @@
   description: |
     TODO.
   tiles:
+    - title: Quarto tutorial
+      subtitle: Of course, we created this website using Quarto!
+      href:
+      code: https://github.com/pythonhealthdatascience/quarto-tutorial
+      thumbnail:
+      categories: [University of Exeter]
     - title: DES RAP Book
       subtitle: Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline.
       href: https://pythonhealthdatascience.github.io/des_rap_book/
       code: https://github.com/pythonhealthdatascience/des_rap_book
       thumbnail: examples/des_rap_book.png
+      categories: [University of Exeter]
+    - title: Testing in Research Workflow
+      subtitle: Tutorial on testing in Python and R, accompanies HDR UK Futures training videos.
+      href: https://pythonhealthdatascience.github.io/stars-testing-intro/
+      code: https://github.com/pythonhealthdatascience/stars-testing-intro
+      thumbnail: examples/testing_in_research.png
+      categories: [University of Exeter]
     - title: HSMA - the little book of DES
       subtitle: Self-paced training resource on creating discrete-event simulation models in Python using SimPy.
       href: https://des.hsma.co.uk/
       code: https://github.com/hsma-programme/hsma6_des_book
       thumbnail: examples/little_book_of_des.png
+      categories: [University of Exeter]
     - title:
       subtitle: 
       href: https://taso-he.github.io/technicalguide/
@@ -133,6 +151,23 @@
       code: 
       thumbnail:
 
+- category: Package documentation
+  description: |
+    Use Quarto (with tools like quartodoc) to build clean, navigable documentation sites for your Python or R packages, including API reference, usage guides, and examples.
+  tiles:
+    - title: lintquarto
+      subtitle: Python package which runs linters and type checkers on code embedded in Quarto .qmd files.
+      href: https://lintquarto.github.io/lintquarto/
+      code: https://github.com/lintquarto/lintquarto
+      categories: [University of Exeter]
+      thumbnail: examples/lintquarto.png
+    - title: vidigi
+      subtitle: Python package for creating animated visualisations of queues and pathways from simulation or real-world data.
+      href: http://hsma-tools.github.io/vidigi/vidigi_docs/
+      code: https://github.com/hsma-tools/vidigi/
+      thumbnail: examples/vidigi.png
+      categories: [University of Exeter]
+
 - category: Non-Quarto Examples
   description: |
     TODO.
@@ -142,8 +177,10 @@
       href:
       code: 
       thumbnail:
+      categories: [University of Exeter]
     - title: Tom
       subtitle: 
       href:
       code: 
       thumbnail:
+      categories: [University of Exeter]
