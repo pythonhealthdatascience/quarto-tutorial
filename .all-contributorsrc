@@ -9,7 +9,25 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "gitmoji",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "amyheather",
+      "name": "Amy Heather",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92166537?v=4",
+      "profile": "https://www.linkedin.com/in/amyheather",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "doc",
+        "example",
+        "ideas",
+        "infra",
+        "maintenance",
+        "tutorial"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
   "linkToUsage": true
 }
