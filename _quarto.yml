@@ -2,16 +2,20 @@ project:
   type: website
 
 website:
-  title: "STARS Quarto Tutorial"
-
+  title: "Introduction to Quarto for Research Projects"
   sidebar:
-    background: "#ca5d3f"
+    title: "Introduction to Quarto for Research Projects"
     style: "docked"
     contents:
-      - index.qmd
+      - text: Welcome
+        href: index.qmd
+      - section: "Tutorial"
+        contents:
+          - pages/setup.qmd
       - pages/examples.qmd
 
 format:
   html:
     theme:
-      - lumen
+      - cosmo
+      - theme.scss
