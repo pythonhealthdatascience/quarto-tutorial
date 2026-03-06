@@ -1,5 +1,11 @@
 ---
 title: "Examples"
+listing:
+  - id: examples
+    contents: examples.yml
+    template: gallery.ejs
 ---
 
-TODO.
+::: {#examples}
+:::
+

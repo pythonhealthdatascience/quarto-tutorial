@@ -1,0 +1,149 @@
+- category: Homepage for big project or team
+  description: |
+    not specific part of project... more overarching... whole team... whole project with many moving parts...
+  tiles:
+    - title: STARS
+      subtitle: Website for the STARS project, summarising all research and publications.
+      href: https://pythonhealthdatascience.github.io/stars/
+      code: https://github.com/pythonhealthdatascience/stars
+      thumbnail: examples/stars.png
+    - title: HSMA
+      subtitle: Homepage for the Health Service Modelling Associates (HSMA) Programme.
+      href: https://hsma.co.uk/
+      code: https://github.com/hsma-programme/hsma_site
+      thumbnail: examples/hsma.png
+    - title:
+      subtitle: 
+      href: https://affcom.ku.edu/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://www.crumplab.com/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://dhbern.github.io/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://www.hertiecodingclub.com/
+      code: 
+      thumbnail:
+    - title: Masiello Research Group
+      subtitle: 
+      href: https://faculty.washington.edu/masiello/
+      code: 
+      thumbnail: examples/masiello.png
+    - title: NHS-R Community
+      subtitle: 
+      href: https://nhsrcommunity.com/
+      code: 
+      thumbnail:
+
+- category: Specific project
+  description: |
+    like a singular specific research thingy
+  tiles:
+    - title: STARS WP1 summary
+      subtitle: 
+      href: https://pythonhealthdatascience.github.io/stars_wp1_summary/
+      code:
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://pythonhealthdatascience.github.io/stars-eom-rcc/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://mtwente.github.io/nordatlantisk-ft/
+      code: 
+      thumbnail:
+
+- category: Training / Modules / Courses / Etc.
+  description: |
+    TODO.
+  tiles:
+    - title: DES RAP Book
+      subtitle: Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline.
+      href: https://pythonhealthdatascience.github.io/des_rap_book/
+      code: https://github.com/pythonhealthdatascience/des_rap_book
+      thumbnail: examples/des_rap_book.png
+    - title: HSMA - the little book of DES
+      subtitle: Self-paced training resource on creating discrete-event simulation models in Python using SimPy.
+      href: https://des.hsma.co.uk/
+      code: https://github.com/hsma-programme/hsma6_des_book
+      thumbnail: examples/little_book_of_des.png
+    - title:
+      subtitle: 
+      href: https://taso-he.github.io/technicalguide/
+      code: https://github.com/taso-he/technicalguide
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://ui-research.github.io/reproducibility-at-urban/
+      code: https://github.com/UI-Research/reproducibility-at-urban
+      thumbnail:
+
+- category: Researcher profiles
+  description: |
+    Personal websites and blogs for researchers.
+  tiles:
+    - title:
+      subtitle: 
+      href: https://www.andrewheiss.com/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://ddimmery.com/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://beamilz.com/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://www.mm218.dev/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://chrisvoncsefalvay.com/
+      code: 
+      thumbnail:
+    - title:
+      subtitle: 
+      href: https://forbo7.github.io/
+      code: 
+      thumbnail:
+
+- category: Conferences
+  description: |
+    TODO.
+  tiles:
+    - title:
+      subtitle: 
+      href: https://sta210-s22.github.io/website/
+      code: 
+      thumbnail:
+
+- category: Non-Quarto Examples
+  description: |
+    TODO.
+  tiles:
+    - title: SAMueL
+      subtitle: 
+      href:
+      code: 
+      thumbnail:
+    - title: Tom
+      subtitle: 
+      href:
+      code: 
+      thumbnail:

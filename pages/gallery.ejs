@@ -1,0 +1,46 @@
+<!-- This EJS file is adapted quarto-dev/quarto-web.
+With thanks to the quarto-web contributors for sharing it under an open license.
+URL: https://github.com/quarto-dev/quarto-web/blob/main/docs/gallery/gallery.ejs
+-->
+
+```{=html}
+
+<% for (const item of items) { %>
+
+<h2><%- item.category %></h2>
+
+<p><%- item.description %></p>
+
+<div class="list grid" style="column-gap: 10px;">
+
+<% for (const tile of item.tiles) { %>
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" <%= metadataAttrs(tile) %>>
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a href="<%- tile.href %>" class="listing-title"><%= tile.title %></a>
+        <% if (tile.code) { %> 
+        <a href="<%- tile.code %>" title="View source code" 
+          class="source-code card-text float-end inline-block">
+          <i class="bi bi-github"></i>
+        </a>
+        <% } %>
+      </small>
+    </div>
+    <a href="<%- tile.href %>">
+      <img src="<%- tile.thumbnail %>" alt="<%- tile.description %>" class="card-img-top"/>
+    </a>
+
+    <small>
+      <div class="card-body py-2">
+        <span class="text-muted listing-subtitle d-block"><%= tile.subtitle %></span>
+      </div>
+    </small>
+    
+  </div>
+<% } %>
+
+</div>
+
+<% } %>
+
+```
