@@ -1,14 +1,17 @@
 project:
-  type: book
-  output-dir: docs
+  type: website
 
-book:
+website:
   title: "STARS Quarto Tutorial"
-  author: "Amy Heather"
-  chapters:
-    - index.qmd
-    - pages/examples.qmd
+
+  sidebar:
+    background: "#ca5d3f"
+    style: "docked"
+    contents:
+      - index.qmd
+      - pages/examples.qmd
 
 format:
-  html: 
-    theme: cosmo
+  html:
+    theme:
+      - lumen
