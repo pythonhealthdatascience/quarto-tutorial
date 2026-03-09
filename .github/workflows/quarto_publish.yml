@@ -1,0 +1,36 @@
+name: Render quarto site and publish on GitHub pages
+run-name: Render quarto site and publish on GitHub pages
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Ensure gh-pages branch exists
+        run: |
+          if ! git ls-remote --heads origin gh-pages >/dev/null 2>&1; then
+            echo "gh-pages does not exist, creating from main"
+            git branch gh-pages
+            git push origin gh-pages
+          else
+            echo "gh-pages already exists, nothing to do"
+          fi
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and publish to GitHub pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
