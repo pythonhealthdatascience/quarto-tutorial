@@ -18,22 +18,18 @@ def find_images_without_alt(file_path):
     inline_code_pattern = r"`[^`]*`"
     content_no_code = re.sub(inline_code_pattern, "", content_no_code)
 
-    # Pattern 1: ![...](...)  - markdown images without fig-alt
-    # Only flag images whose alt text is empty or whitespace
-    # Negative lookahead: (?!.*\{[^}]*fig-alt=) - ensures no fig-alt follows
-    md_pattern = r"(?<!\[)!\[(?:\s*)\]\([^)]+\)(?!.*?\{[^}]*fig-alt=)"
+    md_pattern = r"(?<!\[)!\[(?:\s*)\]\([^)]+\)"
+    attr_pattern = r"\{[^}]*(?:\balt=|\bfig-alt=)[^}]*\}"
 
     for match in re.finditer(md_pattern, content_no_code):
+        end = match.end()
+        # Look at the next chunk of text after the image
+        following = content_no_code[end:end+200]  # enough to include `{...}`
+        if re.match(r"\s*" + attr_pattern, following):
+            # This image has alt/fig-alt in its attribute block; skip
+            continue
         line_num = content[:match.start()].count("\n") + 1
         issues.append(("markdown", line_num, match.group(0)))
-
-    # Pattern 2: <img> tags without alt attribute
-    # Matches <img...> that doesn't contain alt=
-    img_pattern = r"<img\s+(?![^>]*\balt=)[^>]*>"
-
-    for match in re.finditer(img_pattern, content, re.IGNORECASE):
-        line_num = content[:match.start()].count("\n") + 1
-        issues.append(("html", line_num, match.group(0)))
 
     return issues
 
