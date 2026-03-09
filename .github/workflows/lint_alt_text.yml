@@ -19,6 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Check images for alt text
-        run: lintquarto/alt-text-linter@v1
+      - uses: lintquarto/alt-text-linter@v1
