@@ -21,4 +21,4 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Check images for alt text
-        run: python lint_alt_text.py
+        run: lintquarto/alt-text-linter@v1
