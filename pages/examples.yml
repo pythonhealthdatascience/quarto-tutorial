@@ -73,9 +73,9 @@
   tiles:
     - title: Quarto tutorial
       subtitle: Of course, we created this website using Quarto!
-      href:
+      href: https://pythonhealthdatascience.github.io/quarto-tutorial/
       code: https://github.com/pythonhealthdatascience/quarto-tutorial
-      thumbnail:
+      thumbnail: examples/quarto_tutorial.png
       categories: [University of Exeter]
     - title: DES RAP Book
       subtitle: Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline.
@@ -173,7 +173,18 @@
       thumbnail: examples/vidigi.png
       categories: [University of Exeter]
 
-- category: Non-Quarto Examples
+- category: Other cool examples
+  description: |
+    Further examples of interesting uses of quarto in research.
+  tiles:
+    - title: Healthcare Services Analytics & Decision Science Atlas.
+      subtitle: Directory of open-source tools, packages, and projects for analytics and decision science in healthcare.
+      href: https://atlas.hsma.co.uk/
+      code: https://github.com/hsma-programme/decision_intelligence_atlas
+      thumbnail: examples/atlas.png
+      categories: [University of Exeter]
+
+- category: Non-Quarto examples
   description: |
     TODO.
   tiles:
