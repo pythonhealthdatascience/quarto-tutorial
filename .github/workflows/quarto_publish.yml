@@ -15,15 +15,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Ensure gh-pages branch exists
+      - name: Initialise gh-pages on origin
         run: |
-          if ! git ls-remote --heads origin gh-pages >/dev/null 2>&1; then
-            echo "gh-pages does not exist, creating from main"
-            git branch gh-pages
-            git push origin gh-pages
-          else
-            echo "gh-pages already exists, nothing to do"
-          fi
+          echo "Pushing current commit to origin/gh-pages (creates or updates)"
+          git push origin HEAD:gh-pages
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
