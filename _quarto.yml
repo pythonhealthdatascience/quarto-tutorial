@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Introduction to Quarto for Research Projects"
-  favicon: images/stars_logo_blue.png
+  favicon: images/daffodil_head.png
   navbar:
     title: "Introduction to Quarto for Research Projects"
     right:
@@ -23,6 +23,8 @@ website:
       - section: "Tutorial"
         contents:
           - pages/setup.qmd
+          - pages/basic_structure.qmd
+          - pages/making_a_change.qmd
       - pages/examples.qmd
   page-footer:
     center:

@@ -1,0 +1,12 @@
+---
+title: "Basic structure"
+---
+
+explain basic structure of quarto website
+
+i.e., walkthrough of provided codespace.
+
+then, quarto render and quarto preview
+(or perhaps that's another page?)
+explain: what is terminal
+(OR show just via buttons?)
