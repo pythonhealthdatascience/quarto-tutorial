@@ -1,15 +1,47 @@
 ---
-title: 1. Set-up
+title: "(1) Set-up"
 ---
 
-Plan for page:
+::: {.pale-blue}
 
-create a github account
+**On this page we will:**
 
-what is github?
+* Create a GitHub account.
+* Open the Quarto website template in a web browser.
+* Start a GitHub Codespace from the template.
 
-now, lets open codespace
+:::
 
-what is codespace?
+## Create a GitHub account
 
-what is rstudio?
+**GitHub** is a website where you can save files, track changes over time, and work together with other people on the same material. It is very popular for code, but you can also use it for documents, data, and teaching materials.
+
+When your work is on GitHub, it is backed up in the cloud and you can access it from any computer with a web browser.
+
+Sign up for an account here: <https://github.com/signup>
+
+[![](setup/github_account.png){fig-alt="Screenshot from GitHub page to create a new account."}](https://github.com/signup)
+
+## Go to our template repository
+
+A **repository** (or **repo**) is just a folder on GitHub that holds all the files for one project, plus the full history of changes.
+
+Our template repository is a ready-made project you can copy, so you start with all the right files and settings instead of building everything from scratch.
+
+Go to our template repository here: <https://github.com/pythonhealthdatascience/quarto-template>
+
+[![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/quarto-template.png){fig-alt="Screenshot of quarto-template GitHub repository"}](https://github.com/pythonhealthdatascience/quarto-template)
+
+## Open GitHub codespaces.
+
+**GitHub Codespaces** gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.
+
+To open a codespace from the template repository, click the green **Code** button, then choose the **Codespaces** tab, and click **Create codespace on main**.
+
+![](setup/create_codespace.png){fig-align="center" fig-alt="Screenshot of repository showing Code > Codespaces > Create codespace on main"}
+
+> You may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.
+
+GitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.
+
+![](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
