@@ -1,5 +1,5 @@
 ---
-title: "Basic structure"
+title: "(2) Basic structure"
 ---
 
 explain basic structure of quarto website

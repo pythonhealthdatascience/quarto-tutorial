@@ -4,6 +4,7 @@ project:
 website:
   title: "Introduction to Quarto for Research Projects"
   favicon: images/daffodil_head.png
+  page-navigation: true
   navbar:
     title: "Introduction to Quarto for Research Projects"
     right:
@@ -34,6 +35,7 @@ website:
 
 format:
   html:
+    number-sections: true
     theme:
       - cosmo
       - styles/theme.scss
