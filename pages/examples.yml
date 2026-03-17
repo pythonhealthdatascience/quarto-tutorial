@@ -66,6 +66,11 @@
       href: https://nhsrcommunity.com/
       code: https://github.com/nhs-r-community/nhs-r-community
       thumbnail: examples/nhsr.png
+    - title: Deep Energy and Climate Policy Lab
+      subtitle: Group homagepage with blog posts, project summaries, publications, team, events and more.
+      href: https://deeppolicylab.github.io/
+      code: https://github.com/deeppolicylab/deeppolicylab.github.io
+      thumbnail: examples/energy_climate_lab.png
 
 - category: Training / Modules / Courses / Etc.
   description: |
@@ -110,6 +115,11 @@
       href: https://ui-research.github.io/reproducibility-at-urban/
       code: https://github.com/UI-Research/reproducibility-at-urban
       thumbnail: examples/reproducibility_urban.png
+    - title: Energy and Climate Policy
+      subtitle: Online course with schedule, lectures as quarto presentations, and more. 
+      href: https://drganghe.github.io/energy-climate-policy/
+      code: https://github.com/drganghe/energy-climate-policy
+      thumbnail: examples/energy_climate_course.png
 
 - category: Researcher profiles
   description: |
@@ -145,15 +155,35 @@
       href: https://forbo7.github.io/
       code: https://github.com/ForBo7/forbo7.github.io
       thumbnail: examples/salman_naqvi.png
+    - title: Silvia Canelón
+      subtitle: 
+      href: https://silviacanelon.com/
+      code: https://github.com/spcanelon/silvia
+      thumbnail: examples/silvia_canelon.png
+    - title: John Paul Helveston
+      subtitle: 
+      href: https://www.jhelvy.com/
+      code: https://github.com/jhelvy/jhelvy_quarto
+      thumbnail: examples/john_helveston.png
+    - title: Gang He
+      subtitle: 
+      href: https://drganghe.github.io/
+      code: https://github.com/drganghe/drganghe.github.io
+      thumbnail: examples/gang_he.png
+    - title: Quarto Academic Template
+      subtitle: Template created by Dr Gang He
+      href: https://drganghe.github.io/quarto-academic-website-template/
+      code: https://github.com/drganghe/quarto-academic-website-template
+      thumbnail: examples/quarto_academic.png
 
-- category: Conferences
+- category: Conferences and events
   description: |
     TODO.
   tiles:
-    - title:
+    - title: Climate Guest Speakers
       subtitle: 
-      href:
-      code: 
+      href: https://drganghe.github.io/climate-guest-speakers/
+      code: https://github.com/drganghe/climate-guest-speakers
       thumbnail:
 
 - category: Package documentation
@@ -200,3 +230,8 @@
       code: 
       thumbnail:
       categories: [University of Exeter]
+    - title: AmbModelOpen
+      subtitle: Describes research project modelling ambulances - including background, method, and results - serving as foundation for <a href="https://doi.org/10.36819/SW25.042">conference paper</a>.
+      href: https://nhsengland.github.io/AmbModelOpen/
+      code: https://github.com/nhsengland/AmbModelOpen
+      thumbnail: examples/ambsim.png
