@@ -1,5 +1,17 @@
 [
   {
+    "objectID": "pages/basic_structure.html",
+    "href": "pages/basic_structure.html",
+    "title": "(2) Basic structure",
+    "section": "",
+    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(2) Basic structure"
+    ]
+  },
+  {
     "objectID": "pages/examples.html",
     "href": "pages/examples.html",
     "title": "Examples",
@@ -13,14 +25,14 @@
   {
     "objectID": "CONTRIBUTING.html",
     "href": "CONTRIBUTING.html",
-    "title": "Contributing",
+    "title": "1 Contributing",
     "section": "",
     "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
   },
   {
     "objectID": "CONTRIBUTING.html#all-contributors",
     "href": "CONTRIBUTING.html#all-contributors",
-    "title": "Contributing",
+    "title": "1 Contributing",
     "section": "",
     "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
   },
@@ -39,8 +51,8 @@
     "objectID": "index.html#contributors",
     "href": "index.html#contributors",
     "title": "Introduction to Quarto for Research Projects",
-    "section": "Contributors",
-    "text": "Contributors\n\n\n\n\n\n\n\nAmy Heather💻 🖋 🎨 📖 💡 🤔 🚇 🚧 ✅",
+    "section": "1 Contributors",
+    "text": "1 Contributors\n\n\n\n\n\n\n\nAmy Heather💻 🖋 🎨 📖 💡 🤔 🚇 🚧 ✅",
     "crumbs": [
       "GitHub",
       "Welcome"
@@ -50,8 +62,8 @@
     "objectID": "index.html#funding",
     "href": "index.html#funding",
     "title": "Introduction to Quarto for Research Projects",
-    "section": "Funding",
-    "text": "Funding\nThis course was developed as part of the STARS project. STARS is supported by the Medical Research Council [grant number MR/Z503915/1].",
+    "section": "2 Funding",
+    "text": "2 Funding\nThis course was developed as part of the STARS project. STARS is supported by the Medical Research Council [grant number MR/Z503915/1].",
     "crumbs": [
       "GitHub",
       "Welcome"
@@ -60,13 +72,61 @@
   {
     "objectID": "pages/setup.html",
     "href": "pages/setup.html",
-    "title": "1. Set-up",
+    "title": "(1) Set-up",
     "section": "",
-    "text": "Plan for page:\ncreate a github account\nwhat is github?\nnow, lets open codespace\nwhat is codespace?\nwhat is rstudio?",
+    "text": "On this page we will:\n\nCreate a GitHub account.\nOpen the Quarto website template in a web browser.\nStart a GitHub Codespace from the template.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "1. Set-up"
+      "(1) Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/setup.html#create-a-github-account",
+    "href": "pages/setup.html#create-a-github-account",
+    "title": "(1) Set-up",
+    "section": "1 Create a GitHub account",
+    "text": "1 Create a GitHub account\nGitHub is a website where you can save files, track changes over time, and work together with other people on the same material. It is very popular for code, but you can also use it for documents, data, and teaching materials.\nWhen your work is on GitHub, it is backed up in the cloud and you can access it from any computer with a web browser.\nSign up for an account here: https://github.com/signup",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(1) Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/setup.html#go-to-our-template-repository",
+    "href": "pages/setup.html#go-to-our-template-repository",
+    "title": "(1) Set-up",
+    "section": "2 Go to our template repository",
+    "text": "2 Go to our template repository\nA repository (or repo) is just a folder on GitHub that holds all the files for one project, plus the full history of changes.\nOur template repository is a ready-made project you can copy, so you start with all the right files and settings instead of building everything from scratch.\nGo to our template repository here: https://github.com/pythonhealthdatascience/quarto-template\n\n\n\nIt may look a little different from this screenshot if we have changed the repository since writing this page!",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(1) Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/setup.html#open-github-codespaces.",
+    "href": "pages/setup.html#open-github-codespaces.",
+    "title": "(1) Set-up",
+    "section": "3 Open GitHub codespaces.",
+    "text": "3 Open GitHub codespaces.\nGitHub Codespaces gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.\nTo open a codespace from the template repository, click the green Code button, then choose the Codespaces tab, and click Create codespace on main.\n\n\n\n\n\n\nYou may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.\n\nGitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(1) Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/making_a_change.html",
+    "href": "pages/making_a_change.html",
+    "title": "(3) Making a change",
+    "section": "",
+    "text": "make a change\ncommit explain\nfork explain",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(3) Making a change"
     ]
   }
 ]

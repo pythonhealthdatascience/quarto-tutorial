@@ -1,0 +1,22 @@
+/* Space before headings */
+section.level2 {
+  padding-top: 2em;
+}
+h3 {
+  margin-top: 2em;
+}
+h4 {
+  margin-top: 1.5em;
+}
+
+/* Coloured boxes */
+.pale-blue {
+  background-color: #e6f2fa;
+  color: black;
+  border: 2px solid #9ecae1;
+  border-radius: 8px;
+  padding: 1.2em 1em 0.5em 1em;
+  margin: 1.5em 0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
