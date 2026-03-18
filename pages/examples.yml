@@ -19,6 +19,36 @@
       href: https://mtwente.github.io/nordatlantisk-ft/
       code: https://github.com/mtwente/nordatlantisk-ft/
       thumbnail: examples/nordatlantisk-ft.png
+    - title: Simulating Attention and Performance tasks with an LLM
+      subtitle: R project recording various simulation experiments.
+      href: https://www.crumplab.com/GPTAttentionPerformance/
+      code: https://github.com/CrumpLab/GPTAttentionPerformance
+      thumbnail: examples/gptattentionperformance.png
+    - title: "NAture-positive SCenarios for ENvironmental Transitions: Peru"
+      subtitle: Project website with maps, photo galleries, interactive figures, updates.
+      href: https://nascent-peru.github.io/
+      code: https://github.com/NASCENT-Peru/NASCENT-Peru.github.io
+      thumbnail: examples/nascent_peru.png
+    - title: Towards an open-source model for data and metadata standards
+      subtitle: Online report with background/methods/results and links to extra pages providing more details.
+      href: https://uwescience.github.io/2024-open-source-standards-report/
+      code: https://github.com/uwescience/2024-open-source-standards-report
+      thumbnail: examples/towards.png
+    - title: research-compendium-website
+      subtitle: Template site with pages about, data, codes and manuscript.
+      href: https://emdelponte.github.io/research-compendium-website/
+      code: https://github.com/emdelponte/research-compendium-website
+      thumbnail: examples/research-compendium.png
+    - title: PLB DSS Analysis
+      subtitle: Example using the template site, reporting on potate late blight forecasting model.
+      href: https://mladencucak.github.io/AnalysisPLBIreland/
+      code: https://github.com/mladencucak/AnalysisPLBIreland
+      thumbnail: examples/plbdss.png
+    - title: Is Latitude Associated with Chronotype?
+      subtitle: Masters Thesis as quarto website.
+      href: https://danielvartan.github.io/mastersthesis/web/index.html
+      code: https://github.com/danielvartan/mastersthesis
+      thumbnail: examples/masters.png
 
 - category: Homepage for research programme or team
   description: |
@@ -71,10 +101,35 @@
       href: https://deeppolicylab.github.io/
       code: https://github.com/deeppolicylab/deeppolicylab.github.io
       thumbnail: examples/energy_climate_lab.png
+    - title: Atlas of Living Australia Labs
+      subtitle: Features analysis articles and data visualisations.
+      href: https://labs.ala.org.au/
+      code: https://github.com/AtlasOfLivingAustralia/ala-labs
+      thumbnail: examples/alalabs.png
+    - title: Real World Data Science
+      subtitle: Project from the Royal Statistical Society - site contains mostly blog posts.
+      href: https://realworlddatascience.net/
+      code: https://github.com/realworlddatascience/realworlddatascience.net
+      thumbnail: examples/realworld.png
+    - title: epiforecasts
+      subtitle: Research group at the Centre for Mathematical Modelling of Infectious Diseases of the Longon School of Hygiene and Tropical Medicine.
+      href: https://epiforecasts.io/
+      code: https://github.com/epiforecasts/epiforecasts.github.io
+      thumbnail: examples/epiforecasts.png
+    - title: seedcase
+      subtitle: Project website with roadmap, info on team, and links out to other sites focused on community and design.
+      href: https://seedcase-project.org/
+      code: https://github.com/seedcase-project/seedcase-website
+      thumbnail: examples/seedcase.png
+    - title: openscapes
+      subtitle: Clearly designed project website with great graphics and design.
+      href: https://openscapes.org/
+      code: https://github.com/Openscapes/website-new
+      thumbnail: examples/openscapes.png
 
 - category: Training / Modules / Courses / Etc.
   description: |
-    TODO.
+    Self-paced learning resources, workshop materials, and full course sites that use Quarto to deliver lectures, exercises, tutorials, and technical guidance, often alongside code and datasets.
   tiles:
     - title: Quarto tutorial
       subtitle: Of course, we created this website using Quarto!
@@ -175,16 +230,31 @@
       href: https://drganghe.github.io/quarto-academic-website-template/
       code: https://github.com/drganghe/quarto-academic-website-template
       thumbnail: examples/quarto_academic.png
+    - title: Albury C
+      subtitle: 
+      href: https://alburycatalina.github.io/
+      code: https://github.com/alburycatalina/alburycatalina.github.io
+      thumbnail: examples/albury_c.png
 
 - category: Conferences and events
   description: |
-    TODO.
+    Event and seminar websites that share programmes, schedules, speakers, and materials for conferences, workshops, and talk series, often with links to slides, recordings, and related resources.
   tiles:
     - title: Climate Guest Speakers
-      subtitle: 
+      subtitle: Schedule and description of upcoming talks from guest speakers.
       href: https://drganghe.github.io/climate-guest-speakers/
       code: https://github.com/drganghe/climate-guest-speakers
-      thumbnail:
+      thumbnail: examples/climate_guest_speakers.png
+    - title: R/Medicine 2026
+      subtitle: Conference website with registration, submission, programme, details about hackathon, etc.
+      href: https://rconsortium.github.io/RMedicine_website/
+      code: https://github.com/RConsortium/RMedicine_website
+      thumbnail: examples/rmedicine.png
+    - title: 2021 Cloud Hackathon
+      subtitle: Information about hackathon, schedule, lots of tutorial pages.
+      href: https://nasa-openscapes.github.io/2021-Cloud-Hackathon/
+      code: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+      thumbnail: examples/2021cloud.png
 
 - category: Package documentation
   description: |
@@ -202,6 +272,11 @@
       code: https://github.com/hsma-tools/vidigi/
       thumbnail: examples/vidigi.png
       categories: [University of Exeter]
+    - title: skimpy
+      subtitle: Python package providing summary statistics from dataframes.
+      href: https://aeturrell.github.io/skimpy/
+      code: https://github.com/aeturrell/skimpy
+      thumbnail: examples/skimpy.png
 
 - category: Other cool examples
   description: |
@@ -216,19 +291,31 @@
 
 - category: Non-Quarto examples
   description: |
-    TODO.
+     Inspiring research websites, reports, and project pages (built without Quarto) that model good practice in openness, documentation, and communication of analytic work.
   tiles:
-    - title: SAMueL
-      subtitle: 
-      href:
-      code: 
-      thumbnail:
+    - title: "Model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review"
+      subtitle: Companion to publication which provides more detailed introduction, methods, results, discussion.
+      href: https://tommonks.github.io/des_sharing_lit_review/
+      code: https://github.com/TomMonks/des_sharing_lit_review
+      thumbnail: examples/code_sharing.png
       categories: [University of Exeter]
-    - title: Tom
-      subtitle: 
-      href:
-      code: 
-      thumbnail:
+    - title: "Research Compendium: Replicating Simulations in Python using Generative AI"
+      subtitle: Companion to publication with full record of study - in this case, all prompts, code, tests, results.
+      href: https://pythonhealthdatascience.github.io/llm_simpy/
+      code: https://github.com/pythonhealthdatascience/llm_simpy
+      thumbnail: examples/genai.png
+      categories: [University of Exeter]
+    - title: Introduction to SAMueL-1 (Stroke Audit Machine Learning)
+      subtitle: Full results from project, supplementary to reports and papers.
+      href: https://samuel-book.github.io/samuel-1/introduction/intro.html
+      code: https://github.com/samuel-book/samuel-1/tree/gh-pages
+      thumbnail: examples/samuel1.png
+      categories: [University of Exeter]
+    - title: Introduction to SAMueL-2 (Stroke Audit Machine Learning)
+      subtitle: Full project results.
+      href: https://samuel-book.github.io/samuel-2/
+      code: https://github.com/samuel-book/samuel-2
+      thumbnail: examples/samuel2.png
       categories: [University of Exeter]
     - title: AmbModelOpen
       subtitle: Describes research project modelling ambulances - including background, method, and results - serving as foundation for <a href="https://doi.org/10.36819/SW25.042">conference paper</a>.
