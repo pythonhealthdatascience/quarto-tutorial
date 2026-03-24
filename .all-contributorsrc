@@ -4,7 +4,8 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
-    "README.md"
+    "README.md",
+    "index.qmd"
   ],
   "imageSize": 100,
   "commit": false,
@@ -16,15 +17,20 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/92166537?v=4",
       "profile": "https://www.linkedin.com/in/amyheather",
       "contributions": [
-        "code",
         "content",
-        "design",
-        "doc",
-        "example",
         "ideas",
         "infra",
-        "maintenance",
-        "tutorial"
+        "maintenance"
+      ]
+    },
+    {
+      "login": "TomMonks",
+      "name": "Tom Monks",
+      "avatar_url": "https://avatars.githubusercontent.com/u/881493?v=4",
+      "profile": "https://experts.exeter.ac.uk/19244-thomas-monks",
+      "contributions": [
+        "ideas",
+        "mentoring"
       ]
     }
   ],
