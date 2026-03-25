@@ -1,0 +1,19 @@
+---
+title: "Why make a website for your research?"
+---
+
+Research compendium
+
+Paper - report method - actual code - generate
+
+share research
+all the details included
+
+more than just appendices and paper
+searchable
+interactive
+mixed media
+
+examples
+
+(this page could even be a quarto slideshow?)

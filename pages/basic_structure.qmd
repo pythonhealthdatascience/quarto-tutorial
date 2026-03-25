@@ -10,3 +10,6 @@ then, quarto render and quarto preview
 (or perhaps that's another page?)
 explain: what is terminal
 (OR show just via buttons?)
+
+https://quarto.org/docs/books/book-output.html
+HTML books are at their core Quarto Websites with some special navigational behavior built in.
