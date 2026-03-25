@@ -1,3 +1,227 @@
 ---
-title: (5) Images, videos and documents
+title: Images, videos and documents
 ---
+
+## Images
+
+You can add images to a Quarto page using Markdown.  
+The basic pattern is:
+
+```markdown
+![](image.jpg)
+```
+
+In this example, we have an image file called `south_cloisters.jpg` in the `images` folder. The path to the file is:
+
+* `..` meaning "go up one folder".
+* `images` is the folder name.
+* `south_cloisters.jpg` is the file name.
+
+If your image is in the same folder as your `.qmd` file, you could just write the file name.
+
+This shows the image at its default size and alignment:
+
+```markdown
+![](../images/south_cloisters.jpg)
+```
+
+![](../images/south_cloisters.jpg)
+
+You can control the size of the image with `width`:
+
+TODO: EXPLAIN CURLY BRACES
+
+```markdown
+![](../images/south_cloisters.jpg){width=50%}
+```
+
+![](../images/south_cloisters.jpg){width=50%}
+
+To add a caption, put text inside the square brackets:
+
+```markdown
+![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)
+```
+
+![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)
+
+We can control alignment using `fig-align`:
+
+```markdown
+![](../images/south_cloisters.jpg){fig-align="center"}
+```
+
+![](../images/south_cloisters.jpg){fig-align="center"}
+
+Adding `.lightbox` lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.
+
+```markdown
+![](../images/south_cloisters.jpg){.lightbox}
+```
+
+![](../images/south_cloisters.jpg){.lightbox}
+
+You can also make your figure a hyperlink:
+
+```markdown
+[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)
+```
+
+[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)
+
+To add alternative text to your image:
+
+```markdown
+![](../images/south_cloisters.jpg){fig-alt="Photograph of South Cloisters on St Lukes Campus"}
+```
+
+![](../images/south_cloisters.jpg){fig-alt="Photograph of South Cloisters on St Lukes Campus"}
+
+::: {.pale-blue}
+
+**Task**: Open `media.qmd`, see image is provided in images folder
+
+* [ ] Add image at full width
+* [ ] Add it again, 40% width, aligned to right
+* [ ] Add third copy with short caption and alt text.
+
+Render the page and compare how the three images look.
+
+:::
+
+## Videos
+
+You can embed videos (for example, from YouTube) using the `video` shortcode. It will show a video player inside your page. Here is an example:
+
+TODO: EXPLAIN WHAT A SHORTCODE IS
+
+```{.markdown shortcodes="false"}
+{{< video https://youtu.be/BUN0sSa2e9c?si=-o7gu4FGOZS7L2rt >}}
+```
+
+{{< video https://youtu.be/BUN0sSa2e9c?si=-o7gu4FGOZS7L2rt >}}
+
+::: {.pale-blue}
+
+**Task**: On `media.qmd`:
+
+* [ ] Add a YouTube video to the page - for example:
+
+```{.markdown shortcodes="false"}
+{{< video https://www.youtube.com/watch?v=dQw4w9WgXcQ >}}
+```
+
+Render the page and check that the video player appears.
+
+:::
+
+## Embed websites
+
+Sometimes you might want to show another website (e.g., news article, uni web page, etc.) inside your page. You can do this using an HTML `<iframe>`.
+
+TODO: beginner friendly explanation of HTML syntax and of iframes
+
+```markdown
+<iframe width="100%" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+```
+
+<iframe width="100%" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+
+::: {.pale-blue}
+
+**Task**: On `media.qmd`:
+
+* [ ] Embed a website of your choice using an `<iframe>`.
+* [ ] Change the `height` to a different value (e.g., `200`) and see how it changes the space used on the page.
+
+:::
+
+::: {.callout-note title="Advanced Extra: Wrapper" collapse="true"}
+
+Sometimes you may want a header above the iframe.... distinguish embedded page from yours... give it more formal... e.g., open in new tab etc... here is an example wrapper adapted from https://github.com/andrewheiss/ath-quarto/blob/main/cv/index.qmd 
+
+````markdown
+```{=html}
+<div class="iframe-wrapper">
+  <div class="iframe-header">
+    <span>Website preview:</span>
+    <a href="https://quarto.org/"
+       target="_blank" rel="noopener">
+      View website in new tab
+    </a>
+  </div>
+
+  <iframe
+    width="100%"
+    height="500"
+    src="https://quarto.org/"
+    title="Quarto Documentation">
+  </iframe>
+</div>
+<br>
+
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+```
+````
+
+:::
+
+## PDFs
+
+You can embed a PDF so that it appears inside the page. The simplest way (using raw HTML) is:
+
+```markdown
+<embed src="media/example.pdf" width="100%" height="1000px" />
+```
+
+```{=html}
+<embed src="media/example.pdf" width="100%" height="1000px" />
+```
+
+::: {.callout-note title="Advanced Extra: Responsive Container" collapse="true"}
+
+If you want more control (for example, a responsive container), you can use CSS:
+
+```
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+```
+
+:::
+
+::: {.pale-blue}
+
+**Task**: we have provided a pdf namem ... on `media.qmd`:
+
+* [ ] Embed the example PDF.
+
+:::
