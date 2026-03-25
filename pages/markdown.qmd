@@ -1,0 +1,404 @@
+---
+title: "(4) Markdown"
+---
+
+> **Acknowledgements:** This page is adapted from [health-data-science-OR/jupyterlab-introduction](https://github.com/health-data-science-OR/jupyterlab-introduction/blob/main/01_basic_markdown.ipynb).
+
+## What is markdown?
+
+Markdown is a **way of writing documents** using plain text plus a few extra characters to show structure and formatting. Instead of a hidden file format (like a `.docx`), everything is visible as text: your words and the little symbols (e.g., `#`, `*`, `-`) that control how they look.
+
+When you *view* or *render* a Markdown file (for example, by opening it in a preview window or creating a final document), a tool reads your text and these symbols and turns them into a nicely formatted document (for example, HTML or PDF).
+
+A normal Markdown file usually ends in `.md`. In this workshop we mostly used **Quarto Markdown**, which is the same idea but with extra features for things like interactivity, code and citations, and those files end in `.qmd`.
+
+On this page you will practice Markdown features that you can use in your Quarto documents.
+
+## Headings and subheadings
+
+In Markdown, a heading is formatted with the character `#`.
+
+The number of `#` characters represents the level of the heading. For example:
+
+```markdown
+# Heading level 1
+
+## Heading level 2
+
+### Heading level 3
+
+#### Heading level 4
+```
+
+::: {.pale-blue}
+
+**Task:** Open `markdown.qmd` and create three headings:
+
+* [ ] A level 1 heading for the page title (for example, `# My Markdown Page`).
+* [ ] A level 2 heading called `## Section One`.
+* [ ] A level 3 heading called `### A Smaller Section`.
+
+Render the page and check that the heading sizes look different.
+
+:::
+
+## Adding a horizontal line between sections
+
+To add a horizontal line between sections, use three dashes or asterisk on a line by themselves - either:
+
+```markdown
+---
+***
+```
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Add a horizontal line between two sections (for example, between your `Section One` and `A Smaller Section` headings)
+
+Re-render the page to check it has worked.
+
+:::
+
+## Bold and italic text
+
+To create **bold** text, you need to surround a word or phrase with `**`. For example:
+
+```markdown
+The final word of this sentence will be **bold**.
+```
+
+To create *italic* text, you need to surround a word or phrase with `*`.
+
+```markdown
+*This whole sentence will be in italics.*
+```
+
+You can also **combine *both*** if you need stronger emphasis.
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Write one short sentence about anything you like (e.g., "I am learning Quarto today").
+* [ ] Make one word in the sentence **bold**.
+* [ ] Make a different word in the sentence *italic*.
+
+Re-render the page to see the effect.
+
+:::
+
+## Bullet points and numbered lists
+
+To create a bullet list, use `*` followed by a space and then your text:
+
+```markdown
+* Bullet point 1
+* Bullet point 2
+* Bullet point 3
+```
+
+You can indent with spaces (or tab) to create sub-bullets:
+
+```markdown
+* Bullet point 1
+    * Bullet point level 2
+        * Bullet point level 3
+* Back to level 1
+```
+
+A numbered list is created in a similar way using numbers (or letters):
+
+```markdown
+1. Numbered point 1
+    a. Numbered point level 2 
+    b. Numbered point level 2 again
+2. Back to level 1
+```
+
+To create a checklist, add `[ ]` between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using `[x]`.
+
+```markdown
+* [ ] First task
+* [x] Finished task
+```
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Create a bullet list of 3 everyday items (e.g., `Tea`, `Coffee`, `Biscuits`).
+* [ ] Create a numbered list of 3 simple steps (e.g., `Open the file`, `Make a change`, `Save and render`).
+* [ ] Add a checklist with three tasks, and mark one as already completed (e.g., `Read one article`, `Write one paragraph of notes`, `Add article to a report`).
+
+:::
+
+## Indented text
+
+To indent text as a block quote, use `>` at the start of the line:
+
+```markdown
+> This is indented
+```
+
+You can use this for quotes, highlights, or short notes.
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Add a short quote using `>`, for example `> Quarto helps me keep my work organised.`
+
+:::
+
+## Callouts
+
+Quarto extends Markdown with **callouts**, which are highlighted boxes you can use for notes, tips, or warnings.
+
+Callouts use a small bit of extra syntax that Quarto understands as a "special box" rather than normal text. In Markdown, `::: ... :::` defines a block (a kind of container) that Quarto treats like an HTML `<div>`. By adding a class to that block, you tell Quarto what kind of callout it is.
+
+A simple callout note looks like this:
+
+* `:::` starts the block.
+* `{.callout-note}` says that this is a class "callout-note" (just like HTML `<div class="callout-note">`)/
+* Everything until the closing `:::` is the content of the callout.
+* The final `:::` closes the block.
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+Markdown:
+
+```markdown
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+Output:
+
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+
+::::
+
+:::::
+
+You can change the type:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip}
+This is a tip.
+:::
+```
+
+```markdown
+::: {.callout-warning}
+This is a warning.
+:::
+```
+
+```markdown
+::: {.callout-important}
+This is important information.
+:::
+```
+
+```markdown
+::: {.callout-caution}
+This is a caution.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip}
+This is a tip.
+:::
+
+::: {.callout-warning}
+This is a warning.
+:::
+
+::: {.callout-important}
+This is important information.
+:::
+
+::: {.callout-caution}
+This is a caution.
+:::
+
+::::
+
+:::::
+
+You can add a title:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+
+::::
+
+:::::
+
+You can also set the callout to collapse:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+
+::::
+
+:::::
+
+You can change the appearance style to `simple` or `minimal`:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+```
+
+```markdown
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+
+::::
+
+:::::
+
+You can also hide the icon:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+
+::::
+
+:::::
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Add a callout of type `tip` with a short title (e.g., "Helpful tip").
+* [ ] Inside the callout, write one sentence of advice (e.g., "Take short breaks when you are concentrating.").
+* [ ] Add another callout with `collapse="true"` (e.g., with title "More information" and with content "You can come back to this note later if you need it.").
+
+:::
+
+## Line break
+
+You can insert a line break using `<br>`.
+
+```markdown
+First part of the sentence.<br>Second part on a new line.
+```
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Write a short sentence, then use `<br>` to put a second short sentence on the next line with a line break between them.
+
+:::
