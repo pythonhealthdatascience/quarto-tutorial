@@ -28,7 +28,6 @@ website:
           - pages/basic_structure.qmd
           - pages/making_a_change.qmd
           - pages/markdown.qmd
-          - pages/callouts.qmd
           - pages/media.qmd
           - pages/customising.qmd
           - pages/code.qmd

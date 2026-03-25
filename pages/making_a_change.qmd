@@ -1,5 +1,5 @@
 ---
-title: "(3) Making a change"
+title: Making a change
 ---
 
 make a change

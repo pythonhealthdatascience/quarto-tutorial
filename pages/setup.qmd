@@ -1,5 +1,5 @@
 ---
-title: "(1) Set-up"
+title: Set-up
 ---
 
 ::: {.pale-blue}
@@ -44,4 +44,4 @@ To open a codespace from the template repository, click the green **Code** butto
 
 GitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.
 
-![](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
+![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}

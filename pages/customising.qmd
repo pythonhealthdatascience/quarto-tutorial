@@ -1,5 +1,5 @@
 ---
-title: "(6) Customising the site appearance"
+title: Customising the site appearance
 ---
 
 themes
