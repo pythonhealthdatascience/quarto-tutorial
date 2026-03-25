@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Basic structure – Introduction to Quarto for Research Projects</title>
+<title>Images, videos and documents – Introduction to Quarto for Research Projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pages/making_a_change.html" rel="next">
-<link href="../pages/setup.html" rel="prev">
+<link href="../pages/customising.html" rel="next">
+<link href="../pages/markdown.html" rel="prev">
 <link href="../images/daffodil_head.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -46,6 +81,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-6801265040e0d15e7e2ec0dc35f5db1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/basic_structure.html">Basic structure</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/media.html">Images, videos and documents</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -155,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/basic_structure.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/basic_structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Basic structure</span></a>
   </div>
 </li>
@@ -173,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/media.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/media.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Images, videos and documents</span></a>
   </div>
 </li>
@@ -206,9 +244,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/basic_structure.html">Basic structure</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/media.html">Images, videos and documents</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Basic structure</h1>
+<h1 class="title">Images, videos and documents</h1>
 </div>
 
 
@@ -225,12 +263,187 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>explain basic structure of quarto website</p>
-<p>i.e., walkthrough of provided codespace.</p>
-<p>then, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)</p>
-<p>https://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.</p>
+<section id="images" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="images"><span class="header-section-number">1</span> Images</h2>
+<p>You can add images to a Quarto page using Markdown.<br>
+The basic pattern is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](image.jpg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In this example, we have an image file called <code>south_cloisters.jpg</code> in the <code>images</code> folder. The path to the file is:</p>
+<ul>
+<li><code>..</code> meaning “go up one folder”.</li>
+<li><code>images</code> is the folder name.</li>
+<li><code>south_cloisters.jpg</code> is the file name.</li>
+</ul>
+<p>If your image is in the same folder as your <code>.qmd</code> file, you could just write the file name.</p>
+<p>This shows the image at its default size and alignment:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid"></p>
+<p>You can control the size of the image with <code>width</code>:</p>
+<p>TODO: EXPLAIN CURLY BRACES</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{width=50%}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid" style="width:50.0%"></p>
+<p>To add a caption, put text inside the square brackets:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/south_cloisters.jpg" class="img-fluid figure-img"></p>
+<figcaption>Photograph of South Cloisters on St Lukes Campus</figcaption>
+</figure>
+</div>
+<p>We can control alignment using <code>fig-align</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{fig-align="center"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/south_cloisters.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Adding <code>.lightbox</code> lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{.lightbox}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="../images/south_cloisters.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/south_cloisters.jpg" class="img-fluid"></a></p>
+<p>You can also make your figure a hyperlink:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](../images/south_cloisters.jpg)</span><span class="co">](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://medicine.exeter.ac.uk/research/facilities/southcloisters/"><img src="../images/south_cloisters.jpg" class="img-fluid"></a></p>
+<p>To add alternative text to your image:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{fig-alt="Photograph of South Cloisters on St Lukes Campus"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid" alt="Photograph of South Cloisters on St Lukes Campus"></p>
+<div class="pale-blue">
+<p><strong>Task</strong>: Open <code>media.qmd</code>, see image is provided in images folder</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Add image at full width</label></li>
+<li><label><input type="checkbox">Add it again, 40% width, aligned to right</label></li>
+<li><label><input type="checkbox">Add third copy with short caption and alt text.</label></li>
+</ul>
+<p>Render the page and compare how the three images look.</p>
+</div>
+</section>
+<section id="videos" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="videos"><span class="header-section-number">2</span> Videos</h2>
+<p>You can embed videos (for example, from YouTube) using the <code>video</code> shortcode. It will show a video player inside your page. Here is an example:</p>
+<p>TODO: EXPLAIN WHAT A SHORTCODE IS</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://youtu.be/BUN0sSa2e9c?si=-o7gu4FGOZS7L2rt &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/BUN0sSa2e9c?si=-o7gu4FGOZS7L2rt" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="pale-blue">
+<p><strong>Task</strong>: On <code>media.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Add a YouTube video to the page - for example:</label></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=dQw4w9WgXcQ &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Render the page and check that the video player appears.</p>
+</div>
+</section>
+<section id="embed-websites" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="embed-websites"><span class="header-section-number">3</span> Embed websites</h2>
+<p>Sometimes you might want to show another website (e.g., news article, uni web page, etc.) inside your page. You can do this using an HTML <code>&lt;iframe&gt;</code>.</p>
+<p>TODO: beginner friendly explanation of HTML syntax and of iframes</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://quarto.org/"</span><span class="ot"> title</span><span class="op">=</span><span class="st">"Quarto Documentation"</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<iframe width="100%" height="500" src="https://quarto.org/" title="Quarto Documentation">
+</iframe>
+<div class="pale-blue">
+<p><strong>Task</strong>: On <code>media.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Embed a website of your choice using an <code>&lt;iframe&gt;</code>.</label></li>
+<li><label><input type="checkbox">Change the <code>height</code> to a different value (e.g., <code>200</code>) and see how it changes the space used on the page.</label></li>
+</ul>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Advanced Extra: Wrapper">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Advanced Extra: Wrapper
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Sometimes you may want a header above the iframe…. distinguish embedded page from yours… give it more formal… e.g., open in new tab etc… here is an example wrapper adapted from https://github.com/andrewheiss/ath-quarto/blob/main/cv/index.qmd</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="iframe-wrapper"&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="iframe-header"&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span&gt;Website preview:&lt;/span&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;a href="https://quarto.org/"</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="in">       target="_blank" rel="noopener"&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="in">      View website in new tab</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/a&gt;</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;iframe</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="in">    width="100%"</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="in">    height="500"</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="in">    src="https://quarto.org/"</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="in">    title="Quarto Documentation"&gt;</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/iframe&gt;</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;br&gt;</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="in">.embed-container {</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="in">  position: relative;</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="in">  padding-bottom: 129%;</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="in">  height: 0;</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="in">  overflow: hidden;</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="in">  max-width: 100%;</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="in">.embed-container iframe,</span></span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="in">.embed-container object,</span></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="in">.embed-container embed {</span></span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a><span class="in">  position: absolute;</span></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a><span class="in">  top: 0;</span></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a><span class="in">  left: 0;</span></span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a><span class="in">  width: 100%;</span></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a><span class="in">  height: 100%;</span></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</section>
+<section id="pdfs" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pdfs"><span class="header-section-number">4</span> PDFs</h2>
+<p>You can embed a PDF so that it appears inside the page. The simplest way (using raw HTML) is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">embed</span><span class="ot"> src</span><span class="op">=</span><span class="st">"media/example.pdf"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"1000px"</span><span class="ot"> </span><span class="dt">/&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<embed src="media/example.pdf" width="100%" height="1000px">
+<div class="callout callout-style-default callout-note callout-titled" title="Advanced Extra: Responsive Container">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Advanced Extra: Responsive Container
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>If you want more control (for example, a responsive container), you can use CSS:</p>
+<pre><code>.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="pale-blue">
+<p><strong>Task</strong>: we have provided a pdf namem … on <code>media.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Embed the example PDF.</label></li>
+</ul>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -635,13 +848,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pages/setup.html" class="pagination-link" aria-label="Set-up">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Set-up</span>
+      <a href="../pages/markdown.html" class="pagination-link" aria-label="(4) Markdown">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">(4) Markdown</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/making_a_change.html" class="pagination-link" aria-label="Making a change">
-        <span class="nav-page-text">Making a change</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/customising.html" class="pagination-link" aria-label="Customising the site appearance">
+        <span class="nav-page-text">Customising the site appearance</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -664,6 +877,38 @@ Text licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

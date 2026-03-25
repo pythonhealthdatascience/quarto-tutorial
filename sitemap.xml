@@ -2,26 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/basic_structure.html</loc>
-    <lastmod>2026-03-18T15:46:11.959Z</lastmod>
+    <lastmod>2026-03-25T11:52:51.044Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/examples.html</loc>
-    <lastmod>2026-03-18T15:46:11.960Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/CONTRIBUTING.html</loc>
-    <lastmod>2026-03-18T15:46:11.954Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/index.html</loc>
-    <lastmod>2026-03-18T15:46:11.959Z</lastmod>
+    <lastmod>2026-03-25T11:52:51.045Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/setup.html</loc>
-    <lastmod>2026-03-18T15:46:12.068Z</lastmod>
+    <lastmod>2026-03-25T11:52:51.154Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/why.html</loc>
+    <lastmod>2026-03-25T11:52:51.157Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/markdown.html</loc>
+    <lastmod>2026-03-25T11:52:51.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/index.html</loc>
+    <lastmod>2026-03-25T11:52:51.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/CONTRIBUTING.html</loc>
+    <lastmod>2026-03-25T11:52:51.039Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/media.html</loc>
+    <lastmod>2026-03-25T11:52:51.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/customising.html</loc>
+    <lastmod>2026-03-25T11:52:51.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/code.html</loc>
+    <lastmod>2026-03-25T11:52:51.045Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/making_a_change.html</loc>
-    <lastmod>2026-03-18T15:46:12.068Z</lastmod>
+    <lastmod>2026-03-25T11:52:51.153Z</lastmod>
   </url>
 </urlset>

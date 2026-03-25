@@ -2,13 +2,13 @@
   {
     "objectID": "pages/basic_structure.html",
     "href": "pages/basic_structure.html",
-    "title": "(2) Basic structure",
+    "title": "Basic structure",
     "section": "",
-    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)",
+    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)\nhttps://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(2) Basic structure"
+      "Basic structure"
     ]
   },
   {
@@ -23,18 +23,183 @@
     ]
   },
   {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "1 Contributing",
+    "objectID": "pages/setup.html",
+    "href": "pages/setup.html",
+    "title": "Set-up",
     "section": "",
-    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+    "text": "On this page we will:\n\nCreate a GitHub account.\nOpen the Quarto website template in a web browser.\nStart a GitHub Codespace from the template.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Set-up"
+    ]
   },
   {
-    "objectID": "CONTRIBUTING.html#all-contributors",
-    "href": "CONTRIBUTING.html#all-contributors",
-    "title": "1 Contributing",
+    "objectID": "pages/setup.html#create-a-github-account",
+    "href": "pages/setup.html#create-a-github-account",
+    "title": "Set-up",
+    "section": "1 Create a GitHub account",
+    "text": "1 Create a GitHub account\nGitHub is a website where you can save files, track changes over time, and work together with other people on the same material. It is very popular for code, but you can also use it for documents, data, and teaching materials.\nWhen your work is on GitHub, it is backed up in the cloud and you can access it from any computer with a web browser.\nSign up for an account here: https://github.com/signup",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/setup.html#go-to-our-template-repository",
+    "href": "pages/setup.html#go-to-our-template-repository",
+    "title": "Set-up",
+    "section": "2 Go to our template repository",
+    "text": "2 Go to our template repository\nA repository (or repo) is just a folder on GitHub that holds all the files for one project, plus the full history of changes.\nOur template repository is a ready-made project you can copy, so you start with all the right files and settings instead of building everything from scratch.\nGo to our template repository here: https://github.com/pythonhealthdatascience/quarto-template\n\n\n\nIt may look a little different from this screenshot if we have changed the repository since writing this page!",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/setup.html#open-github-codespaces.",
+    "href": "pages/setup.html#open-github-codespaces.",
+    "title": "Set-up",
+    "section": "3 Open GitHub codespaces.",
+    "text": "3 Open GitHub codespaces.\nGitHub Codespaces gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.\nTo open a codespace from the template repository, click the green Code button, then choose the Codespaces tab, and click Create codespace on main.\n\n\n\n\n\n\nYou may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.\n\nGitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.\n\n\n\nIt may look a little different from this screenshot if we have changed the repository since writing this page!",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Set-up"
+    ]
+  },
+  {
+    "objectID": "pages/why.html",
+    "href": "pages/why.html",
+    "title": "Why make a website for your research?",
     "section": "",
-    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+    "text": "Research compendium\nPaper - report method - actual code - generate\nshare research all the details included\nmore than just appendices and paper searchable interactive mixed media\nexamples\n(this page could even be a quarto slideshow?)",
+    "crumbs": [
+      "GitHub",
+      "Why make a website for your research?"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html",
+    "href": "pages/markdown.html",
+    "title": "(4) Markdown",
+    "section": "",
+    "text": "Acknowledgements: This page is adapted from health-data-science-OR/jupyterlab-introduction.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#what-is-markdown",
+    "href": "pages/markdown.html#what-is-markdown",
+    "title": "(4) Markdown",
+    "section": "1 What is markdown?",
+    "text": "1 What is markdown?\nMarkdown is a way of writing documents using plain text plus a few extra characters to show structure and formatting. Instead of a hidden file format (like a .docx), everything is visible as text: your words and the little symbols (e.g., #, *, -) that control how they look.\nWhen you view or render a Markdown file (for example, by opening it in a preview window or creating a final document), a tool reads your text and these symbols and turns them into a nicely formatted document (for example, HTML or PDF).\nA normal Markdown file usually ends in .md. In this workshop we mostly used Quarto Markdown, which is the same idea but with extra features for things like interactivity, code and citations, and those files end in .qmd.\nOn this page you will practice Markdown features that you can use in your Quarto documents.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#headings-and-subheadings",
+    "href": "pages/markdown.html#headings-and-subheadings",
+    "title": "(4) Markdown",
+    "section": "2 Headings and subheadings",
+    "text": "2 Headings and subheadings\nIn Markdown, a heading is formatted with the character #.\nThe number of # characters represents the level of the heading. For example:\n# Heading level 1\n\n## Heading level 2\n\n### Heading level 3\n\n#### Heading level 4\n\nTask: Open markdown.qmd and create three headings:\n\nA level 1 heading for the page title (for example, # My Markdown Page).\nA level 2 heading called ## Section One.\nA level 3 heading called ### A Smaller Section.\n\nRender the page and check that the heading sizes look different.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#adding-a-horizontal-line-between-sections",
+    "href": "pages/markdown.html#adding-a-horizontal-line-between-sections",
+    "title": "(4) Markdown",
+    "section": "3 Adding a horizontal line between sections",
+    "text": "3 Adding a horizontal line between sections\nTo add a horizontal line between sections, use three dashes or asterisk on a line by themselves - either:\n---\n***\n\nTask: In markdown.qmd:\n\nAdd a horizontal line between two sections (for example, between your Section One and A Smaller Section headings)\n\nRe-render the page to check it has worked.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#bold-and-italic-text",
+    "href": "pages/markdown.html#bold-and-italic-text",
+    "title": "(4) Markdown",
+    "section": "4 Bold and italic text",
+    "text": "4 Bold and italic text\nTo create bold text, you need to surround a word or phrase with **. For example:\nThe final word of this sentence will be **bold**.\nTo create italic text, you need to surround a word or phrase with *.\n*This whole sentence will be in italics.*\nYou can also combine both if you need stronger emphasis.\n\nTask: In markdown.qmd:\n\nWrite one short sentence about anything you like (e.g., “I am learning Quarto today”).\nMake one word in the sentence bold.\nMake a different word in the sentence italic.\n\nRe-render the page to see the effect.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#bullet-points-and-numbered-lists",
+    "href": "pages/markdown.html#bullet-points-and-numbered-lists",
+    "title": "(4) Markdown",
+    "section": "5 Bullet points and numbered lists",
+    "text": "5 Bullet points and numbered lists\nTo create a bullet list, use * followed by a space and then your text:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\nYou can indent with spaces (or tab) to create sub-bullets:\n* Bullet point 1\n    * Bullet point level 2\n        * Bullet point level 3\n* Back to level 1\nA numbered list is created in a similar way using numbers (or letters):\n1. Numbered point 1\n    a. Numbered point level 2 \n    b. Numbered point level 2 again\n2. Back to level 1\nTo create a checklist, add [ ] between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using [x].\n* [ ] First task\n* [x] Finished task\n\nTask: In markdown.qmd:\n\nCreate a bullet list of 3 everyday items (e.g., Tea, Coffee, Biscuits).\nCreate a numbered list of 3 simple steps (e.g., Open the file, Make a change, Save and render).\nAdd a checklist with three tasks, and mark one as already completed (e.g., Read one article, Write one paragraph of notes, Add article to a report).",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#indented-text",
+    "href": "pages/markdown.html#indented-text",
+    "title": "(4) Markdown",
+    "section": "6 Indented text",
+    "text": "6 Indented text\nTo indent text as a block quote, use &gt; at the start of the line:\n&gt; This is indented\nYou can use this for quotes, highlights, or short notes.\n\nTask: In markdown.qmd:\n\nAdd a short quote using &gt;, for example &gt; Quarto helps me keep my work organised.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#callouts",
+    "href": "pages/markdown.html#callouts",
+    "title": "(4) Markdown",
+    "section": "7 Callouts",
+    "text": "7 Callouts\nQuarto extends Markdown with callouts, which are highlighted boxes you can use for notes, tips, or warnings.\nCallouts use a small bit of extra syntax that Quarto understands as a “special box” rather than normal text. In Markdown, ::: ... ::: defines a block (a kind of container) that Quarto treats like an HTML &lt;div&gt;. By adding a class to that block, you tell Quarto what kind of callout it is.\nA simple callout note looks like this:\n\n::: starts the block.\n{.callout-note} says that this is a class “callout-note” (just like HTML &lt;div class=\"callout-note\"&gt;)/\nEverything until the closing ::: is the content of the callout.\nThe final ::: closes the block.\n\n\n\nMarkdown:\n::: {.callout-note}\nThis is a callout.\nYou can use it to draw attention to important information.\n:::\n\n\n\nOutput:\n\n\n\n\n\n\nNote\n\n\n\nThis is a callout. You can use it to draw attention to important information.\n\n\n\n\nYou can change the type:\n\n\n::: {.callout-tip}\nThis is a tip.\n:::\n::: {.callout-warning}\nThis is a warning.\n:::\n::: {.callout-important}\nThis is important information.\n:::\n::: {.callout-caution}\nThis is a caution.\n:::\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is important information.\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution.\n\n\n\n\nYou can add a title:\n\n\n::: {.callout-tip title=\"Helpful tip\"}\nRemember to save your file before you render.\n:::\n\n\n\n\n\n\n\n\n\nTipHelpful tip\n\n\n\nRemember to save your file before you render.\n\n\n\n\nYou can also set the callout to collapse:\n\n\n::: {.callout-note title=\"More details\" collapse=\"true\"}\nThis extra information is hidden until you click the arrow.\n:::\n\n\n\n\n\n\n\n\n\nNoteMore details\n\n\n\n\n\nThis extra information is hidden until you click the arrow.\n\n\n\n\n\nYou can change the appearance style to simple or minimal:\n\n\n::: {.callout-note appearance=\"simple\"}\nThis is a simple callout.\n:::\n::: {.callout-note appearance=\"minimal\"}\nThis is a minimal callout.\n:::\n\n\n\n\n\n\n\n\n\nThis is a simple callout.\n\n\n\n\n\n\n\n\n\nThis is a minimal callout.\n\n\n\n\n\nYou can also hide the icon:\n\n\n::: {.callout-note icon=\"false\"}\nDefault callout with icon removed\n:::\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nDefault callout with icon removed\n\n\n\n\n\nTask: In markdown.qmd:\n\nAdd a callout of type tip with a short title (e.g., “Helpful tip”).\nInside the callout, write one sentence of advice (e.g., “Take short breaks when you are concentrating.”).\nAdd another callout with collapse=\"true\" (e.g., with title “More information” and with content “You can come back to this note later if you need it.”).",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#line-break",
+    "href": "pages/markdown.html#line-break",
+    "title": "(4) Markdown",
+    "section": "8 Line break",
+    "text": "8 Line break\nYou can insert a line break using &lt;br&gt;.\nFirst part of the sentence.&lt;br&gt;Second part on a new line.\n\nTask: In markdown.qmd:\n\nWrite a short sentence, then use &lt;br&gt; to put a second short sentence on the next line with a line break between them.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#hyperlinks",
+    "href": "pages/markdown.html#hyperlinks",
+    "title": "(4) Markdown",
+    "section": "9 Hyperlinks",
+    "text": "9 Hyperlinks\nTODO",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "(4) Markdown"
+    ]
   },
   {
     "objectID": "index.html",
@@ -52,7 +217,7 @@
     "href": "index.html#contributors",
     "title": "Introduction to Quarto for Research Projects",
     "section": "1 Contributors",
-    "text": "1 Contributors\n\n\n\n\n\n\n\nAmy Heather💻 🖋 🎨 📖 💡 🤔 🚇 🚧 ✅",
+    "text": "1 Contributors\n\n\n\n\n\n\n\nAmy Heather🖋 🤔 🚇 🚧\n\n\nTom Monks🤔 🧑‍🏫",
     "crumbs": [
       "GitHub",
       "Welcome"
@@ -70,63 +235,113 @@
     ]
   },
   {
-    "objectID": "pages/setup.html",
-    "href": "pages/setup.html",
-    "title": "(1) Set-up",
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "1 Contributing",
     "section": "",
-    "text": "On this page we will:\n\nCreate a GitHub account.\nOpen the Quarto website template in a web browser.\nStart a GitHub Codespace from the template.",
+    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#all-contributors",
+    "href": "CONTRIBUTING.html#all-contributors",
+    "title": "1 Contributing",
+    "section": "",
+    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+  },
+  {
+    "objectID": "pages/media.html",
+    "href": "pages/media.html",
+    "title": "Images, videos and documents",
+    "section": "",
+    "text": "You can add images to a Quarto page using Markdown.\nThe basic pattern is:\n![](image.jpg)\nIn this example, we have an image file called south_cloisters.jpg in the images folder. The path to the file is:\n\n.. meaning “go up one folder”.\nimages is the folder name.\nsouth_cloisters.jpg is the file name.\n\nIf your image is in the same folder as your .qmd file, you could just write the file name.\nThis shows the image at its default size and alignment:\n![](../images/south_cloisters.jpg)\n\nYou can control the size of the image with width:\nTODO: EXPLAIN CURLY BRACES\n![](../images/south_cloisters.jpg){width=50%}\n\nTo add a caption, put text inside the square brackets:\n![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)\n\n\n\nPhotograph of South Cloisters on St Lukes Campus\n\n\nWe can control alignment using fig-align:\n![](../images/south_cloisters.jpg){fig-align=\"center\"}\n\n\n\n\n\nAdding .lightbox lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.\n![](../images/south_cloisters.jpg){.lightbox}\n\nYou can also make your figure a hyperlink:\n[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)\n\nTo add alternative text to your image:\n![](../images/south_cloisters.jpg){fig-alt=\"Photograph of South Cloisters on St Lukes Campus\"}\n\n\nTask: Open media.qmd, see image is provided in images folder\n\nAdd image at full width\nAdd it again, 40% width, aligned to right\nAdd third copy with short caption and alt text.\n\nRender the page and compare how the three images look.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(1) Set-up"
+      "Images, videos and documents"
     ]
   },
   {
-    "objectID": "pages/setup.html#create-a-github-account",
-    "href": "pages/setup.html#create-a-github-account",
-    "title": "(1) Set-up",
-    "section": "1 Create a GitHub account",
-    "text": "1 Create a GitHub account\nGitHub is a website where you can save files, track changes over time, and work together with other people on the same material. It is very popular for code, but you can also use it for documents, data, and teaching materials.\nWhen your work is on GitHub, it is backed up in the cloud and you can access it from any computer with a web browser.\nSign up for an account here: https://github.com/signup",
+    "objectID": "pages/media.html#images",
+    "href": "pages/media.html#images",
+    "title": "Images, videos and documents",
+    "section": "",
+    "text": "You can add images to a Quarto page using Markdown.\nThe basic pattern is:\n![](image.jpg)\nIn this example, we have an image file called south_cloisters.jpg in the images folder. The path to the file is:\n\n.. meaning “go up one folder”.\nimages is the folder name.\nsouth_cloisters.jpg is the file name.\n\nIf your image is in the same folder as your .qmd file, you could just write the file name.\nThis shows the image at its default size and alignment:\n![](../images/south_cloisters.jpg)\n\nYou can control the size of the image with width:\nTODO: EXPLAIN CURLY BRACES\n![](../images/south_cloisters.jpg){width=50%}\n\nTo add a caption, put text inside the square brackets:\n![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)\n\n\n\nPhotograph of South Cloisters on St Lukes Campus\n\n\nWe can control alignment using fig-align:\n![](../images/south_cloisters.jpg){fig-align=\"center\"}\n\n\n\n\n\nAdding .lightbox lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.\n![](../images/south_cloisters.jpg){.lightbox}\n\nYou can also make your figure a hyperlink:\n[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)\n\nTo add alternative text to your image:\n![](../images/south_cloisters.jpg){fig-alt=\"Photograph of South Cloisters on St Lukes Campus\"}\n\n\nTask: Open media.qmd, see image is provided in images folder\n\nAdd image at full width\nAdd it again, 40% width, aligned to right\nAdd third copy with short caption and alt text.\n\nRender the page and compare how the three images look.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(1) Set-up"
+      "Images, videos and documents"
     ]
   },
   {
-    "objectID": "pages/setup.html#go-to-our-template-repository",
-    "href": "pages/setup.html#go-to-our-template-repository",
-    "title": "(1) Set-up",
-    "section": "2 Go to our template repository",
-    "text": "2 Go to our template repository\nA repository (or repo) is just a folder on GitHub that holds all the files for one project, plus the full history of changes.\nOur template repository is a ready-made project you can copy, so you start with all the right files and settings instead of building everything from scratch.\nGo to our template repository here: https://github.com/pythonhealthdatascience/quarto-template\n\n\n\nIt may look a little different from this screenshot if we have changed the repository since writing this page!",
+    "objectID": "pages/media.html#videos",
+    "href": "pages/media.html#videos",
+    "title": "Images, videos and documents",
+    "section": "2 Videos",
+    "text": "2 Videos\nYou can embed videos (for example, from YouTube) using the video shortcode. It will show a video player inside your page. Here is an example:\nTODO: EXPLAIN WHAT A SHORTCODE IS\n{{&lt; video https://youtu.be/BUN0sSa2e9c?si=-o7gu4FGOZS7L2rt &gt;}}\n\n\nTask: On media.qmd:\n\nAdd a YouTube video to the page - for example:\n\n{{&lt; video https://www.youtube.com/watch?v=dQw4w9WgXcQ &gt;}}\nRender the page and check that the video player appears.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(1) Set-up"
+      "Images, videos and documents"
     ]
   },
   {
-    "objectID": "pages/setup.html#open-github-codespaces.",
-    "href": "pages/setup.html#open-github-codespaces.",
-    "title": "(1) Set-up",
-    "section": "3 Open GitHub codespaces.",
-    "text": "3 Open GitHub codespaces.\nGitHub Codespaces gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.\nTo open a codespace from the template repository, click the green Code button, then choose the Codespaces tab, and click Create codespace on main.\n\n\n\n\n\n\nYou may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.\n\nGitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.",
+    "objectID": "pages/media.html#embed-websites",
+    "href": "pages/media.html#embed-websites",
+    "title": "Images, videos and documents",
+    "section": "3 Embed websites",
+    "text": "3 Embed websites\nSometimes you might want to show another website (e.g., news article, uni web page, etc.) inside your page. You can do this using an HTML &lt;iframe&gt;.\nTODO: beginner friendly explanation of HTML syntax and of iframes\n&lt;iframe width=\"100%\" height=\"500\" src=\"https://quarto.org/\" title=\"Quarto Documentation\"&gt;&lt;/iframe&gt;\n\n\n\nTask: On media.qmd:\n\nEmbed a website of your choice using an &lt;iframe&gt;.\nChange the height to a different value (e.g., 200) and see how it changes the space used on the page.\n\n\n\n\n\n\n\n\nNoteAdvanced Extra: Wrapper\n\n\n\n\n\nSometimes you may want a header above the iframe…. distinguish embedded page from yours… give it more formal… e.g., open in new tab etc… here is an example wrapper adapted from https://github.com/andrewheiss/ath-quarto/blob/main/cv/index.qmd\n```{=html}\n&lt;div class=\"iframe-wrapper\"&gt;\n  &lt;div class=\"iframe-header\"&gt;\n    &lt;span&gt;Website preview:&lt;/span&gt;\n    &lt;a href=\"https://quarto.org/\"\n       target=\"_blank\" rel=\"noopener\"&gt;\n      View website in new tab\n    &lt;/a&gt;\n  &lt;/div&gt;\n\n  &lt;iframe\n    width=\"100%\"\n    height=\"500\"\n    src=\"https://quarto.org/\"\n    title=\"Quarto Documentation\"&gt;\n  &lt;/iframe&gt;\n&lt;/div&gt;\n&lt;br&gt;\n\n.embed-container {\n  position: relative;\n  padding-bottom: 129%;\n  height: 0;\n  overflow: hidden;\n  max-width: 100%;\n}\n.embed-container iframe,\n.embed-container object,\n.embed-container embed {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n```",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(1) Set-up"
+      "Images, videos and documents"
+    ]
+  },
+  {
+    "objectID": "pages/media.html#pdfs",
+    "href": "pages/media.html#pdfs",
+    "title": "Images, videos and documents",
+    "section": "4 PDFs",
+    "text": "4 PDFs\nYou can embed a PDF so that it appears inside the page. The simplest way (using raw HTML) is:\n&lt;embed src=\"media/example.pdf\" width=\"100%\" height=\"1000px\" /&gt;\n\n\n\n\n\n\n\nNoteAdvanced Extra: Responsive Container\n\n\n\n\n\nIf you want more control (for example, a responsive container), you can use CSS:\n.embed-container {\n  position: relative;\n  padding-bottom: 129%;\n  height: 0;\n  overflow: hidden;\n  max-width: 100%;\n}\n.embed-container iframe,\n.embed-container object,\n.embed-container embed {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n\n\n\nTask: we have provided a pdf namem … on media.qmd:\n\nEmbed the example PDF.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Images, videos and documents"
+    ]
+  },
+  {
+    "objectID": "pages/customising.html",
+    "href": "pages/customising.html",
+    "title": "Customising the site appearance",
+    "section": "",
+    "text": "themes css colours titles headings interacting with quarto.yml and css",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Customising the site appearance"
+    ]
+  },
+  {
+    "objectID": "pages/code.html",
+    "href": "pages/code.html",
+    "title": "Code",
+    "section": "",
+    "text": "code example code task\nrstudio… r…",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Code"
     ]
   },
   {
     "objectID": "pages/making_a_change.html",
     "href": "pages/making_a_change.html",
-    "title": "(3) Making a change",
+    "title": "Making a change",
     "section": "",
     "text": "make a change\ncommit explain\nfork explain",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(3) Making a change"
+      "Making a change"
     ]
   }
 ]
