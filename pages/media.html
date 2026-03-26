@@ -68,8 +68,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pages/customising.html" rel="next">
-<link href="../pages/markdown.html" rel="prev">
+<link href="../pages/inline_html.html" rel="next">
+<link href="../pages/quarto_features.html" rel="prev">
 <link href="../images/daffodil_head.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6801265040e0d15e7e2ec0dc35f5db1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5e538c7c6d8ac26e5486d015b522a06f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -206,13 +206,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/markdown.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(4) Markdown</span></a>
+ <span class="menu-text">Markdown basics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pages/quarto_features.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto features</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/media.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Images, videos and documents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pages/inline_html.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inline HTML</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -277,16 +289,16 @@ The basic pattern is:</p>
 <p>If your image is in the same folder as your <code>.qmd</code> file, you could just write the file name.</p>
 <p>This shows the image at its default size and alignment:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><img src="../images/south_cloisters.jpg" class="img-fluid"></p>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid" alt="Default size and alignment example"></p>
 <p>You can control the size of the image with <code>width</code>:</p>
 <p>TODO: EXPLAIN CURLY BRACES</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{width=50%}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><img src="../images/south_cloisters.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid" style="width:50.0%" alt="Custom width example"></p>
 <p>To add a caption, put text inside the square brackets:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/south_cloisters.jpg" class="img-fluid figure-img"></p>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid figure-img" alt="Caption example"></p>
 <figcaption>Photograph of South Cloisters on St Lukes Campus</figcaption>
 </figure>
 </div>
@@ -294,15 +306,15 @@ The basic pattern is:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{fig-align="center"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/south_cloisters.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../images/south_cloisters.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Centered figure example"></p>
 </figure>
 </div>
 <p>Adding <code>.lightbox</code> lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{.lightbox}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><a href="../images/south_cloisters.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/south_cloisters.jpg" class="img-fluid"></a></p>
+<p><a href="../images/south_cloisters.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/south_cloisters.jpg" class="img-fluid" alt="Lightbox example"></a></p>
 <p>You can also make your figure a hyperlink:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](../images/south_cloisters.jpg)</span><span class="co">](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><a href="https://medicine.exeter.ac.uk/research/facilities/southcloisters/"><img src="../images/south_cloisters.jpg" class="img-fluid"></a></p>
+<p><a href="https://medicine.exeter.ac.uk/research/facilities/southcloisters/" data-fig-alt="Linked image example"><img src="../images/south_cloisters.jpg" class="img-fluid"></a></p>
 <p>To add alternative text to your image:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](../images/south_cloisters.jpg)</span>{fig-alt="Photograph of South Cloisters on St Lukes Campus"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><img src="../images/south_cloisters.jpg" class="img-fluid" alt="Photograph of South Cloisters on St Lukes Campus"></p>
@@ -848,13 +860,13 @@ The basic pattern is:</p>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pages/markdown.html" class="pagination-link" aria-label="(4) Markdown">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">(4) Markdown</span>
+      <a href="../pages/quarto_features.html" class="pagination-link" aria-label="Quarto features">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quarto features</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/customising.html" class="pagination-link" aria-label="Customising the site appearance">
-        <span class="nav-page-text">Customising the site appearance</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/inline_html.html" class="pagination-link" aria-label="Inline HTML">
+        <span class="nav-page-text">Inline HTML</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

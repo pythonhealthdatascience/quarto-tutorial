@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Markdown basics – Introduction to Quarto for Research Projects</title>
+<title>Inline HTML – Introduction to Quarto for Research Projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -68,8 +68,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pages/quarto_features.html" rel="next">
-<link href="../pages/making_a_change.html" rel="prev">
+<link href="../pages/customising.html" rel="next">
+<link href="../pages/media.html" rel="prev">
 <link href="../images/daffodil_head.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -146,7 +146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/markdown.html">Markdown basics</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/inline_html.html">Inline HTML</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/markdown.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/markdown.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Markdown basics</span></a>
   </div>
 </li>
@@ -220,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/inline_html.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/inline_html.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Inline HTML</span></a>
   </div>
 </li>
@@ -253,9 +253,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/markdown.html">Markdown basics</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/setup.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../pages/inline_html.html">Inline HTML</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Markdown basics</h1>
+<h1 class="title">Inline HTML</h1>
 </div>
 
 
@@ -272,121 +272,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<blockquote class="blockquote">
-<p><strong>Acknowledgements:</strong> This page is adapted from <a href="https://github.com/health-data-science-OR/jupyterlab-introduction/blob/main/01_basic_markdown.ipynb">health-data-science-OR/jupyterlab-introduction</a>.</p>
-</blockquote>
-<section id="what-is-markdown" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="what-is-markdown"><span class="header-section-number">1</span> What is markdown?</h2>
-<p>Markdown is a <strong>way of writing documents</strong> using plain text plus a few extra characters to show structure and formatting. Instead of a hidden file format (like a <code>.docx</code>), everything is visible as text: your words and the little symbols (e.g., <code>#</code>, <code>*</code>, <code>-</code>) that control how they look.</p>
-<p>When you <em>view</em> or <em>render</em> a Markdown file (for example, by opening it in a preview window or creating a final document), a tool reads your text and these symbols and turns them into a nicely formatted document (for example, HTML or PDF).</p>
-<p>A normal Markdown file usually ends in <code>.md</code>. In this workshop we mostly used <strong>Quarto Markdown</strong>, which is the same idea but with extra features for things like interactivity, code and citations, and those files end in <code>.qmd</code>.</p>
-<p>On this page you will practice Markdown features that you can use in your Quarto documents.</p>
-</section>
-<section id="headings-and-subheadings" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="headings-and-subheadings"><span class="header-section-number">2</span> Headings and subheadings</h2>
-<p>In Markdown, a heading is formatted with the character <code>#</code>.</p>
-<p>The number of <code>#</code> characters represents the level of the heading. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading level 1</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading level 2</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading level 3</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Heading level 4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="pale-blue">
-<p><strong>Task:</strong> Open <code>markdown.qmd</code> and create three headings:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">A level 1 heading for the page title (for example, <code># My Markdown Page</code>).</label></li>
-<li><label><input type="checkbox">A level 2 heading called <code>## Section One</code>.</label></li>
-<li><label><input type="checkbox">A level 3 heading called <code>### A Smaller Section</code>.</label></li>
-</ul>
-<p>Render the page and check that the heading sizes look different.</p>
-</div>
-</section>
-<section id="adding-a-horizontal-line-between-sections" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="adding-a-horizontal-line-between-sections"><span class="header-section-number">3</span> Adding a horizontal line between sections</h2>
-<p>To add a horizontal line between sections, use three dashes or asterisk on a line by themselves - either:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">***</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="pale-blue">
-<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Add a horizontal line between two sections (for example, between your <code>Section One</code> and <code>A Smaller Section</code> headings)</label></li>
-</ul>
-<p>Re-render the page to check it has worked.</p>
-</div>
-</section>
-<section id="bold-and-italic-text" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="bold-and-italic-text"><span class="header-section-number">4</span> Bold and italic text</h2>
-<p>To create <strong>bold</strong> text, you need to surround a word or phrase with <code>**</code>. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>The final word of this sentence will be **bold**.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To create <em>italic</em> text, you need to surround a word or phrase with <code>*</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>*This whole sentence will be in italics.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can also <strong>combine <em>both</em></strong> if you need stronger emphasis.</p>
-<div class="pale-blue">
-<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Write one short sentence about anything you like (e.g., “I am learning Quarto today”).</label></li>
-<li><label><input type="checkbox">Make one word in the sentence <strong>bold</strong>.</label></li>
-<li><label><input type="checkbox">Make a different word in the sentence <em>italic</em>.</label></li>
-</ul>
-<p>Re-render the page to see the effect.</p>
-</div>
-</section>
-<section id="bullet-points-and-numbered-lists" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="bullet-points-and-numbered-lists"><span class="header-section-number">5</span> Bullet points and numbered lists</h2>
-<p>To create a bullet list, use <code>*</code> followed by a space and then your text:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 1</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 2</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can indent with spaces (or tab) to create sub-bullets:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 1</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Bullet point level 2</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>Bullet point level 3</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A numbered list is created in a similar way using numbers (or letters):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Numbered point 1</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    a. Numbered point level 2 </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    b. Numbered point level 2 again</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To create a checklist, add <code>[ ]</code> between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using <code>[x]</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[ ]</span> First task</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[x]</span> Finished task</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="pale-blue">
-<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Create a bullet list of 3 everyday items (e.g., <code>Tea</code>, <code>Coffee</code>, <code>Biscuits</code>).</label></li>
-<li><label><input type="checkbox">Create a numbered list of 3 simple steps (e.g., <code>Open the file</code>, <code>Make a change</code>, <code>Save and render</code>).</label></li>
-<li><label><input type="checkbox">Add a checklist with three tasks, and mark one as already completed (e.g., <code>Read one article</code>, <code>Write one paragraph of notes</code>, <code>Add article to a report</code>).</label></li>
-</ul>
-</div>
-</section>
-<section id="indented-text" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="indented-text"><span class="header-section-number">6</span> Indented text</h2>
-<p>To indent text as a block quote, use <code>&gt;</code> at the start of the line:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is indented</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can use this for quotes, highlights, or short notes.</p>
-<div class="pale-blue">
-<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Add a short quote using <code>&gt;</code>, for example <code>&gt; Quarto helps me keep my work organised.</code></label></li>
-</ul>
-</div>
-</section>
-<section id="line-break" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="line-break"><span class="header-section-number">7</span> Line break</h2>
+<p>Web pages are written in <strong>HTML</strong> (HyperText Markup Language), which uses tags like <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code> to describe how things should look.</p>
+<p>In a Markdown document, you can sometimes mix in small pieces of HTML.<br>
+This is called <strong>inline HTML</strong>: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.</p>
+<p><strong>Caveat:</strong> raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.</p>
+<section id="line-break" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="line-break"><span class="header-section-number">1</span> Line break</h2>
 <p>You can insert a line break using <code>&lt;br&gt;</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>First part of the sentence.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span>Second part on a new line.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>First part of the sentence.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span>Second part on a new line.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="pale-blue">
-<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
+<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
 <ul class="task-list">
 <li><label><input type="checkbox">Write a short sentence, then use <code>&lt;br&gt;</code> to put a second short sentence on the next line with a line break between them.</label></li>
 </ul>
 </div>
 </section>
-<section id="hyperlinks" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="hyperlinks"><span class="header-section-number">8</span> Hyperlinks</h2>
-<p>TODO</p>
+<section id="small-text" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="small-text"><span class="header-section-number">2</span> Small text</h2>
+<p>You can make a small “fine print” style note using the <code>&lt;small&gt;</code> tag.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>This is <span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>small print<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is <small>small print</small>.</p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Add a normal sentence and then make one short phrase look like small print using <code>&lt;small&gt; ... &lt;/small&gt;</code>.</label></li>
+</ul>
+</div>
+</section>
+<section id="keyboard-keys" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="keyboard-keys"><span class="header-section-number">3</span> Keyboard keys</h2>
+<p>The <code>&lt;kbd&gt;</code> tag is often used to show keys that the user should press on the keyboard.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Press <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>Ctrl<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> + <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>C<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Write one instruction that shows a keyboard shortcut using <code>&lt;kbd&gt;</code> (for example, <code>Ctrl + S</code> to save).</label></li>
+</ul>
+</div>
+</section>
+<section id="custom-links" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="custom-links"><span class="header-section-number">4</span> Custom links</h2>
+<p>If you want more control over a link (for example, to open it in a new tab), you can write it in HTML instead of plain Markdown.</p>
+<p>In the HTML link below:</p>
+<ul>
+<li><code>href</code> is the web address you are linking to.</li>
+<li>The text between <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code> is what the reader clicks on.</li>
+<li><code>target="_blank"</code> tells the browser to open the link in a new tab.</li>
+<li><code>rel="noopener"</code> is a small security and performance setting that stops the new page from being able to control the original tab.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.exeter.ac.uk"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"noopener"</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  Visit the University of Exeter website</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.exeter.ac.uk" target="_blank" rel="noopener"> Visit the University of Exeter website </a></p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create a link that opens in a new tab by default.</label></li>
+</ul>
+</div>
+</section>
+<section id="abbreviations" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="abbreviations"><span class="header-section-number">5</span> Abbreviations</h2>
+<p>You can explain abbreviations by using the <code>&lt;abbr&gt;</code> tag with a <code>title</code> attribute. When someone hovers over it in a browser, they see the full phrase.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">abbr</span><span class="ot"> title</span><span class="op">=</span><span class="st">"Randomised Controlled Trial"</span><span class="dt">&gt;</span>RCT<span class="dt">&lt;/</span><span class="kw">abbr</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><abbr title="Randomised Controlled Trial">RCT</abbr></p>
+<p>Alternatively, you can use footnotes <strong>?@sec-footnotes</strong> to explain the term.</p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Pick one abbreviation you use in your own work (for example, “NHS” or “A&amp;E”) and write it with an <code>&lt;abbr&gt;</code> tag and a helpful title.</label></li>
+</ul>
+</div>
 
 
 </section>
@@ -794,13 +751,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pages/making_a_change.html" class="pagination-link" aria-label="Making a change">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Making a change</span>
+      <a href="../pages/media.html" class="pagination-link" aria-label="Images, videos and documents">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Images, videos and documents</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/quarto_features.html" class="pagination-link" aria-label="Quarto features">
-        <span class="nav-page-text">Quarto features</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/customising.html" class="pagination-link" aria-label="Customising the site appearance">
+        <span class="nav-page-text">Customising the site appearance</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

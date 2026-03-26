@@ -1,25 +1,136 @@
 [
   {
-    "objectID": "pages/basic_structure.html",
-    "href": "pages/basic_structure.html",
-    "title": "Basic structure",
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "1 Contributing",
     "section": "",
-    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)\nhttps://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.",
+    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#all-contributors",
+    "href": "CONTRIBUTING.html#all-contributors",
+    "title": "1 Contributing",
+    "section": "",
+    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
+  },
+  {
+    "objectID": "pages/quarto_features.html",
+    "href": "pages/quarto_features.html",
+    "title": "Quarto features",
+    "section": "",
+    "text": "In the last page, you worked with Markdown, which is a simple way to format text that works in lots of tools. Quarto lets you keep using that same Markdown, but it also adds extra features on top.\nBehind the scenes, Quarto uses a program called Pandoc. Pandoc takes your Markdown and converts it into many different formats (for example, HTML, PDF, Word, or slides). On top of Pandoc, Quarto adds its own features and settings (for example, callouts, columns, citations, and cross‑references) that you control from a single .qmd file.\nThis page gives a quick tour of some of those “Quarto extras” that go beyond plain Markdown.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "Basic structure"
+      "Quarto features"
     ]
   },
   {
-    "objectID": "pages/examples.html",
-    "href": "pages/examples.html",
-    "title": "Examples",
-    "section": "",
-    "text": "Research projects\n\nProjects that document and share a single, well-defined piece of research, usually with its own paper, report, or case study, plus code and/or interactive outputs.\n\n\n\n\n  \n\n    \n    \n      \n        Computational Reproducibility Assessments: Summary\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Documentation for EOM-RCC,a platform cost-effectiveness model encompassing each decision node in the disease area for advanced renal cell carcinoma.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        nordatlantisk-ft\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Website for an open voting-records dataset, with a data overview, detailed codebook of all variables, and information about the repository.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Simulating Attention and Performance tasks with an LLM\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        R project recording various simulation experiments.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        NAture-positive SCenarios for ENvironmental Transitions: Peru\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project website with maps, photo galleries, interactive figures, updates.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Towards an open-source model for data and metadata standards\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Online report with background/methods/results and links to extra pages providing more details.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        research-compendium-website\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Template site with pages about, data, codes and manuscript.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        PLB DSS Analysis\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Example using the template site, reporting on potate late blight forecasting model.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Is Latitude Associated with Chronotype?\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Masters Thesis as quarto website.\n      \n    \n\n  \n\n\n\nHomepage for research programme or team\n\nOverarching homepages that present an entire project, programme, lab, or community, bringing together people, research, resources, news, and key links in one place.\n\n\n\n\n  \n\n    \n    \n      \n        STARS\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Summary site for the STARS research project, with dedicated pages describing each component of the project and separate pages for every associated publication, including links to code and embedded papers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        HSMA\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Programme homepage describing the HSMA training scheme, with resources, guidance, news, and pages on each and every HSMA student project.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Affective Communication & Computing Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Lab website with blog posts containing latest news, and with pages listing the team, research themes, publications, resources and opportunities.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Computational Cognition Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Research group site listing publications, people, opportunities. Also has latest news and links to their learning resources, including open textbooks and teaching materials built with tools like Bookdown and Quarto.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Digital Humanities Bern\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Centre homepage with news and event listings, and individual pages on their research areas and services.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Hertie Coding Club\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Club site introducing the group's mission, events, and workshops, with interactive resources, coding materials, and a polished, animated homepage experience.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Masiello Research Group\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Group homepage with detailed researcher profiles, plus research area overviews, publications, software links, and news.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        NHS-R Community\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Community site sharing reports, blog posts, events, resources, and information about fellows and contributors, supporting users of R across the NHS.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Deep Energy and Climate Policy Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Group homagepage with blog posts, project summaries, publications, team, events and more.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Atlas of Living Australia Labs\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Features analysis articles and data visualisations.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Real World Data Science\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project from the Royal Statistical Society - site contains mostly blog posts.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        epiforecasts\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Research group at the Centre for Mathematical Modelling of Infectious Diseases of the Longon School of Hygiene and Tropical Medicine.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        seedcase\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project website with roadmap, info on team, and links out to other sites focused on community and design.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        openscapes\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Clearly designed project website with great graphics and design.\n      \n    \n\n  \n\n\n\nTraining / Modules / Courses / Etc.\n\nSelf-paced learning resources, workshop materials, and full course sites that use Quarto to deliver lectures, exercises, tutorials, and technical guidance, often alongside code and datasets.\n\n\n\n\n  \n\n    \n    \n      \n        Quarto tutorial\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Of course, we created this website using Quarto!\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        DES RAP Book\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Testing in Research Workflow\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Tutorial on testing in Python and R, accompanies HDR UK Futures training videos.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        HSMA - the little book of DES\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Self-paced training resource on creating discrete-event simulation models in Python using SimPy.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        STA 210: Regression Analysis\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        TASO Interactive Technical Guides\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Reproducibility at Urban\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Energy and Climate Policy\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Online course with schedule, lectures as quarto presentations, and more.\n      \n    \n\n  \n\n\n\nResearcher profiles\n\nPersonal websites and blogs for researchers.\n\n\n\n\n  \n\n    \n    \n      \n        Andrew Heiss\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Drew Dimmery\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Beatriz Milz\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Mike Mahoney\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Chris von Csefalvay\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Salman Naqvi\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Silvia Canelón\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        John Paul Helveston\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Gang He\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Quarto Academic Template\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Template created by Dr Gang He\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Albury C\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n\n\nConferences and events\n\nEvent and seminar websites that share programmes, schedules, speakers, and materials for conferences, workshops, and talk series, often with links to slides, recordings, and related resources.\n\n\n\n\n  \n\n    \n    \n      \n        Climate Guest Speakers\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Schedule and description of upcoming talks from guest speakers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        R/Medicine 2026\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Conference website with registration, submission, programme, details about hackathon, etc.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        2021 Cloud Hackathon\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Information about hackathon, schedule, lots of tutorial pages.\n      \n    \n\n  \n\n\n\nPackage documentation\n\nUse Quarto (with tools like quartodoc) to build clean, navigable documentation sites for your Python or R packages, including API reference, usage guides, and examples.\n\n\n\n\n  \n\n    \n    \n      \n        lintquarto\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package which runs linters and type checkers on code embedded in Quarto .qmd files.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        vidigi\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package for creating animated visualisations of queues and pathways from simulation or real-world data.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        skimpy\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package providing summary statistics from dataframes.\n      \n    \n\n  \n\n\n\nOther cool examples\n\nFurther examples of interesting uses of quarto in research.\n\n\n\n\n  \n\n    \n    \n      \n        Healthcare Services Analytics & Decision Science Atlas.\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Directory of open-source tools, packages, and projects for analytics and decision science in healthcare.\n      \n    \n\n  \n\n\n\nNon-Quarto examples\n\nInspiring research websites, reports, and project pages (built without Quarto) that model good practice in openness, documentation, and communication of analytic work.\n\n\n\n\n  \n\n    \n    \n      \n        Model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Companion to publication which provides more detailed introduction, methods, results, discussion.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Research Compendium: Replicating Simulations in Python using Generative AI\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Companion to publication with full record of study - in this case, all prompts, code, tests, results.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Introduction to SAMueL-1 (Stroke Audit Machine Learning)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Full results from project, supplementary to reports and papers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Introduction to SAMueL-2 (Stroke Audit Machine Learning)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Full project results.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        AmbModelOpen\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Describes research project modelling ambulances - including background, method, and results - serving as foundation for conference paper.\n      \n    \n\n  \n\n\n\nNo matching items",
+    "objectID": "pages/quarto_features.html#callouts",
+    "href": "pages/quarto_features.html#callouts",
+    "title": "Quarto features",
+    "section": "1 Callouts",
+    "text": "1 Callouts\nQuarto extends Markdown with callouts, which are highlighted boxes you can use for notes, tips, or warnings.\nCallouts use a small bit of extra syntax that Quarto understands as a “special box” rather than normal text. In Markdown, ::: ... ::: defines a block (a kind of container) that Quarto treats like an HTML &lt;div&gt;. By adding a class to that block, you tell Quarto what kind of callout it is.\nA simple callout note looks like this:\n\n::: starts the block.\n{.callout-note} says that this is a class “callout-note” (just like HTML &lt;div class=\"callout-note\"&gt;)/\nEverything until the closing ::: is the content of the callout.\nThe final ::: closes the block.\n\n\n\nMarkdown:\n::: {.callout-note}\nThis is a callout.\nYou can use it to draw attention to important information.\n:::\n\n\n\nOutput:\n\n\n\n\n\n\nNote\n\n\n\nThis is a callout. You can use it to draw attention to important information.\n\n\n\n\nYou can change the type:\n\n\n::: {.callout-tip}\nThis is a tip.\n:::\n::: {.callout-warning}\nThis is a warning.\n:::\n::: {.callout-important}\nThis is important information.\n:::\n::: {.callout-caution}\nThis is a caution.\n:::\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is important information.\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution.\n\n\n\n\nYou can add a title:\n\n\n::: {.callout-tip title=\"Helpful tip\"}\nRemember to save your file before you render.\n:::\n\n\n\n\n\n\n\n\n\nTipHelpful tip\n\n\n\nRemember to save your file before you render.\n\n\n\n\nYou can also set the callout to collapse:\n\n\n::: {.callout-note title=\"More details\" collapse=\"true\"}\nThis extra information is hidden until you click the arrow.\n:::\n\n\n\n\n\n\n\n\n\nNoteMore details\n\n\n\n\n\nThis extra information is hidden until you click the arrow.\n\n\n\n\n\nYou can change the appearance style to simple or minimal:\n\n\n::: {.callout-note appearance=\"simple\"}\nThis is a simple callout.\n:::\n::: {.callout-note appearance=\"minimal\"}\nThis is a minimal callout.\n:::\n\n\n\n\n\n\n\n\n\nThis is a simple callout.\n\n\n\n\n\n\n\n\n\nThis is a minimal callout.\n\n\n\n\n\nYou can also hide the icon:\n\n\n::: {.callout-note icon=\"false\"}\nDefault callout with icon removed\n:::\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nDefault callout with icon removed\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nAdd a callout of type tip with a short title (e.g., “Helpful tip”).\nInside the callout, write one sentence of advice (e.g., “Take short breaks when you are concentrating.”).\nAdd another callout with collapse=\"true\" (e.g., with title “More information” and with content “You can come back to this note later if you need it.”).",
     "crumbs": [
       "GitHub",
-      "Examples"
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#columns",
+    "href": "pages/quarto_features.html#columns",
+    "title": "Quarto features",
+    "section": "2 Columns",
+    "text": "2 Columns\nYou can create columns using the same ::: ... ::: fenced blocks, with a .columns container and one or more .column blocks inside.\nFor example:\n:::: {.columns}\n\n::: {.column}\n![](/images/south_cloisters.jpg){fig-alt=\"Photograph of South Cloisters\"}\n:::\n\n::: {.column}\n**South Cloisters**, University of Exeter, St Luke's Campus, Heavitree Road, Exeter EX1 2LU\n:::\n\n::::\n\n\n\n\nSouth Cloisters, University of Exeter, St Luke’s Campus, Heavitree Road, Exeter EX1 2LU\n\n\nBy default, columns share the space equally. You can control their width by adding width= percentages to each column. For example:\n:::: {.columns}\n\n::: {.column width=60%}\n:::\n\n::: {.column width=5%}\n:::\n\n::: {.column width=35%}\n:::\n\n::::\n\nTask: In quarto_features.qmd:\n\nCreate two columns with some text in each.\nChange one column to 70% width and the other to 30% width.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#footnotes",
+    "href": "pages/quarto_features.html#footnotes",
+    "title": "Quarto features",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is the content of the footnote.\nYou can include additional details by going two line below and tab indent.↩︎",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#citations",
+    "href": "pages/quarto_features.html#citations",
+    "title": "Quarto features",
+    "section": "4 Citations",
+    "text": "4 Citations\nWith a bibliography file (e.g., references.bib), Quarto can automatically format citations and a reference list.\nA bibliography file (with extension .bib) is a text file that stores information about your sources (for example, author, year, title, journal). Each source has a short key, like @feng_ultrasonic_2006, that you can use in your writing. Reference managers such as Zotero can export your library to a .bib file, so you do not have to type these entries by hand.\n\n\n\n\n\n\nNoteView references.bib\n\n\n\n\n\n\n@article{feng_ultrasonic_2006,\n    title = {Ultrasonic communication in frogs},\n    volume = {440},\n    copyright = {2006 Springer Nature Limited},\n    issn = {1476-4687},\n    url = {https://www.nature.com/articles/nature04416},\n    doi = {10.1038/nature04416},\n    abstract = {Some bats, dolphins and rodents are notable among vertebrates in being able to produce and detect ultrasonic frequencies. Now for the first time an amphibian can be added to that select list. The spectacular bird-like sounds made by a type of Chinese torrent frog were known to edge into the ultrasonic range: now these frogs are shown to use ultrasonics as a form of communication. The males do at least, during competition for territory. Frogs are a long way, evolutionarily speaking, from the other known users of ultrasonics so this ability seems to have evolved independently several times. It is possible, too, that many other species are chatting away in the ultrasonic waveband, but that nobody has looked for them.},\n    language = {en},\n    number = {7082},\n    urldate = {2026-03-26},\n    journal = {Nature},\n    author = {Feng, Albert S. and Narins, Peter M. and Xu, Chun-He and Lin, Wen-Yu and Yu, Zu-Lin and Qiu, Qiang and Xu, Zhi-Min and Shen, Jun-Xian},\n    month = mar,\n    year = {2006},\n    note = {Publisher: Nature Publishing Group},\n    keywords = {Humanities and Social Sciences, multidisciplinary, Science},\n    pages = {333--336},\n    file = {Full Text PDF:/home/amy/Zotero/storage/64S36KD5/Feng et al. - 2006 - Ultrasonic communication in frogs.pdf:application/pdf},\n}\n\n@article{starnberger_uni-_2014,\n    title = {From uni- to multimodality: towards an integrative view on anuran communication},\n    volume = {200},\n    issn = {0340-7594},\n    shorttitle = {From uni- to multimodality},\n    url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4138437/},\n    doi = {10.1007/s00359-014-0923-1},\n    abstract = {Undeniably, acoustic signals are the predominant mode of communication in frogs and toads. Acoustically active species are found throughout the vast diversity of anuran families. However, additional or alternative signal modalities have gained increasing attention. In several anurans, seismic, visual and chemical communications have convergently evolved due to ecological constraints such as noisy environments. The production of a visual cue, like the inevitably moving vocal sac of acoustically advertising males, is emphasized by conspicuously coloured throats. Limb movements accompanied by dynamic displays of bright colours are additional examples of striking visual signals independent of vocalizations. In some multimodal anuran communication systems, the acoustic component acts as an alert signal, which alters the receiver attention to the following visual display. Recent findings of colourful glands on vocal sacs, producing volatile species-specific scent bouquets suggest the possibility of integration of acoustic, visual and chemical cues in species recognition and mate choice. The combination of signal components facilitates a broadened display repertoire in challenging environmental conditions. Thus, the complexity of the communication systems of frogs and toads may have been underestimated.},\n    number = {9},\n    urldate = {2026-03-26},\n    journal = {Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology},\n    author = {Starnberger, Iris and Preininger, Doris and Hödl, Walter},\n    year = {2014},\n    pmid = {24973893},\n    pmcid = {PMC4138437},\n    pages = {777--787},\n    file = {Full Text:/home/amy/Zotero/storage/YHX45APP/Starnberger et al. - 2014 - From uni- to multimodality towards an integrative.pdf:application/pdf},\n}\n\n\n\nProvide the path to your bibliography in the YAML metadata for the page e.g.,:\n---\ntitle: \"My Document\"\nbibliography: references.bib\n---\nA simple in-text citation looks like this… can wrap in () and [] if want… use @ and identifier…\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).\n\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (Feng et al. (2006)).\n\n\nMultiple citations can be combined, use semicolon to separate\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).\n\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (Feng et al. (2006); Starnberger et al. (2014)).\n\n\nBy default, a list of works cited will be placed at the end of the document. You can change where this is by provided refs div -\n\n\n::: {#refs}\n:::\n\n\n\n\n\nFeng, Albert S., Peter M. Narins, Chun-He Xu, et al. 2006. “Ultrasonic Communication in Frogs.” Nature 440 (7082): 333–36. https://doi.org/10.1038/nature04416.\n\n\nStarnberger, Iris, Doris Preininger, and Walter Hödl. 2014. “From Uni- to Multimodality: Towards an Integrative View on Anuran Communication.” Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology 200 (9): 777–87. https://doi.org/10.1007/s00359-014-0923-1.\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nA bib file is provided… add citation using key from file…",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#cross-references",
+    "href": "pages/quarto_features.html#cross-references",
+    "title": "Quarto features",
+    "section": "5 Cross-references",
+    "text": "5 Cross-references\nTODO: explain this better… how to do with figures, tables and equation…\nQuarto can automatically number and cross‑reference figures, tables, sections, and equations.\nTo make something cross‑referenceable, you give it an identifier, then refer to it with @id. For example, a section:\n## Results {#sec-results}\n\nAs shown in @sec-results, we found that ...\n\nTask: In quarto_features.qmd:\n\nAdd an ID to one heading then write a sentence later that references it.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#math",
+    "href": "pages/quarto_features.html#math",
+    "title": "Quarto features",
+    "section": "6 Math",
+    "text": "6 Math\nQuarto supports LaTeX‑style math notation for inline and display equations.\nLaTeX is a markup language commonly used for writing mathematics. Quarto understands a subset of LaTeX math syntax so you can write formulas directly in your text. Inline math appears inside a sentence (for example, $y = mx + c$), and display math appears on its own line, centred and spaced out, using $$ ... $$.\nIn-line math:\n\n\nThe solution is $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\n\n\nThe solution is \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n\nDisplay math:\n\n\n$$\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n$$\n\n\n\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\]\n\n\n\nTask: In quarto_features.qmd:\n\nAdd one short inline formula and one display formula (e.g., y = mx + c)",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#definition-lists",
+    "href": "pages/quarto_features.html#definition-lists",
+    "title": "Quarto features",
+    "section": "7 Definition lists",
+    "text": "7 Definition lists\nDefinition lists are useful for small glossaries or when you want to introduce a few key concepts with short explanations. To creat them, write therm term on online line, then start the defintion on the next line with a colon : and space.\n\n\nThing 1\n: Definition of thing 1\n\nThing 2\n: Definition of thing 2\n\n\n\n\n\nThing 1\n\nDefinition of thing 1\n\nThing 2\n\nDefinition of thing 2\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nCreate a short definition list with two terms and one-sentence definitions for each.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#line-blocks",
+    "href": "pages/quarto_features.html#line-blocks",
+    "title": "Quarto features",
+    "section": "8 Line blocks",
+    "text": "8 Line blocks\nBy default, Markdown ignores most extra spaces at the start of a line and treats single line breaks as part of the same paragraph. Line blocks give you precise control: they keep each line and its leading spaces exactly as you typed them.\nDefault:\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke's Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nSouth Cloisters, University of Exeter, St Luke’s Campus, Heavitree Road, Exeter EX1 2LU\n\n\nLine block:\n\n\n| South Cloisters,\n|     University of Exeter,\n|     St Luke's Campus,\n|     Heavitree Road,\n|     Exeter EX1 2LU\n\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke’s Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nTask: In quarto_features.qmd:\n\nWrite a three‑line address or short poem using a line block and check that the line breaks are preserved after rendering.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#includes",
+    "href": "pages/quarto_features.html#includes",
+    "title": "Quarto features",
+    "section": "9 Includes",
+    "text": "9 Includes\nreuse… import…\n{{&lt; include file.md &gt;}}",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
     ]
   },
   {
@@ -71,182 +182,16 @@
     ]
   },
   {
-    "objectID": "pages/why.html",
-    "href": "pages/why.html",
-    "title": "Why make a website for your research?",
+    "objectID": "pages/basic_structure.html",
+    "href": "pages/basic_structure.html",
+    "title": "Basic structure",
     "section": "",
-    "text": "Research compendium\nPaper - report method - actual code - generate\nshare research all the details included\nmore than just appendices and paper searchable interactive mixed media\nexamples\n(this page could even be a quarto slideshow?)",
-    "crumbs": [
-      "GitHub",
-      "Why make a website for your research?"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html",
-    "href": "pages/markdown.html",
-    "title": "(4) Markdown",
-    "section": "",
-    "text": "Acknowledgements: This page is adapted from health-data-science-OR/jupyterlab-introduction.",
+    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)\nhttps://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "(4) Markdown"
+      "Basic structure"
     ]
-  },
-  {
-    "objectID": "pages/markdown.html#what-is-markdown",
-    "href": "pages/markdown.html#what-is-markdown",
-    "title": "(4) Markdown",
-    "section": "1 What is markdown?",
-    "text": "1 What is markdown?\nMarkdown is a way of writing documents using plain text plus a few extra characters to show structure and formatting. Instead of a hidden file format (like a .docx), everything is visible as text: your words and the little symbols (e.g., #, *, -) that control how they look.\nWhen you view or render a Markdown file (for example, by opening it in a preview window or creating a final document), a tool reads your text and these symbols and turns them into a nicely formatted document (for example, HTML or PDF).\nA normal Markdown file usually ends in .md. In this workshop we mostly used Quarto Markdown, which is the same idea but with extra features for things like interactivity, code and citations, and those files end in .qmd.\nOn this page you will practice Markdown features that you can use in your Quarto documents.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#headings-and-subheadings",
-    "href": "pages/markdown.html#headings-and-subheadings",
-    "title": "(4) Markdown",
-    "section": "2 Headings and subheadings",
-    "text": "2 Headings and subheadings\nIn Markdown, a heading is formatted with the character #.\nThe number of # characters represents the level of the heading. For example:\n# Heading level 1\n\n## Heading level 2\n\n### Heading level 3\n\n#### Heading level 4\n\nTask: Open markdown.qmd and create three headings:\n\nA level 1 heading for the page title (for example, # My Markdown Page).\nA level 2 heading called ## Section One.\nA level 3 heading called ### A Smaller Section.\n\nRender the page and check that the heading sizes look different.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#adding-a-horizontal-line-between-sections",
-    "href": "pages/markdown.html#adding-a-horizontal-line-between-sections",
-    "title": "(4) Markdown",
-    "section": "3 Adding a horizontal line between sections",
-    "text": "3 Adding a horizontal line between sections\nTo add a horizontal line between sections, use three dashes or asterisk on a line by themselves - either:\n---\n***\n\nTask: In markdown.qmd:\n\nAdd a horizontal line between two sections (for example, between your Section One and A Smaller Section headings)\n\nRe-render the page to check it has worked.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#bold-and-italic-text",
-    "href": "pages/markdown.html#bold-and-italic-text",
-    "title": "(4) Markdown",
-    "section": "4 Bold and italic text",
-    "text": "4 Bold and italic text\nTo create bold text, you need to surround a word or phrase with **. For example:\nThe final word of this sentence will be **bold**.\nTo create italic text, you need to surround a word or phrase with *.\n*This whole sentence will be in italics.*\nYou can also combine both if you need stronger emphasis.\n\nTask: In markdown.qmd:\n\nWrite one short sentence about anything you like (e.g., “I am learning Quarto today”).\nMake one word in the sentence bold.\nMake a different word in the sentence italic.\n\nRe-render the page to see the effect.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#bullet-points-and-numbered-lists",
-    "href": "pages/markdown.html#bullet-points-and-numbered-lists",
-    "title": "(4) Markdown",
-    "section": "5 Bullet points and numbered lists",
-    "text": "5 Bullet points and numbered lists\nTo create a bullet list, use * followed by a space and then your text:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\nYou can indent with spaces (or tab) to create sub-bullets:\n* Bullet point 1\n    * Bullet point level 2\n        * Bullet point level 3\n* Back to level 1\nA numbered list is created in a similar way using numbers (or letters):\n1. Numbered point 1\n    a. Numbered point level 2 \n    b. Numbered point level 2 again\n2. Back to level 1\nTo create a checklist, add [ ] between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using [x].\n* [ ] First task\n* [x] Finished task\n\nTask: In markdown.qmd:\n\nCreate a bullet list of 3 everyday items (e.g., Tea, Coffee, Biscuits).\nCreate a numbered list of 3 simple steps (e.g., Open the file, Make a change, Save and render).\nAdd a checklist with three tasks, and mark one as already completed (e.g., Read one article, Write one paragraph of notes, Add article to a report).",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#indented-text",
-    "href": "pages/markdown.html#indented-text",
-    "title": "(4) Markdown",
-    "section": "6 Indented text",
-    "text": "6 Indented text\nTo indent text as a block quote, use &gt; at the start of the line:\n&gt; This is indented\nYou can use this for quotes, highlights, or short notes.\n\nTask: In markdown.qmd:\n\nAdd a short quote using &gt;, for example &gt; Quarto helps me keep my work organised.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#callouts",
-    "href": "pages/markdown.html#callouts",
-    "title": "(4) Markdown",
-    "section": "7 Callouts",
-    "text": "7 Callouts\nQuarto extends Markdown with callouts, which are highlighted boxes you can use for notes, tips, or warnings.\nCallouts use a small bit of extra syntax that Quarto understands as a “special box” rather than normal text. In Markdown, ::: ... ::: defines a block (a kind of container) that Quarto treats like an HTML &lt;div&gt;. By adding a class to that block, you tell Quarto what kind of callout it is.\nA simple callout note looks like this:\n\n::: starts the block.\n{.callout-note} says that this is a class “callout-note” (just like HTML &lt;div class=\"callout-note\"&gt;)/\nEverything until the closing ::: is the content of the callout.\nThe final ::: closes the block.\n\n\n\nMarkdown:\n::: {.callout-note}\nThis is a callout.\nYou can use it to draw attention to important information.\n:::\n\n\n\nOutput:\n\n\n\n\n\n\nNote\n\n\n\nThis is a callout. You can use it to draw attention to important information.\n\n\n\n\nYou can change the type:\n\n\n::: {.callout-tip}\nThis is a tip.\n:::\n::: {.callout-warning}\nThis is a warning.\n:::\n::: {.callout-important}\nThis is important information.\n:::\n::: {.callout-caution}\nThis is a caution.\n:::\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is important information.\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution.\n\n\n\n\nYou can add a title:\n\n\n::: {.callout-tip title=\"Helpful tip\"}\nRemember to save your file before you render.\n:::\n\n\n\n\n\n\n\n\n\nTipHelpful tip\n\n\n\nRemember to save your file before you render.\n\n\n\n\nYou can also set the callout to collapse:\n\n\n::: {.callout-note title=\"More details\" collapse=\"true\"}\nThis extra information is hidden until you click the arrow.\n:::\n\n\n\n\n\n\n\n\n\nNoteMore details\n\n\n\n\n\nThis extra information is hidden until you click the arrow.\n\n\n\n\n\nYou can change the appearance style to simple or minimal:\n\n\n::: {.callout-note appearance=\"simple\"}\nThis is a simple callout.\n:::\n::: {.callout-note appearance=\"minimal\"}\nThis is a minimal callout.\n:::\n\n\n\n\n\n\n\n\n\nThis is a simple callout.\n\n\n\n\n\n\n\n\n\nThis is a minimal callout.\n\n\n\n\n\nYou can also hide the icon:\n\n\n::: {.callout-note icon=\"false\"}\nDefault callout with icon removed\n:::\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nDefault callout with icon removed\n\n\n\n\n\nTask: In markdown.qmd:\n\nAdd a callout of type tip with a short title (e.g., “Helpful tip”).\nInside the callout, write one sentence of advice (e.g., “Take short breaks when you are concentrating.”).\nAdd another callout with collapse=\"true\" (e.g., with title “More information” and with content “You can come back to this note later if you need it.”).",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#line-break",
-    "href": "pages/markdown.html#line-break",
-    "title": "(4) Markdown",
-    "section": "8 Line break",
-    "text": "8 Line break\nYou can insert a line break using &lt;br&gt;.\nFirst part of the sentence.&lt;br&gt;Second part on a new line.\n\nTask: In markdown.qmd:\n\nWrite a short sentence, then use &lt;br&gt; to put a second short sentence on the next line with a line break between them.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "pages/markdown.html#hyperlinks",
-    "href": "pages/markdown.html#hyperlinks",
-    "title": "(4) Markdown",
-    "section": "9 Hyperlinks",
-    "text": "9 Hyperlinks\nTODO",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "(4) Markdown"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Quarto for Research Projects",
-    "section": "",
-    "text": "Share your research openly with a simple website\nIn this hands-on workshop, you’ll learn how to build a straightforward Quarto website to share and organise your research. You will be introduced to using GitHub, Quarto and Markdown. No prior experience is needed - we’ll guide you through each step using free, open tools that make it quick and straightforward to get a site online.\nYou’ll see how a website can become a powerful hub for your work: a place to share notes, methods, outputs, and updates openly and accessibly. Your site could act as a:\nThe workshop will give you practical skills and templates you can adapt for your own research. By the end, you’ll have the foundations for your own site - and a clear sense of how open, well-documented work can make your research easier to share, reuse, and build on.\nAfter the workshop, you can keep building on your site. Quarto has many possibilities, including adding blog posts, interactive figures, embedded code, galleries, teaching materials, or project updates. It’s a flexible foundation that can grow with your research, learning, and collaborations - and is free and open to use and host your site.",
-    "crumbs": [
-      "GitHub",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#contributors",
-    "href": "index.html#contributors",
-    "title": "Introduction to Quarto for Research Projects",
-    "section": "1 Contributors",
-    "text": "1 Contributors\n\n\n\n\n\n\n\nAmy Heather🖋 🤔 🚇 🚧\n\n\nTom Monks🤔 🧑‍🏫",
-    "crumbs": [
-      "GitHub",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#funding",
-    "href": "index.html#funding",
-    "title": "Introduction to Quarto for Research Projects",
-    "section": "2 Funding",
-    "text": "2 Funding\nThis course was developed as part of the STARS project. STARS is supported by the Medical Research Council [grant number MR/Z503915/1].",
-    "crumbs": [
-      "GitHub",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "1 Contributing",
-    "section": "",
-    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#all-contributors",
-    "href": "CONTRIBUTING.html#all-contributors",
-    "title": "1 Contributing",
-    "section": "",
-    "text": "If your name or contributions are missing from the README, or if you contributed in ways not captured by the current role emojis, please create an issue and use:\n@all-contributors please add @githubuser for ...\nThen list appropriate contribution types from allcontributors.org/docs/en/emoji-key (e.g., code, review, doc, content, bug, ideas, infra).\nAlternatively, you can update it from the command line. This may be preferable, as the bot will create GitHub issues that email people when they are added.\nYou’ll need to install the All-Contributors CLI tool:\nnpm i -D all-contributors-cli\nWhen we first set-up all-contributors, we called:\nnpx all-contributors init\nFrom then on, you can then run the following and select/enter relevant information when prompted:\nnpx all-contributors\nIf you want to remove specific contributions or people, edit the .all-contributorsrc file then run the following to regenerate the table in README.md. (Don’t edit README.md, as it is just generated based on .all-contributorsrc).\nnpx all-contributors generate"
   },
   {
     "objectID": "pages/media.html",
@@ -309,15 +254,59 @@
     ]
   },
   {
-    "objectID": "pages/customising.html",
-    "href": "pages/customising.html",
-    "title": "Customising the site appearance",
+    "objectID": "pages/examples.html",
+    "href": "pages/examples.html",
+    "title": "Examples",
     "section": "",
-    "text": "themes css colours titles headings interacting with quarto.yml and css",
+    "text": "Research projects\n\nProjects that document and share a single, well-defined piece of research, usually with its own paper, report, or case study, plus code and/or interactive outputs.\n\n\n\n\n  \n\n    \n    \n      \n        Computational Reproducibility Assessments: Summary\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Documentation for EOM-RCC,a platform cost-effectiveness model encompassing each decision node in the disease area for advanced renal cell carcinoma.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        nordatlantisk-ft\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Website for an open voting-records dataset, with a data overview, detailed codebook of all variables, and information about the repository.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Simulating Attention and Performance tasks with an LLM\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        R project recording various simulation experiments.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        NAture-positive SCenarios for ENvironmental Transitions: Peru\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project website with maps, photo galleries, interactive figures, updates.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Towards an open-source model for data and metadata standards\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Online report with background/methods/results and links to extra pages providing more details.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        research-compendium-website\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Template site with pages about, data, codes and manuscript.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        PLB DSS Analysis\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Example using the template site, reporting on potate late blight forecasting model.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Is Latitude Associated with Chronotype?\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Masters Thesis as quarto website.\n      \n    \n\n  \n\n\n\nHomepage for research programme or team\n\nOverarching homepages that present an entire project, programme, lab, or community, bringing together people, research, resources, news, and key links in one place.\n\n\n\n\n  \n\n    \n    \n      \n        STARS\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Summary site for the STARS research project, with dedicated pages describing each component of the project and separate pages for every associated publication, including links to code and embedded papers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        HSMA\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Programme homepage describing the HSMA training scheme, with resources, guidance, news, and pages on each and every HSMA student project.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Affective Communication & Computing Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Lab website with blog posts containing latest news, and with pages listing the team, research themes, publications, resources and opportunities.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Computational Cognition Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Research group site listing publications, people, opportunities. Also has latest news and links to their learning resources, including open textbooks and teaching materials built with tools like Bookdown and Quarto.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Digital Humanities Bern\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Centre homepage with news and event listings, and individual pages on their research areas and services.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Hertie Coding Club\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Club site introducing the group's mission, events, and workshops, with interactive resources, coding materials, and a polished, animated homepage experience.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Masiello Research Group\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Group homepage with detailed researcher profiles, plus research area overviews, publications, software links, and news.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        NHS-R Community\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Community site sharing reports, blog posts, events, resources, and information about fellows and contributors, supporting users of R across the NHS.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Deep Energy and Climate Policy Lab\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Group homagepage with blog posts, project summaries, publications, team, events and more.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Atlas of Living Australia Labs\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Features analysis articles and data visualisations.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Real World Data Science\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project from the Royal Statistical Society - site contains mostly blog posts.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        epiforecasts\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Research group at the Centre for Mathematical Modelling of Infectious Diseases of the Longon School of Hygiene and Tropical Medicine.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        seedcase\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Project website with roadmap, info on team, and links out to other sites focused on community and design.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        openscapes\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Clearly designed project website with great graphics and design.\n      \n    \n\n  \n\n\n\nTraining / Modules / Courses / Etc.\n\nSelf-paced learning resources, workshop materials, and full course sites that use Quarto to deliver lectures, exercises, tutorials, and technical guidance, often alongside code and datasets.\n\n\n\n\n  \n\n    \n    \n      \n        Quarto tutorial\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Of course, we created this website using Quarto!\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        DES RAP Book\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Testing in Research Workflow\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Tutorial on testing in Python and R, accompanies HDR UK Futures training videos.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        HSMA - the little book of DES\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Self-paced training resource on creating discrete-event simulation models in Python using SimPy.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        STA 210: Regression Analysis\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        TASO Interactive Technical Guides\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Reproducibility at Urban\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Energy and Climate Policy\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Online course with schedule, lectures as quarto presentations, and more.\n      \n    \n\n  \n\n\n\nResearcher profiles\n\nPersonal websites and blogs for researchers.\n\n\n\n\n  \n\n    \n    \n      \n        Andrew Heiss\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Drew Dimmery\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Beatriz Milz\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Mike Mahoney\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Chris von Csefalvay\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Salman Naqvi\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Silvia Canelón\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        John Paul Helveston\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Gang He\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Quarto Academic Template\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Template created by Dr Gang He\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Albury C\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        \n      \n    \n\n  \n\n\n\nConferences and events\n\nEvent and seminar websites that share programmes, schedules, speakers, and materials for conferences, workshops, and talk series, often with links to slides, recordings, and related resources.\n\n\n\n\n  \n\n    \n    \n      \n        Climate Guest Speakers\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Schedule and description of upcoming talks from guest speakers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        R/Medicine 2026\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Conference website with registration, submission, programme, details about hackathon, etc.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        2021 Cloud Hackathon\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Information about hackathon, schedule, lots of tutorial pages.\n      \n    \n\n  \n\n\n\nPackage documentation\n\nUse Quarto (with tools like quartodoc) to build clean, navigable documentation sites for your Python or R packages, including API reference, usage guides, and examples.\n\n\n\n\n  \n\n    \n    \n      \n        lintquarto\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package which runs linters and type checkers on code embedded in Quarto .qmd files.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        vidigi\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package for creating animated visualisations of queues and pathways from simulation or real-world data.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        skimpy\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Python package providing summary statistics from dataframes.\n      \n    \n\n  \n\n\n\nOther cool examples\n\nFurther examples of interesting uses of quarto in research.\n\n\n\n\n  \n\n    \n    \n      \n        Healthcare Services Analytics & Decision Science Atlas.\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Directory of open-source tools, packages, and projects for analytics and decision science in healthcare.\n      \n    \n\n  \n\n\n\nNon-Quarto examples\n\nInspiring research websites, reports, and project pages (built without Quarto) that model good practice in openness, documentation, and communication of analytic work.\n\n\n\n\n  \n\n    \n    \n      \n        Model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Companion to publication which provides more detailed introduction, methods, results, discussion.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Research Compendium: Replicating Simulations in Python using Generative AI\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Companion to publication with full record of study - in this case, all prompts, code, tests, results.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Introduction to SAMueL-1 (Stroke Audit Machine Learning)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Full results from project, supplementary to reports and papers.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        Introduction to SAMueL-2 (Stroke Audit Machine Learning)\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n      \n        University of Exeter\n      \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Full project results.\n      \n    \n\n  \n\n  \n\n    \n    \n      \n        AmbModelOpen\n         \n        \n          \n        \n        \n      \n    \n\n    \n    \n\n    \n    \n      \n    \n\n    \n    \n      \n        Describes research project modelling ambulances - including background, method, and results - serving as foundation for conference paper.\n      \n    \n\n  \n\n\n\nNo matching items",
+    "crumbs": [
+      "GitHub",
+      "Examples"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Quarto for Research Projects",
+    "section": "",
+    "text": "Share your research openly with a simple website\nIn this hands-on workshop, you’ll learn how to build a straightforward Quarto website to share and organise your research. You will be introduced to using GitHub, Quarto and Markdown. No prior experience is needed - we’ll guide you through each step using free, open tools that make it quick and straightforward to get a site online.\nYou’ll see how a website can become a powerful hub for your work: a place to share notes, methods, outputs, and updates openly and accessibly. Your site could act as a:\nThe workshop will give you practical skills and templates you can adapt for your own research. By the end, you’ll have the foundations for your own site - and a clear sense of how open, well-documented work can make your research easier to share, reuse, and build on.\nAfter the workshop, you can keep building on your site. Quarto has many possibilities, including adding blog posts, interactive figures, embedded code, galleries, teaching materials, or project updates. It’s a flexible foundation that can grow with your research, learning, and collaborations - and is free and open to use and host your site.",
+    "crumbs": [
+      "GitHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Introduction to Quarto for Research Projects",
+    "section": "1 Contributors",
+    "text": "1 Contributors\n\n\n\n\n\n\n\nAmy Heather🖋 🤔 🚇 🚧\n\n\nTom Monks🤔 🧑‍🏫",
+    "crumbs": [
+      "GitHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
+    "title": "Introduction to Quarto for Research Projects",
+    "section": "2 Funding",
+    "text": "2 Funding\nThis course was developed as part of the STARS project. STARS is supported by the Medical Research Council [grant number MR/Z503915/1].",
+    "crumbs": [
+      "GitHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "pages/making_a_change.html",
+    "href": "pages/making_a_change.html",
+    "title": "Making a change",
+    "section": "",
+    "text": "make a change\ncommit explain\nfork explain",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "Customising the site appearance"
+      "Making a change"
     ]
   },
   {
@@ -333,15 +322,206 @@
     ]
   },
   {
-    "objectID": "pages/making_a_change.html",
-    "href": "pages/making_a_change.html",
-    "title": "Making a change",
+    "objectID": "pages/why.html",
+    "href": "pages/why.html",
+    "title": "Why make a website for your research?",
     "section": "",
-    "text": "make a change\ncommit explain\nfork explain",
+    "text": "Research compendium\nPaper - report method - actual code - generate\nshare research all the details included\nmore than just appendices and paper searchable interactive mixed media\nexamples\n(this page could even be a quarto slideshow?)",
+    "crumbs": [
+      "GitHub",
+      "Why make a website for your research?"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html",
+    "href": "pages/inline_html.html",
+    "title": "Inline HTML",
+    "section": "",
+    "text": "Web pages are written in HTML (HyperText Markup Language), which uses tags like &lt;p&gt;, &lt;a&gt;, and &lt;strong&gt; to describe how things should look.\nIn a Markdown document, you can sometimes mix in small pieces of HTML.\nThis is called inline HTML: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.\nCaveat: raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.",
     "crumbs": [
       "GitHub",
       "Tutorial",
-      "Making a change"
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html#line-break",
+    "href": "pages/inline_html.html#line-break",
+    "title": "Inline HTML",
+    "section": "1 Line break",
+    "text": "1 Line break\nYou can insert a line break using &lt;br&gt;.\nFirst part of the sentence.&lt;br&gt;Second part on a new line.\n\nTask: In html.qmd:\n\nWrite a short sentence, then use &lt;br&gt; to put a second short sentence on the next line with a line break between them.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html#small-text",
+    "href": "pages/inline_html.html#small-text",
+    "title": "Inline HTML",
+    "section": "2 Small text",
+    "text": "2 Small text\nYou can make a small “fine print” style note using the &lt;small&gt; tag.\nThis is &lt;small&gt;small print&lt;/small&gt;.\nThis is small print.\n\nTask: In html.qmd:\n\nAdd a normal sentence and then make one short phrase look like small print using &lt;small&gt; ... &lt;/small&gt;.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html#keyboard-keys",
+    "href": "pages/inline_html.html#keyboard-keys",
+    "title": "Inline HTML",
+    "section": "3 Keyboard keys",
+    "text": "3 Keyboard keys\nThe &lt;kbd&gt; tag is often used to show keys that the user should press on the keyboard.\nPress &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;.\nPress Ctrl + C.\n\nTask: In html.qmd:\n\nWrite one instruction that shows a keyboard shortcut using &lt;kbd&gt; (for example, Ctrl + S to save).",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html#custom-links",
+    "href": "pages/inline_html.html#custom-links",
+    "title": "Inline HTML",
+    "section": "4 Custom links",
+    "text": "4 Custom links\nIf you want more control over a link (for example, to open it in a new tab), you can write it in HTML instead of plain Markdown.\nIn the HTML link below:\n\nhref is the web address you are linking to.\nThe text between &lt;a&gt; and &lt;/a&gt; is what the reader clicks on.\ntarget=\"_blank\" tells the browser to open the link in a new tab.\nrel=\"noopener\" is a small security and performance setting that stops the new page from being able to control the original tab.\n\n&lt;a href=\"https://www.exeter.ac.uk\" target=\"_blank\" rel=\"noopener\"&gt;\n  Visit the University of Exeter website\n&lt;/a&gt;\n Visit the University of Exeter website \n\nTask: In html.qmd:\n\nCreate a link that opens in a new tab by default.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/inline_html.html#abbreviations",
+    "href": "pages/inline_html.html#abbreviations",
+    "title": "Inline HTML",
+    "section": "5 Abbreviations",
+    "text": "5 Abbreviations\nYou can explain abbreviations by using the &lt;abbr&gt; tag with a title attribute. When someone hovers over it in a browser, they see the full phrase.\n&lt;abbr title=\"Randomised Controlled Trial\"&gt;RCT&lt;/abbr&gt;\nRCT\nAlternatively, you can use footnotes ?@sec-footnotes to explain the term.\n\nTask: In html.qmd:\n\nPick one abbreviation you use in your own work (for example, “NHS” or “A&E”) and write it with an &lt;abbr&gt; tag and a helpful title.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Inline HTML"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html",
+    "href": "pages/markdown.html",
+    "title": "Markdown basics",
+    "section": "",
+    "text": "Acknowledgements: This page is adapted from health-data-science-OR/jupyterlab-introduction.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#what-is-markdown",
+    "href": "pages/markdown.html#what-is-markdown",
+    "title": "Markdown basics",
+    "section": "1 What is markdown?",
+    "text": "1 What is markdown?\nMarkdown is a way of writing documents using plain text plus a few extra characters to show structure and formatting. Instead of a hidden file format (like a .docx), everything is visible as text: your words and the little symbols (e.g., #, *, -) that control how they look.\nWhen you view or render a Markdown file (for example, by opening it in a preview window or creating a final document), a tool reads your text and these symbols and turns them into a nicely formatted document (for example, HTML or PDF).\nA normal Markdown file usually ends in .md. In this workshop we mostly used Quarto Markdown, which is the same idea but with extra features for things like interactivity, code and citations, and those files end in .qmd.\nOn this page you will practice Markdown features that you can use in your Quarto documents.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#headings-and-subheadings",
+    "href": "pages/markdown.html#headings-and-subheadings",
+    "title": "Markdown basics",
+    "section": "2 Headings and subheadings",
+    "text": "2 Headings and subheadings\nIn Markdown, a heading is formatted with the character #.\nThe number of # characters represents the level of the heading. For example:\n# Heading level 1\n\n## Heading level 2\n\n### Heading level 3\n\n#### Heading level 4\n\nTask: Open markdown.qmd and create three headings:\n\nA level 1 heading for the page title (for example, # My Markdown Page).\nA level 2 heading called ## Section One.\nA level 3 heading called ### A Smaller Section.\n\nRender the page and check that the heading sizes look different.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#adding-a-horizontal-line-between-sections",
+    "href": "pages/markdown.html#adding-a-horizontal-line-between-sections",
+    "title": "Markdown basics",
+    "section": "3 Adding a horizontal line between sections",
+    "text": "3 Adding a horizontal line between sections\nTo add a horizontal line between sections, use three dashes or asterisk on a line by themselves - either:\n---\n***\n\nTask: In markdown.qmd:\n\nAdd a horizontal line between two sections (for example, between your Section One and A Smaller Section headings)\n\nRe-render the page to check it has worked.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#bold-and-italic-text",
+    "href": "pages/markdown.html#bold-and-italic-text",
+    "title": "Markdown basics",
+    "section": "4 Bold and italic text",
+    "text": "4 Bold and italic text\nTo create bold text, you need to surround a word or phrase with **. For example:\nThe final word of this sentence will be **bold**.\nTo create italic text, you need to surround a word or phrase with *.\n*This whole sentence will be in italics.*\nYou can also combine both if you need stronger emphasis.\n\nTask: In markdown.qmd:\n\nWrite one short sentence about anything you like (e.g., “I am learning Quarto today”).\nMake one word in the sentence bold.\nMake a different word in the sentence italic.\n\nRe-render the page to see the effect.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#bullet-points-and-numbered-lists",
+    "href": "pages/markdown.html#bullet-points-and-numbered-lists",
+    "title": "Markdown basics",
+    "section": "5 Bullet points and numbered lists",
+    "text": "5 Bullet points and numbered lists\nTo create a bullet list, use * followed by a space and then your text:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\nYou can indent with spaces (or tab) to create sub-bullets:\n* Bullet point 1\n    * Bullet point level 2\n        * Bullet point level 3\n* Back to level 1\nA numbered list is created in a similar way using numbers (or letters):\n1. Numbered point 1\n    a. Numbered point level 2 \n    b. Numbered point level 2 again\n2. Back to level 1\nTo create a checklist, add [ ] between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using [x].\n* [ ] First task\n* [x] Finished task\n\nTask: In markdown.qmd:\n\nCreate a bullet list of 3 everyday items (e.g., Tea, Coffee, Biscuits).\nCreate a numbered list of 3 simple steps (e.g., Open the file, Make a change, Save and render).\nAdd a checklist with three tasks, and mark one as already completed (e.g., Read one article, Write one paragraph of notes, Add article to a report).",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#indented-text",
+    "href": "pages/markdown.html#indented-text",
+    "title": "Markdown basics",
+    "section": "6 Indented text",
+    "text": "6 Indented text\nTo indent text as a block quote, use &gt; at the start of the line:\n&gt; This is indented\nYou can use this for quotes, highlights, or short notes.\n\nTask: In markdown.qmd:\n\nAdd a short quote using &gt;, for example &gt; Quarto helps me keep my work organised.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#line-break",
+    "href": "pages/markdown.html#line-break",
+    "title": "Markdown basics",
+    "section": "7 Line break",
+    "text": "7 Line break\nYou can insert a line break using &lt;br&gt;.\nFirst part of the sentence.&lt;br&gt;Second part on a new line.\n\nTask: In markdown.qmd:\n\nWrite a short sentence, then use &lt;br&gt; to put a second short sentence on the next line with a line break between them.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#hyperlinks",
+    "href": "pages/markdown.html#hyperlinks",
+    "title": "Markdown basics",
+    "section": "8 Hyperlinks",
+    "text": "8 Hyperlinks\nTODO",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/customising.html",
+    "href": "pages/customising.html",
+    "title": "Customising the site appearance",
+    "section": "",
+    "text": "themes css colours titles headings interacting with quarto.yml and css",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Customising the site appearance"
     ]
   }
 ]
