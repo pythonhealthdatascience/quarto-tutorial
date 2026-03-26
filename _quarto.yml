@@ -28,6 +28,7 @@ website:
           - pages/basic_structure.qmd
           - pages/making_a_change.qmd
           - pages/markdown.qmd
+          - pages/quarto_features.qmd
           - pages/media.qmd
           - pages/customising.qmd
           - pages/code.qmd

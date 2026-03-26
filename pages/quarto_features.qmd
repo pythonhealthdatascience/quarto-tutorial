@@ -1,0 +1,240 @@
+---
+title: Quarto features
+---
+
+## Callouts
+
+Quarto extends Markdown with **callouts**, which are highlighted boxes you can use for notes, tips, or warnings.
+
+Callouts use a small bit of extra syntax that Quarto understands as a "special box" rather than normal text. In Markdown, `::: ... :::` defines a block (a kind of container) that Quarto treats like an HTML `<div>`. By adding a class to that block, you tell Quarto what kind of callout it is.
+
+A simple callout note looks like this:
+
+* `:::` starts the block.
+* `{.callout-note}` says that this is a class "callout-note" (just like HTML `<div class="callout-note">`)/
+* Everything until the closing `:::` is the content of the callout.
+* The final `:::` closes the block.
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+Markdown:
+
+```markdown
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+Output:
+
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+
+::::
+
+:::::
+
+You can change the type:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip}
+This is a tip.
+:::
+```
+
+```markdown
+::: {.callout-warning}
+This is a warning.
+:::
+```
+
+```markdown
+::: {.callout-important}
+This is important information.
+:::
+```
+
+```markdown
+::: {.callout-caution}
+This is a caution.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip}
+This is a tip.
+:::
+
+::: {.callout-warning}
+This is a warning.
+:::
+
+::: {.callout-important}
+This is important information.
+:::
+
+::: {.callout-caution}
+This is a caution.
+:::
+
+::::
+
+:::::
+
+You can add a title:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+
+::::
+
+:::::
+
+You can also set the callout to collapse:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+
+::::
+
+:::::
+
+You can change the appearance style to `simple` or `minimal`:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+```
+
+```markdown
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+
+::::
+
+:::::
+
+You can also hide the icon:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+
+::::
+
+:::::
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Add a callout of type `tip` with a short title (e.g., "Helpful tip").
+* [ ] Inside the callout, write one sentence of advice (e.g., "Take short breaks when you are concentrating.").
+* [ ] Add another callout with `collapse="true"` (e.g., with title "More information" and with content "You can come back to this note later if you need it.").
+
+:::
+
+## Columns
