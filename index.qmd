@@ -34,8 +34,12 @@ After the workshop, you can keep building on your site. Quarto has many possibil
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 ## Funding
 
 This course was developed as part of the [STARS project](https://pythonhealthdatascience.github.io/stars/). STARS is supported by the Medical Research Council [grant number MR/Z503915/1].
+
+The in-person workshop was supported by departmental funding for activities aiming to enhance research culture in the **Department of Health and Community Sciences** at the University of Exeter.
 
 ![](images/stars_reproduce_reuse_banner_blue.png){fig-alt="Sharing Tools and Artefacts for Reproducible & Reusable Simulations in healthcare"}
