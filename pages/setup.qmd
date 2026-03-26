@@ -32,7 +32,7 @@ Go to our template repository here: <https://github.com/pythonhealthdatascience/
 
 [![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/quarto-template.png){fig-alt="Screenshot of quarto-template GitHub repository"}](https://github.com/pythonhealthdatascience/quarto-template)
 
-## Open GitHub codespaces.
+## Open GitHub codespaces
 
 **GitHub Codespaces** gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.
 
@@ -45,3 +45,17 @@ To open a codespace from the template repository, click the green **Code** butto
 GitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.
 
 ![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
+
+## Reopening your Codespace
+
+If you close your Codespace and want to get back to it later (with all your changes still there), just return to the same GitHub repository.
+
+Click the <kbd><> Code</kbd> button, open the <kbd>Codespaces</kbd> tab, and select your existing Codespace from the list.
+
+![](setup/reopen_codespace.png){fig-align="center" fig-alt="Screenshot of existing Codespace list."}
+
+Your codespace will automatically shut down after a period of inactivity (**30 minutes** by default) to save resources, but any edits you've saved will still be there when you reopen it.
+
+By default, inactive codespaces are deleted after **30 days**.
+
+For this workshop, we're using GitHub Codespaces because it's quick and easy to get started without installing anything. However, if you plan to work on similar projects regularly, we recommend **installing the required tools** (e.g., R and RStudio) on your own computer for more flexibility and long-term use.
