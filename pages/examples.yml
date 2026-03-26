@@ -3,17 +3,42 @@
     Projects that document and share a single, well-defined piece of research, usually with its own paper, report, or case study, plus code and/or interactive outputs.
   tiles:
     - title: "Computational Reproducibility Assessments: Summary"
-      subtitle: Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the paper with full methods, results, tables, and figures.
+      subtitle: Summary of eight computational reproducibility assessments from STARS Work Package 1, presented as a detailed digital appendix to the <a href="https://doi.org/10.1080/17477778.2025.2552177">paper</a> with full methods, results, tables, and figures.
       href: https://pythonhealthdatascience.github.io/stars_wp1_summary/
       code: https://github.com/pythonhealthdatascience/stars_wp1_summary
       thumbnail: examples/stars_wp1.png
       categories: [University of Exeter]
+    - title: "An integrated approach to identifying sex-specific genes, transcription factors, and pathways relevant to Alzheimer's disease"
+      subtitle: Accompanies their <a href="https://doi.org/10.1016/j.nbd.2024.106605">paper</a>. Site includes results of systematic review, and genomics analysis results. (Unfortunately cannot find code)
+      href: https://bioinfo.cipf.es/metafun-ad/
+      code:
+      thumbnail: examples/metafunad.png
     - title: "Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)"
       subtitle: Documentation for EOM-RCC,a platform cost-effectiveness model encompassing each decision node in the disease area for advanced renal cell carcinoma.
       href: https://pythonhealthdatascience.github.io/stars-eom-rcc/
       code: https://github.com/pythonhealthdatascience/stars-eom-rcc/
       thumbnail: examples/eom_rcc.png
       categories: [University of Exeter]
+    - title: "The Early Psychosis: Investigating Cognition (EPIC) Project"
+      subtitle: Website for project including news/updates, pages for advisory group and participants, contact information and publications. (Unfortunately cannot find code)
+      href: https://the-epic-study.quarto.pub/the-epic-project/
+      code:
+      thumbnail: examples/epic.png
+    - title: Quantification of resilience in farm animals
+      subtitle: Supporting website for their <a href="https://doi.org/10.1016/j.animal.2023.100925">paper</a> containing supplemental code examples.
+      href: https://quantanimal.github.io/
+      code: https://github.com/QuantAnimal/QuantAnimal.github.io
+      thumbnail: examples/farm.png
+    - title: Violence Risk Assessment in Forensic Mental Health Services
+      subtitle: Shares results of systematic review, accompanying their <a href="https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(23)00256-0/fulltext">paper</a>.
+      href: https://mayaogonah.github.io/forensic-risk/
+      code: https://github.com/mayaogonah/forensic-risk
+      thumbnail: examples/violence.png
+    - title: Analysis for Large-scale clustering of longitudinal faecal calprotectin and C-reactive protein profiles in inflammatory bowel disease
+      subtitle: Presents the analyses carreid out in their <a href="https://doi.org/10.1016/j.cgh.2025.12.022">paper</a>.
+      href: https://vallejosgroup.github.io/IBD-Inflammatory-Patterns/
+      code: https://github.com/VallejosGroup/IBD-Inflammatory-Patterns
+      thumbnail: examples/faecal_calprotectin.png
     - title: nordatlantisk-ft
       subtitle: Website for an open voting-records dataset, with a data overview, detailed codebook of all variables, and information about the repository.
       href: https://mtwente.github.io/nordatlantisk-ft/
@@ -29,11 +54,6 @@
       href: https://nascent-peru.github.io/
       code: https://github.com/NASCENT-Peru/NASCENT-Peru.github.io
       thumbnail: examples/nascent_peru.png
-    - title: Towards an open-source model for data and metadata standards
-      subtitle: Online report with background/methods/results and links to extra pages providing more details.
-      href: https://uwescience.github.io/2024-open-source-standards-report/
-      code: https://github.com/uwescience/2024-open-source-standards-report
-      thumbnail: examples/towards.png
     - title: research-compendium-website
       subtitle: Template site with pages about, data, codes and manuscript.
       href: https://emdelponte.github.io/research-compendium-website/
@@ -49,6 +69,36 @@
       href: https://danielvartan.github.io/mastersthesis/web/index.html
       code: https://github.com/danielvartan/mastersthesis
       thumbnail: examples/masters.png
+
+- category: Manuscripts
+  description: |
+    Papers wrote fully using Quarto.
+  tiles:
+    - title: Towards an open-source model for data and metadata standards
+      subtitle: Online report with background/methods/results and links to extra pages providing more details.
+      href: https://uwescience.github.io/2024-open-source-standards-report/
+      code: https://github.com/uwescience/2024-open-source-standards-report
+      thumbnail: examples/towards.png
+    - title: Analysis of human visual experience data
+      subtitle: Manuscript and supplementary materials
+      href: https://tscnlab.github.io/ZaunerEtAl_JVis_2026/
+      code: https://github.com/tscnlab/ZaunerEtAl_JVis_2026
+      thumbnail: examples/visual.png
+    - title: "Supplementary Materials for: The promise of community-driven preprints in ecology and evolution"
+      subtitle: 
+      href: https://daniel1noble.github.io/ecoevo_1000/
+      code: https://github.com/daniel1noble/ecoevo_1000
+      thumbnail: examples/supplementary.png
+    - title: Clinical Performance of Tumor-Informed versus Tumor-Agnostic ctDNA Assays for Colorectal Cancer Recurrence
+      subtitle: Webpage-based report for systematic review and meta-analysis <a href="https://doi.org/10.1016/j.ctrv.2025.103066">paper</a>.
+      href: https://crct-bioinformatics.github.io/TIvsTA-DAMA/
+      code: https://github.com/CRCT-bioinformatics/TIvsTA-DAMA
+      thumbnail: examples/tumor.png
+    - title: Dissociating mechanisms of heart-voice coupling
+      subtitle: Extended results and supplementary information for their <a href="https://www.biorxiv.org/content/10.64898/2025.12.01.691544v1.full.pdf">paper</a>.
+      href: https://wimpouw.github.io/VoiceAndHeart/heartrate_expire
+      code:
+      thumbnail: examples/dissociating.png
 
 - category: Homepage for research programme or team
   description: |
