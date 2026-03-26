@@ -593,8 +593,8 @@ Note
 </ul>
 </div>
 </section>
-<section id="footnotes" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="footnotes"><span class="header-section-number">3</span> Footnotes</h2>
+<section id="sec-footnotes" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-footnotes"><span class="header-section-number">3</span> Footnotes</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Here is some text with a footnote.<span class="ot">[^1]</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is the content of the footnote.</span>
@@ -719,12 +719,58 @@ Starnberger, Iris, Doris Preininger, and Walter Hödl. 2014. <span>“From Uni- 
 </section>
 <section id="cross-references" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="cross-references"><span class="header-section-number">5</span> Cross-references</h2>
-<p>TODO: explain this better… how to do with figures, tables and equation…</p>
 <p>Quarto can automatically number and cross‑reference figures, tables, sections, and equations.</p>
-<p>To make something cross‑referenceable, you give it an identifier, then refer to it with <code>@id</code>. For example, a section:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results {#sec-results}</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>As shown in @sec-results, we found that ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To make something cross‑referenceable, you give it an identifier, then refer to it with <code>@id</code>.</p>
+<p>For example, you can refer to tables by adding a caption and then including a <code>#tbl-</code> label in braces at the end of the caption</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Letter <span class="pp">|</span> Number <span class="pp">|</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> - <span class="pp">|</span> - <span class="pp">|</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> 1 <span class="pp">|</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> 2 <span class="pp">|</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> 3 <span class="pp">|</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>: Table with ABC and 123 {#tbl-letters}</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>See @tbl-letters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<div id="tbl-letters" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-letters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Table with ABC and 123
+</figcaption>
+<div aria-describedby="tbl-letters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Letter</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>See <a href="#tbl-letters" class="quarto-xref">Table&nbsp;1</a></p>
+</div>
+</div>
+<p>See the page on <a href="https://quarto.org/docs/authoring/cross-references.html">Cross-references</a> from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).</p>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>
 <ul class="task-list">
@@ -844,8 +890,17 @@ Definition of thing 2
 </section>
 <section id="includes" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="includes"><span class="header-section-number">9</span> Includes</h2>
-<p>reuse… import…</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include file.md &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Sometimes you want to <strong>reuse</strong> the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you “include” another file so that its contents are pulled in when you render.</p>
+<p>For example, if you have a file called <code>snippet.md</code> in the same folder:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include snippet.md &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>When you render, the text from <code>snippet.md</code> will appear at that point in the page</p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create a small file called <code>snippet.md</code> with one or two lines of text.</label></li>
+<li><label><input type="checkbox">Include it in <code>quarto_features.qmd</code> using <code>{{&lt; include snippet.md &gt;}}</code> and render the page.</label></li>
+</ul>
+</div>
 
 
 </section>

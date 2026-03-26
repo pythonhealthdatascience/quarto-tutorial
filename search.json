@@ -230,7 +230,7 @@
     "href": "pages/markdown.html#bullet-points-and-numbered-lists",
     "title": "Markdown basics",
     "section": "5 Bullet points and numbered lists",
-    "text": "5 Bullet points and numbered lists\nTo create a bullet list, use * followed by a space and then your text:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\nYou can indent with spaces (or tab) to create sub-bullets:\n* Bullet point 1\n    * Bullet point level 2\n        * Bullet point level 3\n* Back to level 1\nA numbered list is created in a similar way using numbers (or letters):\n1. Numbered point 1\n    a. Numbered point level 2 \n    b. Numbered point level 2 again\n2. Back to level 1\nTo create a checklist, add [ ] between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using [x].\n* [ ] First task\n* [x] Finished task\n\nTask: In markdown.qmd:\n\nCreate a bullet list of 3 everyday items (e.g., Tea, Coffee, Biscuits).\nCreate a numbered list of 3 simple steps (e.g., Open the file, Make a change, Save and render).\nAdd a checklist with three tasks, and mark one as already completed (e.g., Read one article, Write one paragraph of notes, Add article to a report).",
+    "text": "5 Bullet points and numbered lists\nTo create a bullet list, use * or - or + followed by a space and then your text:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\nCan give more space by having blank lines between items\n* Bullet point 1\n\n* Bullet point 2\n\n* Bullet point 3\nYou can indent with spaces (or tab) to create sub-bullets:\n* Bullet point 1\n    * Bullet point level 2\n        * Bullet point level 3\n* Back to level 1\nA numbered list is created in a similar way using numbers, letters or Roman numerals, or can use #, will just give deciminal numbers from 1:\n1. Numbered point 1\n    a. Numbered point level 2 \n    b. Numbered point level 2 again\n2. Back to level 1\nTo create a checklist, add [ ] between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using [x].\n* [ ] First task\n* [x] Finished task\n\nTask: In markdown.qmd:\n\nCreate a bullet list of 3 everyday items (e.g., Tea, Coffee, Biscuits).\nCreate a numbered list of 3 simple steps (e.g., Open the file, Make a change, Save and render).\nAdd a checklist with three tasks, and mark one as already completed (e.g., Read one article, Write one paragraph of notes, Add article to a report).",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -238,11 +238,11 @@
     ]
   },
   {
-    "objectID": "pages/markdown.html#indented-text",
-    "href": "pages/markdown.html#indented-text",
+    "objectID": "pages/markdown.html#block-quotes",
+    "href": "pages/markdown.html#block-quotes",
     "title": "Markdown basics",
-    "section": "6 Indented text",
-    "text": "6 Indented text\nTo indent text as a block quote, use &gt; at the start of the line:\n&gt; This is indented\nYou can use this for quotes, highlights, or short notes.\n\nTask: In markdown.qmd:\n\nAdd a short quote using &gt;, for example &gt; Quarto helps me keep my work organised.",
+    "section": "6 Block quotes",
+    "text": "6 Block quotes\nTo indent text as a block quote, use &gt; at the start of the line:\n&gt; This is indented\nYou can use this for quotes, highlights, or short notes.\n\nTask: In markdown.qmd:\n\nAdd a short quote using &gt;, for example &gt; Quarto helps me keep my work organised.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -250,11 +250,11 @@
     ]
   },
   {
-    "objectID": "pages/markdown.html#line-break",
-    "href": "pages/markdown.html#line-break",
+    "objectID": "pages/markdown.html#links",
+    "href": "pages/markdown.html#links",
     "title": "Markdown basics",
-    "section": "7 Line break",
-    "text": "7 Line break\nYou can insert a line break using &lt;br&gt;.\nFirst part of the sentence.&lt;br&gt;Second part on a new line.\n\nTask: In markdown.qmd:\n\nWrite a short sentence, then use &lt;br&gt; to put a second short sentence on the next line with a line break between them.",
+    "section": "7 Links",
+    "text": "7 Links\nYou can create a link by putting the link text in square brackets and the web address in parentheses:\n[University of Exeter](https://www.exeter.ac.uk/)\nUniversity of Exeter\nIf you just paste a URL, you should wrap it in angle brackets to ensure it is clickable:\n&lt;https://www.exeter.ac.uk/&gt;\nhttps://www.exeter.ac.uk/\n\nTask: In markdown.qmd:\n\nAdd one link with custom link text.\nAdd one bare URL wrapped in &lt; &gt; so that it becomes clickable.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -262,11 +262,23 @@
     ]
   },
   {
-    "objectID": "pages/markdown.html#hyperlinks",
-    "href": "pages/markdown.html#hyperlinks",
+    "objectID": "pages/markdown.html#inline-code-and-code-blocks",
+    "href": "pages/markdown.html#inline-code-and-code-blocks",
     "title": "Markdown basics",
-    "section": "8 Hyperlinks",
-    "text": "8 Hyperlinks\nTODO",
+    "section": "8 Inline code and code blocks",
+    "text": "8 Inline code and code blocks\nYou can show short bits of code or filenames using single backticks. This is good for things like file names, commands, and short code fragments.\nExample:\n\n\nRun `python script.py` in your terminal.\n\nOpen `analysis.qmd` and edit the first section.\n\n\n\nRun python script.py in your terminal.\nOpen analysis.qmd and edit the first section.\n\n\nFor longer code, use a code block fenced with three backticks:\n\n\n```bash\npython script.py --help\necho \"Hello, world\"\n```\n\n\n\npython script.py --help\necho \"Hello, world\"\n\n\n\nTask: In markdown.qmd:\n\nUse inline code (single backticks) to show one filename and one command.\nAdd a fenced code block with 2-3 lines of example code (any language you like) - or just some text if you are unfamiliar.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Markdown basics"
+    ]
+  },
+  {
+    "objectID": "pages/markdown.html#tables",
+    "href": "pages/markdown.html#tables",
+    "title": "Markdown basics",
+    "section": "9 Tables",
+    "text": "9 Tables\nYou can create simple tables using pipes | and dashes -:\n\n\n| Letter | Number |\n| - | - |\n| A | 1 |\n| B | 2 |\n| C | 3 |\n\n\n\n\n\n\nLetter\nNumber\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n\n\n\n\nTask: In markdown.qmd:\n\nCreate a small table with two columns and at least three rows (for example, “Item” and “Quantity”).",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -453,11 +465,11 @@
     ]
   },
   {
-    "objectID": "pages/quarto_features.html#footnotes",
-    "href": "pages/quarto_features.html#footnotes",
+    "objectID": "pages/quarto_features.html#sec-footnotes",
+    "href": "pages/quarto_features.html#sec-footnotes",
     "title": "Quarto features",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is the content of the footnote.\nYou can include additional details by going two line below and tab indent.↩︎",
+    "section": "3 Footnotes",
+    "text": "3 Footnotes\nHere is some text with a footnote.[^1]\n\n[^1]: This is the content of the footnote.\n\n    You can include additional details by going two line below and tab indent.\nHere is some text with a footnote.1\n\nTask: In quarto_features.qmd:\n\nAdd one footnote to a sentence and put a little extra detail into the footnote text.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -481,7 +493,7 @@
     "href": "pages/quarto_features.html#cross-references",
     "title": "Quarto features",
     "section": "5 Cross-references",
-    "text": "5 Cross-references\nTODO: explain this better… how to do with figures, tables and equation…\nQuarto can automatically number and cross‑reference figures, tables, sections, and equations.\nTo make something cross‑referenceable, you give it an identifier, then refer to it with @id. For example, a section:\n## Results {#sec-results}\n\nAs shown in @sec-results, we found that ...\n\nTask: In quarto_features.qmd:\n\nAdd an ID to one heading then write a sentence later that references it.",
+    "text": "5 Cross-references\nQuarto can automatically number and cross‑reference figures, tables, sections, and equations.\nTo make something cross‑referenceable, you give it an identifier, then refer to it with @id.\nFor example, you can refer to tables by adding a caption and then including a #tbl- label in braces at the end of the caption\n\n\n| Letter | Number |\n| - | - |\n| A | 1 |\n| B | 2 |\n| C | 3 |\n\n: Table with ABC and 123 {#tbl-letters}\n\nSee @tbl-letters\n\n\n\n\n\n\nTable 1: Table with ABC and 123\n\n\n\n\n\nLetter\nNumber\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n\n\n\n\nSee Table 1\n\n\nSee the page on Cross-references from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).\n\nTask: In quarto_features.qmd:\n\nAdd an ID to one heading then write a sentence later that references it.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -529,7 +541,19 @@
     "href": "pages/quarto_features.html#includes",
     "title": "Quarto features",
     "section": "9 Includes",
-    "text": "9 Includes\nreuse… import…\n{{&lt; include file.md &gt;}}",
+    "text": "9 Includes\nSometimes you want to reuse the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you “include” another file so that its contents are pulled in when you render.\nFor example, if you have a file called snippet.md in the same folder:\n{{&lt; include snippet.md &gt;}}\nWhen you render, the text from snippet.md will appear at that point in the page\n\nTask: In quarto_features.qmd:\n\nCreate a small file called snippet.md with one or two lines of text.\nInclude it in quarto_features.qmd using {{&lt; include snippet.md &gt;}} and render the page.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
+    "objectID": "pages/quarto_features.html#footnotes",
+    "href": "pages/quarto_features.html#footnotes",
+    "title": "Quarto features",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is the content of the footnote.\nYou can include additional details by going two line below and tab indent.↩︎",
     "crumbs": [
       "GitHub",
       "Tutorial",

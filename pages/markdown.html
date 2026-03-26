@@ -335,23 +335,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="bullet-points-and-numbered-lists" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="bullet-points-and-numbered-lists"><span class="header-section-number">5</span> Bullet points and numbered lists</h2>
-<p>To create a bullet list, use <code>*</code> followed by a space and then your text:</p>
+<p>To create a bullet list, use <code>*</code> or <code>-</code> or <code>+</code> followed by a space and then your text:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 1</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 2</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can indent with spaces (or tab) to create sub-bullets:</p>
+<p>Can give more space by having blank lines between items</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 1</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Bullet point level 2</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>Bullet point level 3</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A numbered list is created in a similar way using numbers (or letters):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Numbered point 1</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    a. Numbered point level 2 </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    b. Numbered point level 2 again</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 2</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You can indent with spaces (or tab) to create sub-bullets:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Bullet point 1</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Bullet point level 2</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>Bullet point level 3</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A numbered list is created in a similar way using numbers, letters or Roman numerals, or can use #, will just give deciminal numbers from 1:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Numbered point 1</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    a. Numbered point level 2 </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    b. Numbered point level 2 again</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Back to level 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>To create a checklist, add <code>[ ]</code> between the bullet and text. You can then click on the boxes to cross them out, or have them already shown as crossed out using <code>[x]</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[ ]</span> First task</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[x]</span> Finished task</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[ ]</span> First task</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="va">[x]</span> Finished task</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
 <ul class="task-list">
@@ -361,10 +367,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </div>
 </section>
-<section id="indented-text" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="indented-text"><span class="header-section-number">6</span> Indented text</h2>
+<section id="block-quotes" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="block-quotes"><span class="header-section-number">6</span> Block quotes</h2>
 <p>To indent text as a block quote, use <code>&gt;</code> at the start of the line:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is indented</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is indented</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You can use this for quotes, highlights, or short notes.</p>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
@@ -373,20 +379,103 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </div>
 </section>
-<section id="line-break" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="line-break"><span class="header-section-number">7</span> Line break</h2>
-<p>You can insert a line break using <code>&lt;br&gt;</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>First part of the sentence.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span>Second part on a new line.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="links" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="links"><span class="header-section-number">7</span> Links</h2>
+<p>You can create a link by putting the link text in square brackets and the web address in parentheses:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">University of Exeter</span><span class="co">](https://www.exeter.ac.uk/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.exeter.ac.uk/">University of Exeter</a></p>
+<p>If you just paste a URL, you should wrap it in angle brackets to ensure it is clickable:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.exeter.ac.uk/&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.exeter.ac.uk/" class="uri">https://www.exeter.ac.uk/</a></p>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
 <ul class="task-list">
-<li><label><input type="checkbox">Write a short sentence, then use <code>&lt;br&gt;</code> to put a second short sentence on the next line with a line break between them.</label></li>
+<li><label><input type="checkbox">Add one link with custom link text.</label></li>
+<li><label><input type="checkbox">Add one bare URL wrapped in <code>&lt; &gt;</code> so that it becomes clickable.</label></li>
 </ul>
 </div>
 </section>
-<section id="hyperlinks" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="hyperlinks"><span class="header-section-number">8</span> Hyperlinks</h2>
-<p>TODO</p>
+<section id="inline-code-and-code-blocks" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="inline-code-and-code-blocks"><span class="header-section-number">8</span> Inline code and code blocks</h2>
+<p>You can show short bits of code or filenames using single backticks. This is good for things like file names, commands, and short code fragments.</p>
+<p>Example:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Run <span class="in">`python script.py`</span> in your terminal.</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>Open <span class="in">`analysis.qmd`</span> and edit the first section.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<p>Run <code>python script.py</code> in your terminal.</p>
+<p>Open <code>analysis.qmd</code> and edit the first section.</p>
+</div>
+</div>
+<p>For longer code, use a code block fenced with three backticks:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> script.py <span class="at">--help</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Hello, world"</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> script.py <span class="at">--help</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Hello, world"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Use inline code (single backticks) to show one filename and one command.</label></li>
+<li><label><input type="checkbox">Add a fenced code block with 2-3 lines of example code (any language you like) - or just some text if you are unfamiliar.</label></li>
+</ul>
+</div>
+</section>
+<section id="tables" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="tables"><span class="header-section-number">9</span> Tables</h2>
+<p>You can create simple tables using pipes <code>|</code> and dashes <code>-</code>:</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Letter <span class="pp">|</span> Number <span class="pp">|</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> - <span class="pp">|</span> - <span class="pp">|</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> 1 <span class="pp">|</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> 2 <span class="pp">|</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> 3 <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:65%;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Letter</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>markdown.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create a small table with two columns and at least three rows (for example, “Item” and “Quantity”).</label></li>
+</ul>
+</div>
 
 
 </section>
