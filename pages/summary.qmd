@@ -1,0 +1,23 @@
+---
+title: Summary
+---
+
+what have learnt?
+
+github
+
+* commit
+* fork
+
+markdown
+
+quarto
+
+* set up site
+* add differnt thigns... callouts... media...
+
+in-line html
+
+customise appearnce... themes, css
+
+embed code

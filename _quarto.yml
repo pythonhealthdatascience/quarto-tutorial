@@ -33,6 +33,7 @@ website:
           - pages/inline_html.qmd
           - pages/customising.qmd
           - pages/code.qmd
+          - pages/summary.qmd
       - pages/examples.qmd
   page-footer:
     center:
