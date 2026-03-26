@@ -91,11 +91,21 @@ Re-render the page to see the effect.
 
 ## Bullet points and numbered lists
 
-To create a bullet list, use `*` followed by a space and then your text:
+To create a bullet list, use `*` or `-` or `+` followed by a space and then your text:
 
 ```markdown
 * Bullet point 1
 * Bullet point 2
+* Bullet point 3
+```
+
+Can give more space by having blank lines between items
+
+```markdown
+* Bullet point 1
+
+* Bullet point 2
+
 * Bullet point 3
 ```
 
@@ -108,7 +118,7 @@ You can indent with spaces (or tab) to create sub-bullets:
 * Back to level 1
 ```
 
-A numbered list is created in a similar way using numbers (or letters):
+A numbered list is created in a similar way using numbers, letters or Roman numerals, or can use #, will just give deciminal numbers from 1:
 
 ```markdown
 1. Numbered point 1
@@ -134,7 +144,7 @@ To create a checklist, add `[ ]` between the bullet and text. You can then click
 
 :::
 
-## Indented text
+## Block quotes
 
 To indent text as a block quote, use `>` at the start of the line:
 
@@ -152,22 +162,116 @@ You can use this for quotes, highlights, or short notes.
 
 :::
 
-## Line break
+## Links
 
-You can insert a line break using `<br>`.
+You can create a link by putting the link text in square brackets and the web address in parentheses:
 
 ```markdown
-First part of the sentence.<br>Second part on a new line.
+[University of Exeter](https://www.exeter.ac.uk/)
 ```
+
+[University of Exeter](https://www.exeter.ac.uk/)
+
+If you just paste a URL, you should wrap it in angle brackets to ensure it is clickable:
+
+```markdown
+<https://www.exeter.ac.uk/>
+```
+
+<https://www.exeter.ac.uk/>
 
 ::: {.pale-blue}
 
 **Task:** In `markdown.qmd`:
 
-* [ ] Write a short sentence, then use `<br>` to put a second short sentence on the next line with a line break between them.
+* [ ] Add one link with custom link text.
+* [ ] Add one bare URL wrapped in `< >` so that it becomes clickable.
 
 :::
 
-## Hyperlinks
+## Inline code and code blocks
 
-TODO
+You can show short bits of code or filenames using single backticks.
+This is good for things like file names, commands, and short code fragments.
+
+Example:
+
+:::: {.columns}
+::: {.column width=50%}
+```markdown
+Run `python script.py` in your terminal.
+
+Open `analysis.qmd` and edit the first section.
+```
+:::
+::: {.column width=5%}
+:::
+::: {.column width=45%}
+Run `python script.py` in your terminal.
+
+Open `analysis.qmd` and edit the first section.
+:::
+::::
+
+For longer code, use a code block fenced with three backticks:
+
+:::: {.columns}
+::: {.column width=50%}
+````markdown
+```bash
+python script.py --help
+echo "Hello, world"
+```
+````
+:::
+::: {.column width=5%}
+:::
+::: {.column width=45%}
+```bash
+python script.py --help
+echo "Hello, world"
+```
+:::
+::::
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Use inline code (single backticks) to show one filename and one command.
+* [ ] Add a fenced code block with 2-3 lines of example code (any language you like) - or just some text if you are unfamiliar.
+
+:::
+
+## Tables
+
+You can create simple tables using pipes `|` and dashes `-`:
+
+:::: {.columns}
+::: {.column width=30%}
+```markdown
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
+```
+:::
+::: {.column width=5%}
+:::
+::: {.column width=65%}
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
+:::
+::::
+
+::: {.pale-blue}
+
+**Task:** In `markdown.qmd`:
+
+* [ ] Create a small table with two columns and at least three rows (for example, "Item" and "Quantity").
+
+:::
