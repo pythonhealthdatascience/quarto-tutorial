@@ -25,7 +25,7 @@ This shows the image at its default size and alignment:
 ![](../images/south_cloisters.jpg)
 ```
 
-![](../images/south_cloisters.jpg)
+![](../images/south_cloisters.jpg){fig-alt="Default size and alignment example"}
 
 You can control the size of the image with `width`:
 
@@ -35,7 +35,7 @@ TODO: EXPLAIN CURLY BRACES
 ![](../images/south_cloisters.jpg){width=50%}
 ```
 
-![](../images/south_cloisters.jpg){width=50%}
+![](../images/south_cloisters.jpg){width=50% fig-alt="Custom width example"}
 
 To add a caption, put text inside the square brackets:
 
@@ -43,7 +43,7 @@ To add a caption, put text inside the square brackets:
 ![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)
 ```
 
-![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg)
+![Photograph of South Cloisters on St Lukes Campus](../images/south_cloisters.jpg){fig-alt="Caption example"}
 
 We can control alignment using `fig-align`:
 
@@ -51,7 +51,7 @@ We can control alignment using `fig-align`:
 ![](../images/south_cloisters.jpg){fig-align="center"}
 ```
 
-![](../images/south_cloisters.jpg){fig-align="center"}
+![](../images/south_cloisters.jpg){fig-align="center" fig-alt="Centered figure example"}
 
 Adding `.lightbox` lets people click to see a larger version of the image - helpful when you have detailed figures or diagrams.
 
@@ -59,7 +59,7 @@ Adding `.lightbox` lets people click to see a larger version of the image - help
 ![](../images/south_cloisters.jpg){.lightbox}
 ```
 
-![](../images/south_cloisters.jpg){.lightbox}
+![](../images/south_cloisters.jpg){.lightbox fig-alt="Lightbox example"}
 
 You can also make your figure a hyperlink:
 
@@ -67,7 +67,7 @@ You can also make your figure a hyperlink:
 [![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)
 ```
 
-[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/)
+[![](../images/south_cloisters.jpg)](https://medicine.exeter.ac.uk/research/facilities/southcloisters/){fig-alt="Linked image example"}
 
 To add alternative text to your image:
 
