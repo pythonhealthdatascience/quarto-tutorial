@@ -306,7 +306,7 @@ By default, columns share the space equally. You can control their width by addi
 
 :::
 
-## Footnotes
+## Footnotes {#sec-footnotes}
 
 ```markdown
 Here is some text with a footnote.[^1]
@@ -416,17 +416,42 @@ By default, a list of works cited will be placed at the end of the document. You
 
 ## Cross-references
 
-TODO: explain this better... how to do with figures, tables and equation...
-
 Quarto can automatically number and cross‑reference figures, tables, sections, and equations.
 
-To make something cross‑referenceable, you give it an identifier, then refer to it with `@id`. For example, a section:
+To make something cross‑referenceable, you give it an identifier, then refer to it with `@id`.
 
+For example, you can refer to tables by adding a caption and then including a `#tbl-` label in braces at the end of the caption
+
+:::: {.columns}
+::: {.column width=45%}
 ```markdown
-## Results {#sec-results}
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
 
-As shown in @sec-results, we found that ...
+: Table with ABC and 123 {#tbl-letters}
+
+See @tbl-letters
 ```
+:::
+::: {.column width=10%}
+:::
+::: {.column width=45%}
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
+
+: Table with ABC and 123 {#tbl-letters}
+
+See @tbl-letters
+:::
+::::
+
+See the page on [Cross-references](https://quarto.org/docs/authoring/cross-references.html) from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).
 
 ::: {.pale-blue}
 
@@ -579,8 +604,21 @@ Line block:
 
 ## Includes
 
-reuse... import...
+Sometimes you want to **reuse** the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you "include" another file so that its contents are pulled in when you render.
+
+For example, if you have a file called `snippet.md` in the same folder:
 
 ```markdown
-{{{< include file.md >}}}
+{{{< include snippet.md >}}}
 ```
+
+When you render, the text from `snippet.md` will appear at that point in the page
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create a small file called `snippet.md` with one or two lines of text.
+* [ ] Include it in `quarto_features.qmd` using `{{< include snippet.md >}}` and render the page.
+
+:::
