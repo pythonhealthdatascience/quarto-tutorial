@@ -30,6 +30,7 @@ website:
           - pages/markdown.qmd
           - pages/quarto_features.qmd
           - pages/media.qmd
+          - pages/inline_html.qmd
           - pages/customising.qmd
           - pages/code.qmd
       - pages/examples.qmd
