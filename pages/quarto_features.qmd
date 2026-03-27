@@ -306,6 +306,28 @@ By default, columns share the space equally. You can control their width by addi
 
 :::
 
+## Link that opens in a new tab by default
+
+You'll recall from the [Markdown](markdown.qmd) page that we can create a link using `[text](link)`.
+
+In Quarto, we can amend the link so it opens in a new tab by default by adding `{target="_blank"}` to the end.
+
+For example:
+
+```markdown
+[Visit the University of Exeter website](https://www.exeter.ac.uk){target="_blank"}
+```
+
+[Visit the University of Exeter website](https://www.exeter.ac.uk){target="_blank"}
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create a link that opens in a new tab by default.
+
+:::
+
 ## Footnotes {#sec-footnotes}
 
 ```markdown
