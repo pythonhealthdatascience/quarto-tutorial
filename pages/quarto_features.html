@@ -599,13 +599,27 @@ Note
 </ul>
 </div>
 </section>
-<section id="sec-footnotes" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="sec-footnotes"><span class="header-section-number">3</span> Footnotes</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Here is some text with a footnote.<span class="ot">[^1]</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is the content of the footnote.</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="in">    You can include additional details by going two line below and tab indent.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="link-that-opens-in-a-new-tab-by-default" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="link-that-opens-in-a-new-tab-by-default"><span class="header-section-number">3</span> Link that opens in a new tab by default</h2>
+<p>You’ll recall from the <a href="../pages/markdown.html">Markdown</a> page that we can create a link using <code>[text](link)</code>.</p>
+<p>In Quarto, we can amend the link so it opens in a new tab by default by adding <code>{target="_blank"}</code> to the end.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Visit the University of Exeter website</span><span class="co">](https://www.exeter.ac.uk)</span>{target="_blank"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.exeter.ac.uk" target="_blank">Visit the University of Exeter website</a></p>
+<div class="pale-blue">
+<p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create a link that opens in a new tab by default.</label></li>
+</ul>
+</div>
+</section>
+<section id="sec-footnotes" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="sec-footnotes"><span class="header-section-number">4</span> Footnotes</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Here is some text with a footnote.<span class="ot">[^1]</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is the content of the footnote.</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="in">    You can include additional details by going two line below and tab indent.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Here is some text with a footnote.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>
@@ -614,8 +628,8 @@ Note
 </ul>
 </div>
 </section>
-<section id="citations" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="citations"><span class="header-section-number">4</span> Citations</h2>
+<section id="citations" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="citations"><span class="header-section-number">5</span> Citations</h2>
 <p>With a bibliography file (e.g., <code>references.bib</code>), Quarto can automatically format citations and a reference list.</p>
 <p>A bibliography file (with extension <code>.bib</code>) is a text file that stores information about your sources (for example, author, year, title, journal). Each source has a short key, like <code>@feng_ultrasonic_2006</code>, that you can use in your writing. Reference managers such as <a href="https://www.zotero.org/">Zotero</a> can export your library to a <code>.bib</code> file, so you do not have to type these entries by hand.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="View `references.bib`">
@@ -630,58 +644,58 @@ Note
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bib code-with-copy"><code class="sourceCode bibtex"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">feng_ultrasonic_2006</span>,</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Ultrasonic communication in frogs},</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {440},</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">copyright</span> = {2006 Springer Nature Limited},</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">issn</span> = {1476-4687},</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://www.nature.com/articles/nature04416},</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.1038/nature04416},</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abstract</span> = {Some bats, dolphins and rodents are notable among vertebrates in being able to produce and detect ultrasonic frequencies. Now for the first time an amphibian can be added to that select list. The spectacular bird-like sounds made by a type of Chinese torrent frog were known to edge into the ultrasonic range: now these frogs are shown to use ultrasonics as a form of communication. The males do at least, during competition for territory. Frogs are a long way, evolutionarily speaking, from the other known users of ultrasonics so this ability seems to have evolved independently several times. It is possible, too, that many other species are chatting away in the ultrasonic waveband, but that nobody has looked for them.},</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">language</span> = {en},</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {7082},</span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">urldate</span> = {2026-03-26},</span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Nature},</span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Feng, Albert S. and Narins, Peter M. and Xu, Chun-He and Lin, Wen-Yu and Yu, Zu-Lin and Qiu, Qiang and Xu, Zhi-Min and Shen, Jun-Xian},</span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">month</span> = <span class="st">mar</span>,</span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2006},</span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">note</span> = {Publisher: Nature Publishing Group},</span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">keywords</span> = {Humanities and Social Sciences, multidisciplinary, Science},</span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {333--336},</span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    <span class="dt">file</span> = {Full Text PDF:/home/amy/Zotero/storage/64S36KD5/Feng et al. - 2006 - Ultrasonic communication in frogs.pdf:application/pdf},</span>
-<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">starnberger_uni</span>-<span class="ot">_2014</span>,</span>
-<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {From uni- to multimodality: towards an integrative view on anuran communication},</span>
-<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {200},</span>
-<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>    <span class="dt">issn</span> = {0340-7594},</span>
-<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">shorttitle</span> = {From uni- to multimodality},</span>
-<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4138437/},</span>
-<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.1007/s00359-014-0923-1},</span>
-<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abstract</span> = {Undeniably, acoustic signals are the predominant mode of communication in frogs and toads. Acoustically active species are found throughout the vast diversity of anuran families. However, additional or alternative signal modalities have gained increasing attention. In several anurans, seismic, visual and chemical communications have convergently evolved due to ecological constraints such as noisy environments. The production of a visual cue, like the inevitably moving vocal sac of acoustically advertising males, is emphasized by conspicuously coloured throats. Limb movements accompanied by dynamic displays of bright colours are additional examples of striking visual signals independent of vocalizations. In some multimodal anuran communication systems, the acoustic component acts as an alert signal, which alters the receiver attention to the following visual display. Recent findings of colourful glands on vocal sacs, producing volatile species-specific scent bouquets suggest the possibility of integration of acoustic, visual and chemical cues in species recognition and mate choice. The combination of signal components facilitates&nbsp;a broadened display repertoire in challenging environmental conditions. Thus, the complexity of the communication systems of frogs and toads may have been underestimated.},</span>
-<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {9},</span>
-<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">urldate</span> = {2026-03-26},</span>
-<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology},</span>
-<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Starnberger, Iris and Preininger, Doris and Hödl, Walter},</span>
-<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2014},</span>
-<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pmid</span> = {24973893},</span>
-<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pmcid</span> = {PMC4138437},</span>
-<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {777--787},</span>
-<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">file</span> = {Full Text:/home/amy/Zotero/storage/YHX45APP/Starnberger et al. - 2014 - From uni- to multimodality towards an integrative.pdf:application/pdf},</span>
-<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bib code-with-copy"><code class="sourceCode bibtex"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">feng_ultrasonic_2006</span>,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Ultrasonic communication in frogs},</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {440},</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">copyright</span> = {2006 Springer Nature Limited},</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">issn</span> = {1476-4687},</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://www.nature.com/articles/nature04416},</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.1038/nature04416},</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abstract</span> = {Some bats, dolphins and rodents are notable among vertebrates in being able to produce and detect ultrasonic frequencies. Now for the first time an amphibian can be added to that select list. The spectacular bird-like sounds made by a type of Chinese torrent frog were known to edge into the ultrasonic range: now these frogs are shown to use ultrasonics as a form of communication. The males do at least, during competition for territory. Frogs are a long way, evolutionarily speaking, from the other known users of ultrasonics so this ability seems to have evolved independently several times. It is possible, too, that many other species are chatting away in the ultrasonic waveband, but that nobody has looked for them.},</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">language</span> = {en},</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {7082},</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">urldate</span> = {2026-03-26},</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Nature},</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Feng, Albert S. and Narins, Peter M. and Xu, Chun-He and Lin, Wen-Yu and Yu, Zu-Lin and Qiu, Qiang and Xu, Zhi-Min and Shen, Jun-Xian},</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">month</span> = <span class="st">mar</span>,</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2006},</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">note</span> = {Publisher: Nature Publishing Group},</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">keywords</span> = {Humanities and Social Sciences, multidisciplinary, Science},</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {333--336},</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>    <span class="dt">file</span> = {Full Text PDF:/home/amy/Zotero/storage/64S36KD5/Feng et al. - 2006 - Ultrasonic communication in frogs.pdf:application/pdf},</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">starnberger_uni</span>-<span class="ot">_2014</span>,</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {From uni- to multimodality: towards an integrative view on anuran communication},</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {200},</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    <span class="dt">issn</span> = {0340-7594},</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">shorttitle</span> = {From uni- to multimodality},</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4138437/},</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.1007/s00359-014-0923-1},</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abstract</span> = {Undeniably, acoustic signals are the predominant mode of communication in frogs and toads. Acoustically active species are found throughout the vast diversity of anuran families. However, additional or alternative signal modalities have gained increasing attention. In several anurans, seismic, visual and chemical communications have convergently evolved due to ecological constraints such as noisy environments. The production of a visual cue, like the inevitably moving vocal sac of acoustically advertising males, is emphasized by conspicuously coloured throats. Limb movements accompanied by dynamic displays of bright colours are additional examples of striking visual signals independent of vocalizations. In some multimodal anuran communication systems, the acoustic component acts as an alert signal, which alters the receiver attention to the following visual display. Recent findings of colourful glands on vocal sacs, producing volatile species-specific scent bouquets suggest the possibility of integration of acoustic, visual and chemical cues in species recognition and mate choice. The combination of signal components facilitates&nbsp;a broadened display repertoire in challenging environmental conditions. Thus, the complexity of the communication systems of frogs and toads may have been underestimated.},</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {9},</span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">urldate</span> = {2026-03-26},</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology},</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Starnberger, Iris and Preininger, Doris and Hödl, Walter},</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2014},</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pmid</span> = {24973893},</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pmcid</span> = {PMC4138437},</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {777--787},</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">file</span> = {Full Text:/home/amy/Zotero/storage/YHX45APP/Starnberger et al. - 2014 - From uni- to multimodality towards an integrative.pdf:application/pdf},</span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
 <p>Provide the path to your bibliography in the YAML metadata for the page e.g.,:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>A simple in-text citation looks like this… can wrap in () and [] if want… use @ and identifier…</p>
 <div class="columns">
 <div class="column" style="width:47%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:6%;">
 
 </div><div class="column" style="width:47%;">
@@ -691,7 +705,7 @@ Note
 <p>Multiple citations can be combined, use semicolon to separate</p>
 <div class="columns">
 <div class="column" style="width:47%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:6%;">
 
 </div><div class="column" style="width:47%;">
@@ -701,8 +715,8 @@ Note
 <p>By default, a list of works cited will be placed at the end of the document. You can change where this is by provided <code>refs</code> div -</p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:65%;">
@@ -723,22 +737,22 @@ Starnberger, Iris, Doris Preininger, and Walter Hödl. 2014. <span>“From Uni- 
 </ul>
 </div>
 </section>
-<section id="cross-references" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="cross-references"><span class="header-section-number">5</span> Cross-references</h2>
+<section id="cross-references" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="cross-references"><span class="header-section-number">6</span> Cross-references</h2>
 <p>Quarto can automatically number and cross‑reference figures, tables, sections, and equations.</p>
 <p>To make something cross‑referenceable, you give it an identifier, then refer to it with <code>@id</code>.</p>
 <p>For example, you can refer to tables by adding a caption and then including a <code>#tbl-</code> label in braces at the end of the caption</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Letter <span class="pp">|</span> Number <span class="pp">|</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> - <span class="pp">|</span> - <span class="pp">|</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> 1 <span class="pp">|</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> 2 <span class="pp">|</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> 3 <span class="pp">|</span></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>: Table with ABC and 123 {#tbl-letters}</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>See @tbl-letters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Letter <span class="pp">|</span> Number <span class="pp">|</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> - <span class="pp">|</span> - <span class="pp">|</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> 1 <span class="pp">|</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> 2 <span class="pp">|</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> 3 <span class="pp">|</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>: Table with ABC and 123 {#tbl-letters}</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>See @tbl-letters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
@@ -784,14 +798,14 @@ Table&nbsp;1: Table with ABC and 123
 </ul>
 </div>
 </section>
-<section id="math" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="math"><span class="header-section-number">6</span> Math</h2>
+<section id="math" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="math"><span class="header-section-number">7</span> Math</h2>
 <p>Quarto supports LaTeX‑style math notation for inline and display equations.</p>
 <p>LaTeX is a markup language commonly used for writing mathematics. Quarto understands a subset of LaTeX math syntax so you can write formulas directly in your text. Inline math appears inside a sentence (for example, <code>$y = mx + c$</code>), and display math appears on its own line, centred and spaced out, using <code>$$ ... $$</code>.</p>
 <p>In-line math:</p>
 <div class="columns">
 <div class="column" style="width:60%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>The solution is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>The solution is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:35%;">
@@ -801,9 +815,9 @@ Table&nbsp;1: Table with ABC and 123
 <p>Display math:</p>
 <div class="columns">
 <div class="column" style="width:60%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:35%;">
@@ -819,16 +833,16 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 </ul>
 </div>
 </section>
-<section id="definition-lists" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="definition-lists"><span class="header-section-number">7</span> Definition lists</h2>
+<section id="definition-lists" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="definition-lists"><span class="header-section-number">8</span> Definition lists</h2>
 <p>Definition lists are useful for small glossaries or when you want to introduce a few key concepts with short explanations. To creat them, write therm term on online line, then start the defintion on the next line with a colon <code>:</code> and space.</p>
 <div class="columns">
 <div class="column" style="width:40%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Thing 1</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>: Definition of thing 1</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>Thing 2</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>: Definition of thing 2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>Thing 1</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>: Definition of thing 1</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>Thing 2</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>: Definition of thing 2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:55%;">
@@ -852,17 +866,17 @@ Definition of thing 2
 </ul>
 </div>
 </section>
-<section id="line-blocks" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="line-blocks"><span class="header-section-number">8</span> Line blocks</h2>
+<section id="line-blocks" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="line-blocks"><span class="header-section-number">9</span> Line blocks</h2>
 <p>By default, Markdown ignores most extra spaces at the start of a line and treats single line breaks as part of the same paragraph. Line blocks give you precise control: they keep each line and its leading spaces exactly as you typed them.</p>
 <p>Default:</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>South Cloisters,</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    University of Exeter,</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    St Luke's Campus,</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    Heavitree Road,</span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    Exeter EX1 2LU</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>South Cloisters,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    University of Exeter,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    St Luke's Campus,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    Heavitree Road,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    Exeter EX1 2LU</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
@@ -872,11 +886,11 @@ Definition of thing 2
 <p>Line block:</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> South Cloisters,</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     University of Exeter,</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     St Luke's Campus,</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     Heavitree Road,</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     Exeter EX1 2LU</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> South Cloisters,</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     University of Exeter,</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     St Luke's Campus,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     Heavitree Road,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>     Exeter EX1 2LU</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
@@ -894,11 +908,11 @@ Definition of thing 2
 </ul>
 </div>
 </section>
-<section id="includes" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="includes"><span class="header-section-number">9</span> Includes</h2>
+<section id="includes" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="includes"><span class="header-section-number">10</span> Includes</h2>
 <p>Sometimes you want to <strong>reuse</strong> the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you “include” another file so that its contents are pulled in when you render.</p>
 <p>For example, if you have a file called <code>snippet.md</code> in the same folder:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include snippet.md &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include snippet.md &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>When you render, the text from <code>snippet.md</code> will appear at that point in the page</p>
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>

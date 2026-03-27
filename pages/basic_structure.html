@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -243,12 +278,209 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>explain basic structure of quarto website</p>
-<p>i.e., walkthrough of provided codespace.</p>
-<p>then, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)</p>
-<p>https://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.</p>
+<section id="introduction-to-rstudio" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introduction-to-rstudio"><span class="header-section-number">1</span> Introduction to RStudio</h2>
+<p>TODO</p>
+<!-- Rough notes...
+
+BE SUPER CLEAR that this is just somewhere to run quarto and that focus of this session is not on code (though will do at the very end).
+
+If youre not someone who has coded / used R
+no worry
+not needed for session
+and not needed for quarto
+
+so why are we using rstudio?
+
+explain- need an IDE - one of the really cool things they can do is include executable code e.g., R and Python - come onto that at the end - but also, can make sites without
+
+best interfaces for making quarto sites? things like rstudio, positron and vscode.
+they just are what exist.
+
+explain basic interface
+- text editor
+- console / terminal / background jobs - explain each
+- environment
+- files, help, plots
+
+we are going to look at files...
+-->
+</section>
+<section id="introduce-to-quarto-websites" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="introduce-to-quarto-websites"><span class="header-section-number">2</span> Introduce to Quarto websites</h2>
+<p>We’ll be creating a <strong>Quarto website</strong>, but it’s worth knowing that Quarto can produce many things. See the <a href="https://quarto.org/docs/guide/">Quarto documentation</a> for examples - options include:</p>
+<ul>
+<li>Presentations</li>
+<li>Dashboards</li>
+<li>Manuscripts</li>
+<li>Documents</li>
+<li>Books</li>
+</ul>
+<p>A simple website project just needs <strong>two key files</strong>:</p>
+<ol type="1">
+<li><code>_quarto.yml</code></li>
+<li><code>index.qmd</code></li>
+</ol>
+<section id="quarto.yml" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="quarto.yml"><span class="header-section-number">2.1</span> <code>_quarto.yml</code></h3>
+<p>This is file defines your <strong>project settings</strong> and <strong>website structure</strong>.</p>
+<p>TODO: Add explanation. A yml file is YAML. plain text format. uses key-value pairs to store settings. YAML (“YAML Ain’t Markup Language”) is a simple format using key–value pairs, like:</p>
+<p>Below is an example from <a href="https://github.com/pythonhealthdatascience/quarto-template" target="_blank">quarto-template</a>. Hover over each line to see an explanation:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-1"><pre class="sourceCode yaml code-annotation-code code-with-copy code-annotated"><code class="sourceCode yaml"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-1-5" class="code-annotation-target"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Template"</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-1-6" class="code-annotation-target"><a href="#annotated-cell-1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> images/exeter.png</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="4" onclick="event.preventDefault();">4</a><span id="annotated-cell-1-7" class="code-annotation-target"><a href="#annotated-cell-1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="5" onclick="event.preventDefault();">5</a><span id="annotated-cell-1-8" class="code-annotation-target"><a href="#annotated-cell-1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="annotated-cell-1-10"><a href="#annotated-cell-1-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub</span></span>
+<span id="annotated-cell-1-11"><a href="#annotated-cell-1-11" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/pythonhealthdatascience/quarto-template/</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="6" onclick="event.preventDefault();">6</a><span id="annotated-cell-1-12" class="code-annotation-target"><a href="#annotated-cell-1-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="7" onclick="event.preventDefault();">7</a><span id="annotated-cell-1-13" class="code-annotation-target"><a href="#annotated-cell-1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> images/exeter.png</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="8" onclick="event.preventDefault();">8</a><span id="annotated-cell-1-14" class="code-annotation-target"><a href="#annotated-cell-1-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-15"><a href="#annotated-cell-1-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Overview</span></span>
+<span id="annotated-cell-1-16"><a href="#annotated-cell-1-16" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="annotated-cell-1-17"><a href="#annotated-cell-1-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pages/TODO.qmd</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="1,2,4" data-code-annotation="1"><strong>Website:</strong> Defines that this project builds as a website.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="5" data-code-annotation="2"><strong>Website title:</strong> Appears in broswer tab and navbar.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="6" data-code-annotation="3"><strong>Favicon:</strong> The small icon shown on the tab (often a logo).</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="7" data-code-annotation="4"><strong>Navbar:</strong> The navigation bar across the top of your site.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="5">5</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="8,9,10,11" data-code-annotation="5"><strong>GitHub link:</strong> Adds a GitHub icon on the right side of the navbar linking to the repository (which contains the source files for the site).</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="6">6</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="12" data-code-annotation="6"><strong>Sidebar:</strong> Displays navigation links down the left-hand side.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="7">7</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="13" data-code-annotation="7"><strong>Logo:</strong> The image shown at the top of the sidebar.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="8">8</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="14,15,16,17" data-code-annotation="8"><strong>Sidebar contents:</strong> Lists website pages. Will list using page titles by default, but can override with <code>text</code> (title to use) and <code>href</code> (path to file).</span>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled" title="Optional extra: books">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional extra: books
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A <strong>Quarto book</strong> is basically a website with chapter-style navigation. Under the hood, it’s still a Quarto website - just organised a little differently.</p>
+<p>See the <a href="https://quarto.org/docs/books/book-output.html">books guide</a> for more information.</p>
+<p>Example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">book</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Template"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> images/exeter.png</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Overview</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> pages/TODO.qmd</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/pythonhealthdatascience/quarto-template/</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> images/exeter.png</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</section>
+<section id="index.qmd" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="index.qmd"><span class="header-section-number">2.2</span> <code>index.qmd</code></h3>
+<p>A <code>.qmd</code> file is a <strong>Quarto Markdown</strong> document.</p>
+<blockquote class="blockquote">
+<p>If you’re familiar with R Markdown (<code>.Rmd</code>), these are similar, but <code>.qmd</code> is more flexible.</p>
+</blockquote>
+<p><code>index.qmd</code> servers as the <strong>homepage</strong> of your website.</p>
+<p>Each <code>.qmd</code> file begins with <strong>YAML front matter</strong>, enclosed by three dashes (<code>---</code>). This defines metadata such as the page title.</p>
+<blockquote class="blockquote">
+<p>Alternative way of doing this would be <code># My homepage</code>. TODO: SO WHY DO IT IN YAML?</p>
+</blockquote>
+<p>Below that is the page. Here we just have one sentence: <code>This is my homepage.</code>.</p>
+<pre class="qmd"><code>---
+title: My homepage
+---
 
 
+This is my homepage.</code></pre>
+</section>
+</section>
+<section id="rendering-your-website" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="rendering-your-website"><span class="header-section-number">3</span> Rendering your website</h2>
+<p><strong>Rendering</strong> means converting your Quarto source files into the final website - a colelction of <code>.html</code> pages that live inside a folder called <code>_site</code>.</p>
+<p>To render in RStudio…</p>
+<ol type="1">
+<li>Open <code>index.qmd</code> in the editor.</li>
+</ol>
+<p>[SCREENSHOT]</p>
+<ol start="2" type="1">
+<li>Click the blue <strong>Render</strong> button (the arrow icon) at the top of the editor.</li>
+</ol>
+<p>[SCREENSHOT]</p>
+<p>RStudio will:</p>
+<ul>
+<li>Create the <code>_sites/</code> folder containing your rendered site.</li>
+<li>Open a <strong>live preview</strong> in your browser.</li>
+</ul>
+<p>TODO: EXPLAIN LIVE PREVIEW url… its local host… display via browser…</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Troubleshooting">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Troubleshooting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The preview may not open automatically if your browser blocks the pop-up. To resolve this, you should either:</p>
+<ul>
+<li>Click to allow pop-ups in your browsers, then click <strong>Render</strong> again.</li>
+<li>Go to the <strong>Background Jobs</strong> tab in the bottom left. This is where lgos from rendering quarot site are shown. Here, you will find the preview URL. Copy and paste this into browser.</li>
+</ul>
+</div>
+</div>
+<p>[SCREENSHOT]</p>
+<section id="rendering-from-the-terminal" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="rendering-from-the-terminal"><span class="header-section-number">3.1</span> Rendering from the terminal</h3>
+<p>You can also build your site using command-line tools. The terminal is simply a text-based way to type commands directly, rather than clicking buttons.</p>
+<p>Two helpful commands are:</p>
+<ul>
+<li><code>quarto render</code> - builds your website.</li>
+<li><code>quarto preview</code> - builds and opens a live-updating preview.</li>
+</ul>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

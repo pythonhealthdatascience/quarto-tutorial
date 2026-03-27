@@ -50,11 +50,23 @@
     ]
   },
   {
+    "objectID": "pages/quarto_features.html#link-that-opens-in-a-new-tab-by-default",
+    "href": "pages/quarto_features.html#link-that-opens-in-a-new-tab-by-default",
+    "title": "Quarto features",
+    "section": "3 Link that opens in a new tab by default",
+    "text": "3 Link that opens in a new tab by default\nYou’ll recall from the Markdown page that we can create a link using [text](link).\nIn Quarto, we can amend the link so it opens in a new tab by default by adding {target=\"_blank\"} to the end.\nFor example:\n[Visit the University of Exeter website](https://www.exeter.ac.uk){target=\"_blank\"}\nVisit the University of Exeter website\n\nTask: In quarto_features.qmd:\n\nCreate a link that opens in a new tab by default.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Quarto features"
+    ]
+  },
+  {
     "objectID": "pages/quarto_features.html#sec-footnotes",
     "href": "pages/quarto_features.html#sec-footnotes",
     "title": "Quarto features",
-    "section": "3 Footnotes",
-    "text": "3 Footnotes\nHere is some text with a footnote.[^1]\n\n[^1]: This is the content of the footnote.\n\n    You can include additional details by going two line below and tab indent.\nHere is some text with a footnote.1\n\nTask: In quarto_features.qmd:\n\nAdd one footnote to a sentence and put a little extra detail into the footnote text.",
+    "section": "4 Footnotes",
+    "text": "4 Footnotes\nHere is some text with a footnote.[^1]\n\n[^1]: This is the content of the footnote.\n\n    You can include additional details by going two line below and tab indent.\nHere is some text with a footnote.1\n\nTask: In quarto_features.qmd:\n\nAdd one footnote to a sentence and put a little extra detail into the footnote text.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -65,8 +77,8 @@
     "objectID": "pages/quarto_features.html#citations",
     "href": "pages/quarto_features.html#citations",
     "title": "Quarto features",
-    "section": "4 Citations",
-    "text": "4 Citations\nWith a bibliography file (e.g., references.bib), Quarto can automatically format citations and a reference list.\nA bibliography file (with extension .bib) is a text file that stores information about your sources (for example, author, year, title, journal). Each source has a short key, like @feng_ultrasonic_2006, that you can use in your writing. Reference managers such as Zotero can export your library to a .bib file, so you do not have to type these entries by hand.\n\n\n\n\n\n\nNoteView references.bib\n\n\n\n\n\n\n@article{feng_ultrasonic_2006,\n    title = {Ultrasonic communication in frogs},\n    volume = {440},\n    copyright = {2006 Springer Nature Limited},\n    issn = {1476-4687},\n    url = {https://www.nature.com/articles/nature04416},\n    doi = {10.1038/nature04416},\n    abstract = {Some bats, dolphins and rodents are notable among vertebrates in being able to produce and detect ultrasonic frequencies. Now for the first time an amphibian can be added to that select list. The spectacular bird-like sounds made by a type of Chinese torrent frog were known to edge into the ultrasonic range: now these frogs are shown to use ultrasonics as a form of communication. The males do at least, during competition for territory. Frogs are a long way, evolutionarily speaking, from the other known users of ultrasonics so this ability seems to have evolved independently several times. It is possible, too, that many other species are chatting away in the ultrasonic waveband, but that nobody has looked for them.},\n    language = {en},\n    number = {7082},\n    urldate = {2026-03-26},\n    journal = {Nature},\n    author = {Feng, Albert S. and Narins, Peter M. and Xu, Chun-He and Lin, Wen-Yu and Yu, Zu-Lin and Qiu, Qiang and Xu, Zhi-Min and Shen, Jun-Xian},\n    month = mar,\n    year = {2006},\n    note = {Publisher: Nature Publishing Group},\n    keywords = {Humanities and Social Sciences, multidisciplinary, Science},\n    pages = {333--336},\n    file = {Full Text PDF:/home/amy/Zotero/storage/64S36KD5/Feng et al. - 2006 - Ultrasonic communication in frogs.pdf:application/pdf},\n}\n\n@article{starnberger_uni-_2014,\n    title = {From uni- to multimodality: towards an integrative view on anuran communication},\n    volume = {200},\n    issn = {0340-7594},\n    shorttitle = {From uni- to multimodality},\n    url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4138437/},\n    doi = {10.1007/s00359-014-0923-1},\n    abstract = {Undeniably, acoustic signals are the predominant mode of communication in frogs and toads. Acoustically active species are found throughout the vast diversity of anuran families. However, additional or alternative signal modalities have gained increasing attention. In several anurans, seismic, visual and chemical communications have convergently evolved due to ecological constraints such as noisy environments. The production of a visual cue, like the inevitably moving vocal sac of acoustically advertising males, is emphasized by conspicuously coloured throats. Limb movements accompanied by dynamic displays of bright colours are additional examples of striking visual signals independent of vocalizations. In some multimodal anuran communication systems, the acoustic component acts as an alert signal, which alters the receiver attention to the following visual display. Recent findings of colourful glands on vocal sacs, producing volatile species-specific scent bouquets suggest the possibility of integration of acoustic, visual and chemical cues in species recognition and mate choice. The combination of signal components facilitates a broadened display repertoire in challenging environmental conditions. Thus, the complexity of the communication systems of frogs and toads may have been underestimated.},\n    number = {9},\n    urldate = {2026-03-26},\n    journal = {Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology},\n    author = {Starnberger, Iris and Preininger, Doris and Hödl, Walter},\n    year = {2014},\n    pmid = {24973893},\n    pmcid = {PMC4138437},\n    pages = {777--787},\n    file = {Full Text:/home/amy/Zotero/storage/YHX45APP/Starnberger et al. - 2014 - From uni- to multimodality towards an integrative.pdf:application/pdf},\n}\n\n\n\nProvide the path to your bibliography in the YAML metadata for the page e.g.,:\n---\ntitle: \"My Document\"\nbibliography: references.bib\n---\nA simple in-text citation looks like this… can wrap in () and [] if want… use @ and identifier…\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).\n\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (Feng et al. (2006)).\n\n\nMultiple citations can be combined, use semicolon to separate\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).\n\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (Feng et al. (2006); Starnberger et al. (2014)).\n\n\nBy default, a list of works cited will be placed at the end of the document. You can change where this is by provided refs div -\n\n\n::: {#refs}\n:::\n\n\n\n\n\nFeng, Albert S., Peter M. Narins, Chun-He Xu, et al. 2006. “Ultrasonic Communication in Frogs.” Nature 440 (7082): 333–36. https://doi.org/10.1038/nature04416.\n\n\nStarnberger, Iris, Doris Preininger, and Walter Hödl. 2014. “From Uni- to Multimodality: Towards an Integrative View on Anuran Communication.” Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology 200 (9): 777–87. https://doi.org/10.1007/s00359-014-0923-1.\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nA bib file is provided… add citation using key from file…",
+    "section": "5 Citations",
+    "text": "5 Citations\nWith a bibliography file (e.g., references.bib), Quarto can automatically format citations and a reference list.\nA bibliography file (with extension .bib) is a text file that stores information about your sources (for example, author, year, title, journal). Each source has a short key, like @feng_ultrasonic_2006, that you can use in your writing. Reference managers such as Zotero can export your library to a .bib file, so you do not have to type these entries by hand.\n\n\n\n\n\n\nNoteView references.bib\n\n\n\n\n\n\n@article{feng_ultrasonic_2006,\n    title = {Ultrasonic communication in frogs},\n    volume = {440},\n    copyright = {2006 Springer Nature Limited},\n    issn = {1476-4687},\n    url = {https://www.nature.com/articles/nature04416},\n    doi = {10.1038/nature04416},\n    abstract = {Some bats, dolphins and rodents are notable among vertebrates in being able to produce and detect ultrasonic frequencies. Now for the first time an amphibian can be added to that select list. The spectacular bird-like sounds made by a type of Chinese torrent frog were known to edge into the ultrasonic range: now these frogs are shown to use ultrasonics as a form of communication. The males do at least, during competition for territory. Frogs are a long way, evolutionarily speaking, from the other known users of ultrasonics so this ability seems to have evolved independently several times. It is possible, too, that many other species are chatting away in the ultrasonic waveband, but that nobody has looked for them.},\n    language = {en},\n    number = {7082},\n    urldate = {2026-03-26},\n    journal = {Nature},\n    author = {Feng, Albert S. and Narins, Peter M. and Xu, Chun-He and Lin, Wen-Yu and Yu, Zu-Lin and Qiu, Qiang and Xu, Zhi-Min and Shen, Jun-Xian},\n    month = mar,\n    year = {2006},\n    note = {Publisher: Nature Publishing Group},\n    keywords = {Humanities and Social Sciences, multidisciplinary, Science},\n    pages = {333--336},\n    file = {Full Text PDF:/home/amy/Zotero/storage/64S36KD5/Feng et al. - 2006 - Ultrasonic communication in frogs.pdf:application/pdf},\n}\n\n@article{starnberger_uni-_2014,\n    title = {From uni- to multimodality: towards an integrative view on anuran communication},\n    volume = {200},\n    issn = {0340-7594},\n    shorttitle = {From uni- to multimodality},\n    url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4138437/},\n    doi = {10.1007/s00359-014-0923-1},\n    abstract = {Undeniably, acoustic signals are the predominant mode of communication in frogs and toads. Acoustically active species are found throughout the vast diversity of anuran families. However, additional or alternative signal modalities have gained increasing attention. In several anurans, seismic, visual and chemical communications have convergently evolved due to ecological constraints such as noisy environments. The production of a visual cue, like the inevitably moving vocal sac of acoustically advertising males, is emphasized by conspicuously coloured throats. Limb movements accompanied by dynamic displays of bright colours are additional examples of striking visual signals independent of vocalizations. In some multimodal anuran communication systems, the acoustic component acts as an alert signal, which alters the receiver attention to the following visual display. Recent findings of colourful glands on vocal sacs, producing volatile species-specific scent bouquets suggest the possibility of integration of acoustic, visual and chemical cues in species recognition and mate choice. The combination of signal components facilitates a broadened display repertoire in challenging environmental conditions. Thus, the complexity of the communication systems of frogs and toads may have been underestimated.},\n    number = {9},\n    urldate = {2026-03-26},\n    journal = {Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology},\n    author = {Starnberger, Iris and Preininger, Doris and Hödl, Walter},\n    year = {2014},\n    pmid = {24973893},\n    pmcid = {PMC4138437},\n    pages = {777--787},\n    file = {Full Text:/home/amy/Zotero/storage/YHX45APP/Starnberger et al. - 2014 - From uni- to multimodality towards an integrative.pdf:application/pdf},\n}\n\n\n\nProvide the path to your bibliography in the YAML metadata for the page e.g.,:\n---\ntitle: \"My Document\"\nbibliography: references.bib\n---\nA simple in-text citation looks like this… can wrap in () and [] if want… use @ and identifier…\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).\n\n\n\nSome frogs can communicate using ultrasonic calls that are far above the range of human hearing (Feng et al. (2006)).\n\n\nMultiple citations can be combined, use semicolon to separate\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).\n\n\n\nUltrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (Feng et al. (2006); Starnberger et al. (2014)).\n\n\nBy default, a list of works cited will be placed at the end of the document. You can change where this is by provided refs div -\n\n\n::: {#refs}\n:::\n\n\n\n\n\nFeng, Albert S., Peter M. Narins, Chun-He Xu, et al. 2006. “Ultrasonic Communication in Frogs.” Nature 440 (7082): 333–36. https://doi.org/10.1038/nature04416.\n\n\nStarnberger, Iris, Doris Preininger, and Walter Hödl. 2014. “From Uni- to Multimodality: Towards an Integrative View on Anuran Communication.” Journal of Comparative Physiology. A, Neuroethology, Sensory, Neural, and Behavioral Physiology 200 (9): 777–87. https://doi.org/10.1007/s00359-014-0923-1.\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nA bib file is provided… add citation using key from file…",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -77,8 +89,8 @@
     "objectID": "pages/quarto_features.html#cross-references",
     "href": "pages/quarto_features.html#cross-references",
     "title": "Quarto features",
-    "section": "5 Cross-references",
-    "text": "5 Cross-references\nQuarto can automatically number and cross‑reference figures, tables, sections, and equations.\nTo make something cross‑referenceable, you give it an identifier, then refer to it with @id.\nFor example, you can refer to tables by adding a caption and then including a #tbl- label in braces at the end of the caption\n\n\n| Letter | Number |\n| - | - |\n| A | 1 |\n| B | 2 |\n| C | 3 |\n\n: Table with ABC and 123 {#tbl-letters}\n\nSee @tbl-letters\n\n\n\n\n\n\nTable 1: Table with ABC and 123\n\n\n\n\n\nLetter\nNumber\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n\n\n\n\nSee Table 1\n\n\nSee the page on Cross-references from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).\n\nTask: In quarto_features.qmd:\n\nAdd an ID to one heading then write a sentence later that references it.",
+    "section": "6 Cross-references",
+    "text": "6 Cross-references\nQuarto can automatically number and cross‑reference figures, tables, sections, and equations.\nTo make something cross‑referenceable, you give it an identifier, then refer to it with @id.\nFor example, you can refer to tables by adding a caption and then including a #tbl- label in braces at the end of the caption\n\n\n| Letter | Number |\n| - | - |\n| A | 1 |\n| B | 2 |\n| C | 3 |\n\n: Table with ABC and 123 {#tbl-letters}\n\nSee @tbl-letters\n\n\n\n\n\n\nTable 1: Table with ABC and 123\n\n\n\n\n\nLetter\nNumber\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n\n\n\n\nSee Table 1\n\n\nSee the page on Cross-references from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).\n\nTask: In quarto_features.qmd:\n\nAdd an ID to one heading then write a sentence later that references it.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -89,8 +101,8 @@
     "objectID": "pages/quarto_features.html#math",
     "href": "pages/quarto_features.html#math",
     "title": "Quarto features",
-    "section": "6 Math",
-    "text": "6 Math\nQuarto supports LaTeX‑style math notation for inline and display equations.\nLaTeX is a markup language commonly used for writing mathematics. Quarto understands a subset of LaTeX math syntax so you can write formulas directly in your text. Inline math appears inside a sentence (for example, $y = mx + c$), and display math appears on its own line, centred and spaced out, using $$ ... $$.\nIn-line math:\n\n\nThe solution is $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\n\n\nThe solution is \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n\nDisplay math:\n\n\n$$\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n$$\n\n\n\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\]\n\n\n\nTask: In quarto_features.qmd:\n\nAdd one short inline formula and one display formula (e.g., y = mx + c)",
+    "section": "7 Math",
+    "text": "7 Math\nQuarto supports LaTeX‑style math notation for inline and display equations.\nLaTeX is a markup language commonly used for writing mathematics. Quarto understands a subset of LaTeX math syntax so you can write formulas directly in your text. Inline math appears inside a sentence (for example, $y = mx + c$), and display math appears on its own line, centred and spaced out, using $$ ... $$.\nIn-line math:\n\n\nThe solution is $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\n\n\nThe solution is \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n\nDisplay math:\n\n\n$$\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n$$\n\n\n\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\]\n\n\n\nTask: In quarto_features.qmd:\n\nAdd one short inline formula and one display formula (e.g., y = mx + c)",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -101,8 +113,8 @@
     "objectID": "pages/quarto_features.html#definition-lists",
     "href": "pages/quarto_features.html#definition-lists",
     "title": "Quarto features",
-    "section": "7 Definition lists",
-    "text": "7 Definition lists\nDefinition lists are useful for small glossaries or when you want to introduce a few key concepts with short explanations. To creat them, write therm term on online line, then start the defintion on the next line with a colon : and space.\n\n\nThing 1\n: Definition of thing 1\n\nThing 2\n: Definition of thing 2\n\n\n\n\n\nThing 1\n\nDefinition of thing 1\n\nThing 2\n\nDefinition of thing 2\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nCreate a short definition list with two terms and one-sentence definitions for each.",
+    "section": "8 Definition lists",
+    "text": "8 Definition lists\nDefinition lists are useful for small glossaries or when you want to introduce a few key concepts with short explanations. To creat them, write therm term on online line, then start the defintion on the next line with a colon : and space.\n\n\nThing 1\n: Definition of thing 1\n\nThing 2\n: Definition of thing 2\n\n\n\n\n\nThing 1\n\nDefinition of thing 1\n\nThing 2\n\nDefinition of thing 2\n\n\n\n\n\nTask: In quarto_features.qmd:\n\nCreate a short definition list with two terms and one-sentence definitions for each.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -113,8 +125,8 @@
     "objectID": "pages/quarto_features.html#line-blocks",
     "href": "pages/quarto_features.html#line-blocks",
     "title": "Quarto features",
-    "section": "8 Line blocks",
-    "text": "8 Line blocks\nBy default, Markdown ignores most extra spaces at the start of a line and treats single line breaks as part of the same paragraph. Line blocks give you precise control: they keep each line and its leading spaces exactly as you typed them.\nDefault:\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke's Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nSouth Cloisters, University of Exeter, St Luke’s Campus, Heavitree Road, Exeter EX1 2LU\n\n\nLine block:\n\n\n| South Cloisters,\n|     University of Exeter,\n|     St Luke's Campus,\n|     Heavitree Road,\n|     Exeter EX1 2LU\n\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke’s Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nTask: In quarto_features.qmd:\n\nWrite a three‑line address or short poem using a line block and check that the line breaks are preserved after rendering.",
+    "section": "9 Line blocks",
+    "text": "9 Line blocks\nBy default, Markdown ignores most extra spaces at the start of a line and treats single line breaks as part of the same paragraph. Line blocks give you precise control: they keep each line and its leading spaces exactly as you typed them.\nDefault:\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke's Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nSouth Cloisters, University of Exeter, St Luke’s Campus, Heavitree Road, Exeter EX1 2LU\n\n\nLine block:\n\n\n| South Cloisters,\n|     University of Exeter,\n|     St Luke's Campus,\n|     Heavitree Road,\n|     Exeter EX1 2LU\n\n\n\nSouth Cloisters,\n    University of Exeter,\n    St Luke’s Campus,\n    Heavitree Road,\n    Exeter EX1 2LU\n\n\n\nTask: In quarto_features.qmd:\n\nWrite a three‑line address or short poem using a line block and check that the line breaks are preserved after rendering.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -125,8 +137,8 @@
     "objectID": "pages/quarto_features.html#includes",
     "href": "pages/quarto_features.html#includes",
     "title": "Quarto features",
-    "section": "9 Includes",
-    "text": "9 Includes\nSometimes you want to reuse the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you “include” another file so that its contents are pulled in when you render.\nFor example, if you have a file called snippet.md in the same folder:\n{{&lt; include snippet.md &gt;}}\nWhen you render, the text from snippet.md will appear at that point in the page\n\nTask: In quarto_features.qmd:\n\nCreate a small file called snippet.md with one or two lines of text.\nInclude it in quarto_features.qmd using {{&lt; include snippet.md &gt;}} and render the page.",
+    "section": "10 Includes",
+    "text": "10 Includes\nSometimes you want to reuse the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you “include” another file so that its contents are pulled in when you render.\nFor example, if you have a file called snippet.md in the same folder:\n{{&lt; include snippet.md &gt;}}\nWhen you render, the text from snippet.md will appear at that point in the page\n\nTask: In quarto_features.qmd:\n\nCreate a small file called snippet.md with one or two lines of text.\nInclude it in quarto_features.qmd using {{&lt; include snippet.md &gt;}} and render the page.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -270,7 +282,7 @@
     "href": "pages/inline_html.html",
     "title": "Inline HTML",
     "section": "",
-    "text": "Web pages are written in HTML (HyperText Markup Language), which uses tags like &lt;p&gt;, &lt;a&gt;, and &lt;strong&gt; to describe how things should look.\nIn a Markdown document, you can sometimes mix in small pieces of HTML.\nThis is called inline HTML: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.\nCaveat: raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.",
+    "text": "Web pages are written in HTML (HyperText Markup Language), which uses tags like &lt;p&gt;, &lt;a&gt;, and &lt;strong&gt; to describe how things should look.\nIn a Markdown document, you can sometimes mix in small pieces of HTML. This is called inline HTML: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.\nCaveat: raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -314,23 +326,11 @@
     ]
   },
   {
-    "objectID": "pages/inline_html.html#custom-links",
-    "href": "pages/inline_html.html#custom-links",
-    "title": "Inline HTML",
-    "section": "4 Custom links",
-    "text": "4 Custom links\nIf you want more control over a link (for example, to open it in a new tab), you can write it in HTML instead of plain Markdown.\nIn the HTML link below:\n\nhref is the web address you are linking to.\nThe text between &lt;a&gt; and &lt;/a&gt; is what the reader clicks on.\ntarget=\"_blank\" tells the browser to open the link in a new tab.\nrel=\"noopener\" is a small security and performance setting that stops the new page from being able to control the original tab.\n\n&lt;a href=\"https://www.exeter.ac.uk\" target=\"_blank\" rel=\"noopener\"&gt;\n  Visit the University of Exeter website\n&lt;/a&gt;\n Visit the University of Exeter website \n\nTask: In html.qmd:\n\nCreate a link that opens in a new tab by default.",
-    "crumbs": [
-      "GitHub",
-      "Tutorial",
-      "Inline HTML"
-    ]
-  },
-  {
     "objectID": "pages/inline_html.html#abbreviations",
     "href": "pages/inline_html.html#abbreviations",
     "title": "Inline HTML",
-    "section": "5 Abbreviations",
-    "text": "5 Abbreviations\nYou can explain abbreviations by using the &lt;abbr&gt; tag with a title attribute. When someone hovers over it in a browser, they see the full phrase.\n&lt;abbr title=\"Randomised Controlled Trial\"&gt;RCT&lt;/abbr&gt;\nRCT\nAlternatively, you can use footnotes ?@sec-footnotes to explain the term.\n\nTask: In html.qmd:\n\nPick one abbreviation you use in your own work (for example, “NHS” or “A&E”) and write it with an &lt;abbr&gt; tag and a helpful title.",
+    "section": "4 Abbreviations",
+    "text": "4 Abbreviations\nYou can explain abbreviations by using the &lt;abbr&gt; tag with a title attribute. When someone hovers over it in a browser, they see the full phrase.\n&lt;abbr title=\"Randomised Controlled Trial\"&gt;RCT&lt;/abbr&gt;\nRCT\nAlternatively, you can use footnotes ?@sec-footnotes to explain the term.\n\nTask: In html.qmd:\n\nPick one abbreviation you use in your own work (for example, “NHS” or “A&E”) and write it with an &lt;abbr&gt; tag and a helpful title.",
     "crumbs": [
       "GitHub",
       "Tutorial",
@@ -481,7 +481,43 @@
     "href": "pages/basic_structure.html",
     "title": "Basic structure",
     "section": "",
-    "text": "explain basic structure of quarto website\ni.e., walkthrough of provided codespace.\nthen, quarto render and quarto preview (or perhaps that’s another page?) explain: what is terminal (OR show just via buttons?)\nhttps://quarto.org/docs/books/book-output.html HTML books are at their core Quarto Websites with some special navigational behavior built in.",
+    "text": "TODO",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Basic structure"
+    ]
+  },
+  {
+    "objectID": "pages/basic_structure.html#introduction-to-rstudio",
+    "href": "pages/basic_structure.html#introduction-to-rstudio",
+    "title": "Basic structure",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Basic structure"
+    ]
+  },
+  {
+    "objectID": "pages/basic_structure.html#introduce-to-quarto-websites",
+    "href": "pages/basic_structure.html#introduce-to-quarto-websites",
+    "title": "Basic structure",
+    "section": "2 Introduce to Quarto websites",
+    "text": "2 Introduce to Quarto websites\nWe’ll be creating a Quarto website, but it’s worth knowing that Quarto can produce many things. See the Quarto documentation for examples - options include:\n\nPresentations\nDashboards\nManuscripts\nDocuments\nBooks\n\nA simple website project just needs two key files:\n\n_quarto.yml\nindex.qmd\n\n\n2.1 _quarto.yml\nThis is file defines your project settings and website structure.\nTODO: Add explanation. A yml file is YAML. plain text format. uses key-value pairs to store settings. YAML (“YAML Ain’t Markup Language”) is a simple format using key–value pairs, like:\nBelow is an example from quarto-template. Hover over each line to see an explanation:\n1project:\n  type: website\n\nwebsite:\n2  title: \"Quarto Template\"\n3  favicon: images/exeter.png\n4  navbar:\n5    right:\n      - icon: github\n        text: GitHub\n        href: https://github.com/pythonhealthdatascience/quarto-template/\n6  sidebar:\n7    - logo: images/exeter.png\n8      contents:\n        - text: Overview\n          href: index.qmd\n        - pages/TODO.qmd\n\n1\n\nWebsite: Defines that this project builds as a website.\n\n2\n\nWebsite title: Appears in broswer tab and navbar.\n\n3\n\nFavicon: The small icon shown on the tab (often a logo).\n\n4\n\nNavbar: The navigation bar across the top of your site.\n\n5\n\nGitHub link: Adds a GitHub icon on the right side of the navbar linking to the repository (which contains the source files for the site).\n\n6\n\nSidebar: Displays navigation links down the left-hand side.\n\n7\n\nLogo: The image shown at the top of the sidebar.\n\n8\n\nSidebar contents: Lists website pages. Will list using page titles by default, but can override with text (title to use) and href (path to file).\n\n\n\n\n\n\n\n\nNoteOptional extra: books\n\n\n\n\n\nA Quarto book is basically a website with chapter-style navigation. Under the hood, it’s still a Quarto website - just organised a little differently.\nSee the books guide for more information.\nExample:\nproject:\n  type: book\n\nbook:\n  title: \"Quarto Template\"\n  favicon: images/exeter.png\n  chapters:\n    - text: Overview\n      href: index.qmd\n    - pages/TODO.qmd\n  navbar:\n    right:\n      - icon: github\n        text: GitHub\n        href: https://github.com/pythonhealthdatascience/quarto-template/\n  sidebar:\n    logo: images/exeter.png\n\n\n\n\n\n2.2 index.qmd\nA .qmd file is a Quarto Markdown document.\n\nIf you’re familiar with R Markdown (.Rmd), these are similar, but .qmd is more flexible.\n\nindex.qmd servers as the homepage of your website.\nEach .qmd file begins with YAML front matter, enclosed by three dashes (---). This defines metadata such as the page title.\n\nAlternative way of doing this would be # My homepage. TODO: SO WHY DO IT IN YAML?\n\nBelow that is the page. Here we just have one sentence: This is my homepage..\n---\ntitle: My homepage\n---\n\n\nThis is my homepage.",
+    "crumbs": [
+      "GitHub",
+      "Tutorial",
+      "Basic structure"
+    ]
+  },
+  {
+    "objectID": "pages/basic_structure.html#rendering-your-website",
+    "href": "pages/basic_structure.html#rendering-your-website",
+    "title": "Basic structure",
+    "section": "3 Rendering your website",
+    "text": "3 Rendering your website\nRendering means converting your Quarto source files into the final website - a colelction of .html pages that live inside a folder called _site.\nTo render in RStudio…\n\nOpen index.qmd in the editor.\n\n[SCREENSHOT]\n\nClick the blue Render button (the arrow icon) at the top of the editor.\n\n[SCREENSHOT]\nRStudio will:\n\nCreate the _sites/ folder containing your rendered site.\nOpen a live preview in your browser.\n\nTODO: EXPLAIN LIVE PREVIEW url… its local host… display via browser…\n\n\n\n\n\n\nTipTroubleshooting\n\n\n\nThe preview may not open automatically if your browser blocks the pop-up. To resolve this, you should either:\n\nClick to allow pop-ups in your browsers, then click Render again.\nGo to the Background Jobs tab in the bottom left. This is where lgos from rendering quarot site are shown. Here, you will find the preview URL. Copy and paste this into browser.\n\n\n\n[SCREENSHOT]\n\n3.1 Rendering from the terminal\nYou can also build your site using command-line tools. The terminal is simply a text-based way to type commands directly, rather than clicking buttons.\nTwo helpful commands are:\n\nquarto render - builds your website.\nquarto preview - builds and opens a live-updating preview.",
     "crumbs": [
       "GitHub",
       "Tutorial",

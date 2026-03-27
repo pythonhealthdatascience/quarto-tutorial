@@ -279,8 +279,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Web pages are written in <strong>HTML</strong> (HyperText Markup Language), which uses tags like <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code> to describe how things should look.</p>
-<p>In a Markdown document, you can sometimes mix in small pieces of HTML.<br>
-This is called <strong>inline HTML</strong>: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.</p>
+<p>In a Markdown document, you can sometimes mix in small pieces of HTML. This is called <strong>inline HTML</strong>: you add a tiny HTML tag inside a sentence, and Quarto keeps it when it turns your page into HTML.</p>
 <p><strong>Caveat:</strong> raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.</p>
 <section id="line-break" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="line-break"><span class="header-section-number">1</span> Line break</h2>
@@ -317,31 +316,10 @@ This is called <strong>inline HTML</strong>: you add a tiny HTML tag inside a se
 </ul>
 </div>
 </section>
-<section id="custom-links" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="custom-links"><span class="header-section-number">4</span> Custom links</h2>
-<p>If you want more control over a link (for example, to open it in a new tab), you can write it in HTML instead of plain Markdown.</p>
-<p>In the HTML link below:</p>
-<ul>
-<li><code>href</code> is the web address you are linking to.</li>
-<li>The text between <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code> is what the reader clicks on.</li>
-<li><code>target="_blank"</code> tells the browser to open the link in a new tab.</li>
-<li><code>rel="noopener"</code> is a small security and performance setting that stops the new page from being able to control the original tab.</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.exeter.ac.uk"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"noopener"</span><span class="dt">&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  Visit the University of Exeter website</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><a href="https://www.exeter.ac.uk" target="_blank" rel="noopener"> Visit the University of Exeter website </a></p>
-<div class="pale-blue">
-<p><strong>Task:</strong> In <code>html.qmd</code>:</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Create a link that opens in a new tab by default.</label></li>
-</ul>
-</div>
-</section>
-<section id="abbreviations" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="abbreviations"><span class="header-section-number">5</span> Abbreviations</h2>
+<section id="abbreviations" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="abbreviations"><span class="header-section-number">4</span> Abbreviations</h2>
 <p>You can explain abbreviations by using the <code>&lt;abbr&gt;</code> tag with a <code>title</code> attribute. When someone hovers over it in a browser, they see the full phrase.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">abbr</span><span class="ot"> title</span><span class="op">=</span><span class="st">"Randomised Controlled Trial"</span><span class="dt">&gt;</span>RCT<span class="dt">&lt;/</span><span class="kw">abbr</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">abbr</span><span class="ot"> title</span><span class="op">=</span><span class="st">"Randomised Controlled Trial"</span><span class="dt">&gt;</span>RCT<span class="dt">&lt;/</span><span class="kw">abbr</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><abbr title="Randomised Controlled Trial">RCT</abbr></p>
 <p>Alternatively, you can use footnotes <strong>?@sec-footnotes</strong> to explain the term.</p>
 <div class="pale-blue">
