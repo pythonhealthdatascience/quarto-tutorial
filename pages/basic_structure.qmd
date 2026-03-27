@@ -2,14 +2,177 @@
 title: Basic structure
 ---
 
-explain basic structure of quarto website
+## Introduction to RStudio
 
-i.e., walkthrough of provided codespace.
+TODO
 
-then, quarto render and quarto preview
-(or perhaps that's another page?)
-explain: what is terminal
-(OR show just via buttons?)
+<!-- Rough notes...
 
-https://quarto.org/docs/books/book-output.html
-HTML books are at their core Quarto Websites with some special navigational behavior built in.
+BE SUPER CLEAR that this is just somewhere to run quarto and that focus of this session is not on code (though will do at the very end).
+
+If youre not someone who has coded / used R
+no worry
+not needed for session
+and not needed for quarto
+
+so why are we using rstudio?
+
+explain- need an IDE - one of the really cool things they can do is include executable code e.g., R and Python - come onto that at the end - but also, can make sites without
+
+best interfaces for making quarto sites? things like rstudio, positron and vscode.
+they just are what exist.
+
+explain basic interface
+- text editor
+- console / terminal / background jobs - explain each
+- environment
+- files, help, plots
+
+we are going to look at files...
+-->
+
+## Introduce to Quarto websites
+
+We'll be creating a **Quarto website**, but it's worth knowing that Quarto can produce many things. See the [Quarto documentation](https://quarto.org/docs/guide/) for examples - options include:
+
+* Presentations
+* Dashboards
+* Manuscripts
+* Documents
+* Books
+
+A simple website project just needs **two key files**:
+
+1. `_quarto.yml`
+2. `index.qmd`
+
+### `_quarto.yml`
+
+This is file defines your **project settings** and **website structure**.
+
+TODO: Add explanation. A yml file is YAML. plain text format. uses key-value pairs to store settings. YAML ("YAML Ain't Markup Language") is a simple format using key–value pairs, like:
+
+Below is an example from [quarto-template](https://github.com/pythonhealthdatascience/quarto-template){target="_blank"}. Hover over each line to see an explanation:
+
+```yaml
+project: # <1>
+  type: website # <1>
+
+website: # <1>
+  title: "Quarto Template" # <2>
+  favicon: images/exeter.png # <3>
+  navbar: # <4>
+    right: # <5>
+      - icon: github # <5>
+        text: GitHub # <5>
+        href: https://github.com/pythonhealthdatascience/quarto-template/ # <5>
+  sidebar: # <6>
+    - logo: images/exeter.png # <7>
+      contents: # <8>
+        - text: Overview # <8>
+          href: index.qmd # <8>
+        - pages/TODO.qmd # <8>
+```
+
+1. **Website:** Defines that this project builds as a website.
+2. **Website title:** Appears in broswer tab and navbar. 
+3. **Favicon:** The small icon shown on the tab (often a logo).
+4. **Navbar:** The navigation bar across the top of your site.
+5. **GitHub link:** Adds a GitHub icon on the right side of the navbar linking to the repository (which contains the source files for the site).
+6. **Sidebar:** Displays navigation links down the left-hand side.
+7. **Logo:** The image shown at the top of the sidebar.
+8. **Sidebar contents:** Lists website pages. Will list using page titles by default, but can override with `text` (title to use) and `href` (path to file).
+
+::: {.callout-note title="Optional extra: books" collapse="true"}
+
+A **Quarto book** is basically a website with chapter-style navigation. Under the hood, it's still a Quarto website - just organised a little differently.
+
+See the [books guide](https://quarto.org/docs/books/book-output.html) for more information.
+
+Example:
+
+```yaml
+project:
+  type: book
+
+book:
+  title: "Quarto Template"
+  favicon: images/exeter.png
+  chapters:
+    - text: Overview
+      href: index.qmd
+    - pages/TODO.qmd
+  navbar:
+    right:
+      - icon: github
+        text: GitHub
+        href: https://github.com/pythonhealthdatascience/quarto-template/
+  sidebar:
+    logo: images/exeter.png
+```
+
+:::
+
+### `index.qmd`
+
+A `.qmd` file is a **Quarto Markdown** document.
+
+> If you're familiar with R Markdown (`.Rmd`), these are similar, but `.qmd` is more flexible.
+
+`index.qmd` servers as the **homepage** of your website.
+
+Each `.qmd` file begins with **YAML front matter**, enclosed by three dashes (`---`). This defines metadata such as the page title.
+
+> Alternative way of doing this would be `# My homepage`. TODO: SO WHY DO IT IN YAML?
+
+Below that is the page. Here we just have one sentence: `This is my homepage.`.
+
+```qmd
+---
+title: My homepage
+---
+
+
+This is my homepage.
+```
+
+## Rendering your website
+
+**Rendering** means converting your Quarto source files into the final website - a colelction of `.html` pages that live inside a folder called `_site`.
+
+To render in RStudio...
+
+1. Open `index.qmd` in the editor.
+
+[SCREENSHOT]
+
+2. Click the blue **Render** button (the arrow icon) at the top of the editor.
+
+[SCREENSHOT]
+
+RStudio will:
+
+* Create the `_sites/` folder containing your rendered site.
+* Open a **live preview** in your browser.
+
+TODO: EXPLAIN LIVE PREVIEW url... its local host... display via browser...
+
+::: {.callout-tip title="Troubleshooting"}
+
+The preview may not open automatically if your browser blocks the pop-up. To resolve this, you should either:
+
+* Click to allow pop-ups in your browsers, then click **Render** again.
+* Go to the **Background Jobs** tab in the bottom left. This is where lgos from rendering quarot site are shown. Here, you will find the preview URL. Copy and paste this into browser.
+
+:::
+
+[SCREENSHOT]
+
+### Rendering from the terminal
+
+You can also build your site using command-line tools. The terminal is simply a text-based way to type commands directly, rather than clicking buttons.
+
+Two helpful commands are:
+
+* `quarto render` - builds your website.
+* `quarto preview` - builds and opens a live-updating preview.
