@@ -35,7 +35,7 @@
       code: https://github.com/mayaogonah/forensic-risk
       thumbnail: examples/violence.png
     - title: Analysis for Large-scale clustering of longitudinal faecal calprotectin and C-reactive protein profiles in inflammatory bowel disease
-      subtitle: Presents the analyses carreid out in their <a href="https://doi.org/10.1016/j.cgh.2025.12.022">paper</a>.
+      subtitle: Presents the analyses carried out in their <a href="https://doi.org/10.1016/j.cgh.2025.12.022">paper</a>.
       href: https://vallejosgroup.github.io/IBD-Inflammatory-Patterns/
       code: https://github.com/VallejosGroup/IBD-Inflammatory-Patterns
       thumbnail: examples/faecal_calprotectin.png
@@ -230,6 +230,12 @@
   description: |
     Personal websites and blogs for researchers.
   tiles:
+    - title: Sammi Rosser
+      subtitle:
+      href: https://sammirosser.com/
+      code: https://github.com/Bergam0t/bergam0t.github.io
+      thumbnail: examples/sammi_rosser.png
+      categories: [University of Exeter]
     - title: Andrew Heiss
       subtitle: 
       href: https://www.andrewheiss.com/
