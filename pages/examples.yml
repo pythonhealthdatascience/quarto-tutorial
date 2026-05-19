@@ -230,6 +230,12 @@
   description: |
     Personal websites and blogs for researchers.
   tiles:
+    - title: Amy Heather
+      subtitle:
+      href: https://amyheather.github.io/
+      code: https://github.com/amyheather/amyheather.github.io/
+      thumbnail: examples/amy_heather.png
+      categories: [University of Exeter]
     - title: Sammi Rosser
       subtitle:
       href: https://sammirosser.com/
