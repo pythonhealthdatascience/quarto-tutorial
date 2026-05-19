@@ -20,3 +20,32 @@ h4 {
   position: relative;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
 }
+
+/* Iframe wrapper and header */
+
+.iframe-preview {
+  display: block;
+  width: 100%;
+  border: 8px solid #5a302f;
+}
+
+.iframe-header {
+  background-color: #5a302f;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.iframe-header a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.iframe-header a:hover,
+.iframe-header a:focus {
+  text-decoration: none;
+}

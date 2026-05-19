@@ -1,19 +1,141 @@
 ---
 title: Why make a website for your research?
+format: 
+  html:
+    page-layout: full
 ---
 
-Research compendium
+Quarto lets you create free, professional websites. This page explains why researchers use them and the kinds of things you can make.
 
-Paper - report method - actual code - generate
+## Your research project
 
-share research
-all the details included
+Research tends to accumulate across many different places - Word documents, PDFs, data files, presentations, emails, code repositories. It can be hard for collaborators to find things, and nearly impossible for anyone outside the project to navigate. Much of it stays hidden.
 
-more than just appendices and paper
-searchable
-interactive
-mixed media
+A Quarto website can bring everything together in one place that anyone can visit. It's relevant to any kind of research (qualitative or quantitative) and you can include whatever makes sense for your project:
 
-examples
+- An overview of the study and its aims
+- Relevant documents, reports, and materials
+- Embedded videos, presentations, and visualisations
+- Notes, updates, or a log of progress
 
-(this page could even be a quarto slideshow?)
+If your research involves code (Python, R, etc.), you can go further: run code directly within the site, display outputs automatically, and embed interactive figures. But none of that is required.
+
+A project website can accompany a journal paper as a richer alternative to a standard appendix - searchable, mixed media, and openly accessible to anyone. Or it can simply serve as a research compendium: everything in one place, properly organised.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://the-epic-study.quarto.pub/the-epic-project/"
+  title="The Early Psychosis: Investigating Cognition (EPIC) Project">
+</iframe>
+
+## Homepage for a research programme or team
+
+If you lead a group, collaborate across institutions, or are part of a larger programme of work, a Quarto website can serve as the public-facing home for everything you do.
+
+This might include:
+
+- An overview of the programme's aims and funding
+- Profiles of team members (Quarto has built-in "about page" templates)
+- A list of outputs: papers, datasets, tools, presentations
+- News or blog posts about recent developments
+- Links to resources for collaborators or the public
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://pythonhealthdatascience.github.io/stars/"
+  title="STARS">
+</iframe>
+
+## Training, modules, and courses
+
+Quarto is widely used for teaching materials. Course notes, worked examples, exercises, and slide decks can all live together on one structured, searchable site that learners can work through
+
+The site can be open to anyone, easy to update and verion controlled, so you always know what changed and when.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://sta210-s22.github.io/website/"
+  title="STA 210: Regression Analysis">
+</iframe>
+
+## Researcher profiles
+
+You can create a personal academic website that goes far beyond a LinkedIn profile or institutional staff page. A researcher profile site lets you present your work exactly as you want to, with your own design and structure. You can include your biography, research interests, publications, teaching, and links to your other profiles online.
+
+You can also have a blog - a place to share updates, write about your work, or post short pieces between papers.
+
+It can also move with you if you change institutions.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://amyheather.github.io/"
+  title="Amy Heather">
+</iframe>
+
+## Manuscripts
+
+Quarto has a dedicated manuscripts format for scholarly articles. You write your paper in Quarto and can output it as a website, a PDF, or a Word document - all from the same source file.
+
+This won't be relevant to everyone - but for research involving data analysis, you can embed code meaning your figures and results are always generated directly from the analysis — nothing can go out of sync.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://daniel1noble.github.io/ecoevo_1000/"
+  title="Supplementary Materials for: The promise of community-driven preprints in ecology and evolution">
+</iframe>
+
+## Conferences and events
+
+If you are hosting an event - a workshop, symposium, summer school, or conference - Quarto works well here too. You can publish the programme, abstracts, speaker information, and practical details before the event, then add slides, recordings, and notes afterwards, all on the same site.
+
+Because the site is just files in a repository, multiple organisers can contribute to it, and it can be updated easily as the event approaches and after it ends.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="https://drganghe.github.io/climate-guest-speakers/"
+  title="Climate Guest Speakers">
+</iframe>
+
+## Package documentation
+
+If you develop a software package - in Python, R, or another language - Quarto is a great way to write its documentation. You can include installation instructions, usage guides, tutorials, and examples, all in one navigable site.
+
+Example:
+
+<iframe
+  class="auto-preview"
+  width="100%"
+  height="800"
+  src="http://hsma-tools.github.io/vidigi/vidigi_docs/"
+  title="vidigi">
+</iframe>
+
+## Next steps
+
+The rest of this tutorial will walk you through how to create a Quarto website from scratch — we'll build one together.
+
+When you reach the end, head to the [Examples](examples.qmd) page to see a much larger collection of real research websites built with Quarto, covering all of the categories above and more.

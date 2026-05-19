@@ -70,36 +70,6 @@
       code: https://github.com/danielvartan/mastersthesis
       thumbnail: examples/masters.png
 
-- category: Manuscripts
-  description: |
-    Papers wrote fully using Quarto.
-  tiles:
-    - title: Towards an open-source model for data and metadata standards
-      subtitle: Online report with background/methods/results and links to extra pages providing more details.
-      href: https://uwescience.github.io/2024-open-source-standards-report/
-      code: https://github.com/uwescience/2024-open-source-standards-report
-      thumbnail: examples/towards.png
-    - title: Analysis of human visual experience data
-      subtitle: Manuscript and supplementary materials
-      href: https://tscnlab.github.io/ZaunerEtAl_JVis_2026/
-      code: https://github.com/tscnlab/ZaunerEtAl_JVis_2026
-      thumbnail: examples/visual.png
-    - title: "Supplementary Materials for: The promise of community-driven preprints in ecology and evolution"
-      subtitle: 
-      href: https://daniel1noble.github.io/ecoevo_1000/
-      code: https://github.com/daniel1noble/ecoevo_1000
-      thumbnail: examples/supplementary.png
-    - title: Clinical Performance of Tumor-Informed versus Tumor-Agnostic ctDNA Assays for Colorectal Cancer Recurrence
-      subtitle: Webpage-based report for systematic review and meta-analysis <a href="https://doi.org/10.1016/j.ctrv.2025.103066">paper</a>.
-      href: https://crct-bioinformatics.github.io/TIvsTA-DAMA/
-      code: https://github.com/CRCT-bioinformatics/TIvsTA-DAMA
-      thumbnail: examples/tumor.png
-    - title: Dissociating mechanisms of heart-voice coupling
-      subtitle: Extended results and supplementary information for their <a href="https://www.biorxiv.org/content/10.64898/2025.12.01.691544v1.full.pdf">paper</a>.
-      href: https://wimpouw.github.io/VoiceAndHeart/heartrate_expire
-      code:
-      thumbnail: examples/dissociating.png
-
 - category: Homepage for research programme or team
   description: |
     Overarching homepages that present an entire project, programme, lab, or community, bringing together people, research, resources, news, and key links in one place.
@@ -297,6 +267,36 @@
       href: https://alburycatalina.github.io/
       code: https://github.com/alburycatalina/alburycatalina.github.io
       thumbnail: examples/albury_c.png
+
+- category: Manuscripts
+  description: |
+    Papers wrote fully using Quarto.
+  tiles:
+    - title: Towards an open-source model for data and metadata standards
+      subtitle: Online report with background/methods/results and links to extra pages providing more details.
+      href: https://uwescience.github.io/2024-open-source-standards-report/
+      code: https://github.com/uwescience/2024-open-source-standards-report
+      thumbnail: examples/towards.png
+    - title: Analysis of human visual experience data
+      subtitle: Manuscript and supplementary materials
+      href: https://tscnlab.github.io/ZaunerEtAl_JVis_2026/
+      code: https://github.com/tscnlab/ZaunerEtAl_JVis_2026
+      thumbnail: examples/visual.png
+    - title: "Supplementary Materials for: The promise of community-driven preprints in ecology and evolution"
+      subtitle: 
+      href: https://daniel1noble.github.io/ecoevo_1000/
+      code: https://github.com/daniel1noble/ecoevo_1000
+      thumbnail: examples/supplementary.png
+    - title: Clinical Performance of Tumor-Informed versus Tumor-Agnostic ctDNA Assays for Colorectal Cancer Recurrence
+      subtitle: Webpage-based report for systematic review and meta-analysis <a href="https://doi.org/10.1016/j.ctrv.2025.103066">paper</a>.
+      href: https://crct-bioinformatics.github.io/TIvsTA-DAMA/
+      code: https://github.com/CRCT-bioinformatics/TIvsTA-DAMA
+      thumbnail: examples/tumor.png
+    - title: Dissociating mechanisms of heart-voice coupling
+      subtitle: Extended results and supplementary information for their <a href="https://www.biorxiv.org/content/10.64898/2025.12.01.691544v1.full.pdf">paper</a>.
+      href: https://wimpouw.github.io/VoiceAndHeart/heartrate_expire
+      code:
+      thumbnail: examples/dissociating.png
 
 - category: Conferences and events
   description: |
