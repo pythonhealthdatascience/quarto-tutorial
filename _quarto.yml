@@ -21,7 +21,8 @@ website:
     contents:
       - text: Welcome
         href: index.qmd
-      - pages/why.qmd
+      - text: "Slides: Why make a website for your research?"
+        href: pages/why.qmd
       - section: "Tutorial"
         contents:
           - pages/setup.qmd
@@ -44,6 +45,7 @@ website:
 format:
   html:
     number-sections: true
+    lightbox: true
     theme:
       - cosmo
       - styles/theme.scss
