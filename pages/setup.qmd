@@ -9,6 +9,7 @@ title: Set-up
 * Create a GitHub account.
 * Open the Quarto website template in a web browser.
 * Start a GitHub Codespace from the template.
+* Introduce VSCode.
 
 :::
 
