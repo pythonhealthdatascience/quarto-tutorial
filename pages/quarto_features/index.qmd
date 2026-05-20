@@ -1,7 +1,19 @@
 ---
-title: Quarto features
+title: "Exercise 3. Quarto features"
 bibliography: references.bib
 ---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* See how Quarto builds on Markdown with extra features.
+* Create callouts and columns using fenced blocks.
+* Add links that open in a new tab, footnotes, and definition lists.
+* Practice citations, cross‑references, math, and line blocks.
+* Reuse content with includes.
+
+:::
 
 In the last page, you worked with Markdown, which is a simple way to format text that works in lots of tools. Quarto lets you keep using that same Markdown, but it also adds extra features on top.
 

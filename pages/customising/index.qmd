@@ -1,5 +1,5 @@
 ---
-title: Customising the site appearance
+title: "Exercise 6. Customising the site appearance"
 ---
 
 themes

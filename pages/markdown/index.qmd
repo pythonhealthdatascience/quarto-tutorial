@@ -1,6 +1,16 @@
 ---
-title: "Markdown basics"
+title: "Exercise 2. Markdown basics"
 ---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+- Learn what Markdown is and how it relates to Quarto.
+- Practice headings, emphasis, lists and links.
+- Use quotes, code, tables and checklists to structure information.
+
+:::
 
 > **Acknowledgements:** This page is adapted from [health-data-science-OR/jupyterlab-introduction](https://github.com/health-data-science-OR/jupyterlab-introduction/blob/main/01_basic_markdown.ipynb).
 

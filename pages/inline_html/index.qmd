@@ -1,6 +1,16 @@
 ---
-title: Inline HTML
+title: "Exercise 5. Inline HTML"
 ---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* See how HTML tags can be mixed into Markdown.
+* Use inline HTML for line breaks, small print and keyboard keys.
+* Add helpful abbreviations that show full text on hover.
+
+:::
 
 Web pages are written in **HTML** (HyperText Markup Language), which uses tags like `<p>`, `<a>`, and `<strong>` to describe how things should look.
 
