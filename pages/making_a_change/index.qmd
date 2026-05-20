@@ -1,0 +1,42 @@
+---
+title: Making a change
+---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* Make a small change to your site.
+* See how that change appears in the live preview.
+* Save your work with a Git commit.
+
+:::
+
+## Make a small change
+
+1. Open the file `1_making_a_change.qmd`.
+
+2. Add a short line of text in the body - for example:
+
+```{.markdown}
+This is my change.
+```
+
+3. If the preview is still running: just save your files; the browser should refresh automatically. If it is not running, re-open it using the <kbd>Preview</kbd> button or by running `quarto preview` in the Terminal.
+
+Does the page show your updated title and text?
+
+## Save your change with Git
+
+We are working on github codespaces.
+github... versionl control...
+multiple copeis over time...
+Do so using commit.
+A commit is like a snapshot of your project at a particular moment in time. When you commit, Git records what changed, who changed it, and a short message describing the change.
+We are going to commit our change.
+
+1. Click on the Source Control button in the sidebar.
+
+2. Click + for file changed.
+
+3. Write a short message e.g., "Made a change to a file."

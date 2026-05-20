@@ -108,15 +108,15 @@ This is my homepage.
 
 **Option 1: Preview button.** Open `index.qmd` in the editor, and click the **Preview** button in the top right hand corner
 
-![](basic_structure/preview_button.drawio.png)
+![](preview_button.drawio.png){fig-alt="Screenshot of VSCode with Preview button circled."}
 
 **Option 2: Terminal.** In the bottom panel, ensure you are on the **Terminal** tab. The Terminal is a place where you type commands instead of clicking buttons. We just need to type `quarto preview` then press <kbd>Enter</kbd> on your keyboard.
 
-![](basic_structure/preview_terminal.drawio.png)
+![](preview_terminal.drawio.png){fig-alt="Screenshot of VSCode with 'quarto preview' command in Terminal circled."}
 
 After either of these, you should see it says **Preparing to preview** and runs through files. It is creating `_sites/` folder containing your rendered site. Then when it is done, green text saying `Browse at ...`.
 
-![](basic_structure/preparing_preview.png)
+![](preparing_preview.png){fig-alt="Screenshot of the 'Preparing to preview' message in the Terminal."}
 
 Open that link, by doing <kbd>Ctrl</kbd> and click, or by simply copying and pasting the link into your web browser.
 
@@ -124,4 +124,4 @@ This will open a **live preview** of your site in the browser. Keep the browser 
 
 Nothing is public yet; this preview only runs on your own computer. In other words, you are the only person who can see this site right now, and it will not appear on the internet until you deliberately publish or upload the rendered files somewhere.
 
-![](basic_structure/site.png)
+![](site.png){fig-alt="Screenshot of the rendered site."}

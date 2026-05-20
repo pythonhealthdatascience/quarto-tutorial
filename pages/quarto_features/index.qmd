@@ -1,6 +1,6 @@
 ---
 title: Quarto features
-bibliography: quarto_features/references.bib
+bibliography: references.bib
 ---
 
 In the last page, you worked with Markdown, which is a simple way to format text that works in lots of tools. Quarto lets you keep using that same Markdown, but it also adds extra features on top.
@@ -308,7 +308,7 @@ By default, columns share the space equally. You can control their width by addi
 
 ## Link that opens in a new tab by default
 
-You'll recall from the [Markdown](markdown.qmd) page that we can create a link using `[text](link)`.
+You'll recall from the [Markdown](/pages/markdown/index.qmd) page that we can create a link using `[text](link)`.
 
 In Quarto, we can amend the link so it opens in a new tab by default by adding `{target="_blank"}` to the end.
 
@@ -360,7 +360,7 @@ A bibliography file (with extension `.bib`) is a text file that stores informati
 
 ::: {.callout-note title="View `references.bib`" collapse="true"}
 ```bib
-{{< include quarto_features/references.bib >}}
+{{< include references.bib >}}
 ```
 :::
 

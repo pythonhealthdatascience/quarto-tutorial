@@ -235,15 +235,15 @@ Installation instructions, usage guides, tutorials, and examples, all in one nav
 
 The rest of this tutorial will walk you through how to create a Quarto website from scratch — **we'll build one together**.
 
-[Go to tutorial →](/pages/setup.qmd)
+[Go to tutorial →](/pages/setup/index.qmd)
 
-At the end, head to the [Examples](examples.qmd) page to see a much larger collection of real research websites built with Quarto, covering all of the categories above and more.
+At the end, head to the [Examples](/pages/examples/index.qmd) page to see a much larger collection of real research websites built with Quarto, covering all of the categories above and more.
 
 :::
 
 ::: {.column width="40%"}
 
-[![](/images/examples_page_screenshot.png)](/pages/examples.qmd)
+[![](/images/examples_page_screenshot.png)](/pages/examples/index.qmd)
 
 :::
 :::

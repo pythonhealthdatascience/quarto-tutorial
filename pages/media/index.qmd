@@ -186,11 +186,11 @@ Sometimes you may want a header above the iframe.... distinguish embedded page f
 You can embed a PDF so that it appears inside the page. The simplest way (using raw HTML) is:
 
 ```markdown
-<embed src="media/example.pdf" width="100%" height="1000px" />
+<embed src="example.pdf" width="100%" height="1000px" />
 ```
 
 ```{=html}
-<embed src="media/example.pdf" width="100%" height="1000px" />
+<embed src="example.pdf" width="100%" height="1000px" />
 ```
 
 ::: {.callout-note title="Advanced Extra: Responsive Container" collapse="true"}

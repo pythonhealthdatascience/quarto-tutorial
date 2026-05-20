@@ -1,0 +1,24 @@
+---
+title: Customising the site appearance
+---
+
+themes
+css
+colours
+titles
+headings
+interacting with quarto.yml
+and css
+screen width
+
+## Styled span
+
+Highlight <span style="background: yellow;">this bit</span>.
+
+::: {.pale-blue}
+
+**Task:** In `html.qmd`:
+
+* [ ]
+
+:::

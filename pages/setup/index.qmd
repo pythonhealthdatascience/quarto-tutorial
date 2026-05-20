@@ -21,7 +21,7 @@ When your work is on GitHub, it is backed up in the cloud and you can access it 
 
 Sign up for an account here: <https://github.com/signup>
 
-[![](setup/github_account.png){fig-alt="Screenshot from GitHub page to create a new account."}](https://github.com/signup)
+[![](github_account.png){fig-alt="Screenshot from GitHub page to create a new account."}](https://github.com/signup)
 
 ## Go to our template repository
 
@@ -31,7 +31,7 @@ Our template repository is a ready-made project you can copy, so you start with 
 
 Go to our template repository here: <https://github.com/pythonhealthdatascience/quarto-template>
 
-[![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/quarto-template.png){fig-alt="Screenshot of quarto-template GitHub repository"}](https://github.com/pythonhealthdatascience/quarto-template)
+[![It may look a little different from this screenshot if we have changed the repository since writing this page!](quarto-template.png){fig-alt="Screenshot of quarto-template GitHub repository"}](https://github.com/pythonhealthdatascience/quarto-template)
 
 ## Open GitHub codespaces
 
@@ -39,13 +39,13 @@ Go to our template repository here: <https://github.com/pythonhealthdatascience/
 
 To open a codespace from the template repository, click the green **Code** button, then choose the **Codespaces** tab, and click **Create codespace on main**.
 
-![](setup/create_codespace.png){fig-align="center" fig-alt="Screenshot of repository showing Code > Codespaces > Create codespace on main"}
+![](create_codespace.png){fig-align="center" fig-alt="Screenshot of repository showing Code > Codespaces > Create codespace on main"}
 
 > You may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.
 
 GitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.
 
-![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
+![It may look a little different from this screenshot if we have changed the repository since writing this page!](open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
 
 ## Welcome to VSCode
 
@@ -61,7 +61,7 @@ The layout is split into a few main areas:
 * **Bottom panel:** a shared area that can show different tools.
 * **Build with AI agent:** an optional assistant built into VSCode to help people who are writing code - we do not need this panel, so can close it by clicking the **x** on its tab.
 
-![](setup/codespace_labels.drawio.png)
+![](codespace_labels.drawio.png)
 
 ## Reopening your Codespace
 
@@ -69,7 +69,7 @@ If you close your Codespace and want to get back to it later (with all your chan
 
 Click the <kbd><> Code</kbd> button, open the <kbd>Codespaces</kbd> tab, and select your existing Codespace from the list.
 
-![](setup/reopen_codespace.png){fig-align="center" fig-alt="Screenshot of existing Codespace list."}
+![](reopen_codespace.png){fig-align="center" fig-alt="Screenshot of existing Codespace list."}
 
 Your codespace will automatically shut down after a period of inactivity (**30 minutes** by default) to save resources, but any edits you've saved will still be there when you reopen it.
 
