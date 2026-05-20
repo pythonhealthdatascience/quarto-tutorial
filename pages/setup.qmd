@@ -46,6 +46,22 @@ GitHub will take a minute to prepare your Codespace, then open an editor in the 
 
 ![It may look a little different from this screenshot if we have changed the repository since writing this page!](setup/open_codespace.png){fig-alt="Screenshot of the generated GitHub codespace."}
 
+## Welcome to VSCode
+
+When your Codespace opens, you are using **VSCode (Visual Studio Code)** in your web browser.
+
+VSCode is an **IDE (Integrated Development Environment)**. That sounds technical, but in simple terms it is just an application that helps you work with files in one place. You can open, edit, and organise your project without needing lots of different tools.
+
+The layout is split into a few main areas:
+
+* **File explorer (left side)**: shows all the files in your project, you can click any file to open it.
+* **Editor (centre):** this is where you read and edit your files.
+* **Top tabs:** each open file appears as a tab, so you can switch between them.
+* **Bottom panel:** a shared area that can show different tools.
+* **Build with AI agent:** an optional assistant built into VSCode to help people who are writing code - we do not need this panel, so can close it by clicking the **x** on its tab.
+
+![](setup/codespace_labels.drawio.png)
+
 ## Reopening your Codespace
 
 If you close your Codespace and want to get back to it later (with all your changes still there), just return to the same GitHub repository.
@@ -57,5 +73,7 @@ Click the <kbd><> Code</kbd> button, open the <kbd>Codespaces</kbd> tab, and sel
 Your codespace will automatically shut down after a period of inactivity (**30 minutes** by default) to save resources, but any edits you've saved will still be there when you reopen it.
 
 By default, inactive codespaces are deleted after **30 days**.
+
+<br><br>
 
 For this workshop, we're using GitHub Codespaces because it's quick and easy to get started without installing anything. However, if you plan to work on similar projects regularly, we recommend **installing the required tools** (e.g., R and RStudio) on your own computer for more flexibility and long-term use.
