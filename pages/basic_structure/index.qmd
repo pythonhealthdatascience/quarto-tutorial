@@ -104,24 +104,36 @@ This is my homepage.
 
 ## Rendering your website
 
-**Rendering** means converting your Quarto source files into the final website - a colelction of `.html` pages that live inside a folder called `_site`. There are two ways to do this.
+**Rendering** means converting your Quarto source files into the final website - a collection of `.html` pages that live inside a folder called `_site`. To render your site:
 
-**Option 1: Preview button.** Open `index.qmd` in the editor, and click the **Preview** button in the top right hand corner
+1. Open `index.qmd` in the editor, and click the **Preview** button in the top right hand corner
 
-![](preview_button.drawio.png){fig-alt="Screenshot of VSCode with Preview button circled."}
+![](preview_button.drawio.png){fig-alt="Screenshot of VSCode with Preview button circled."} 
 
-**Option 2: Terminal.** In the bottom panel, ensure you are on the **Terminal** tab. The Terminal is a place where you type commands instead of clicking buttons. We just need to type `quarto preview` then press <kbd>Enter</kbd> on your keyboard.
-
-![](preview_terminal.drawio.png){fig-alt="Screenshot of VSCode with 'quarto preview' command in Terminal circled."}
-
-After either of these, you should see it says **Preparing to preview** and runs through files. It is creating `_sites/` folder containing your rendered site. Then when it is done, green text saying `Browse at ...`.
+2. In the bottom panel in the Terminal, you should see it says **Preparing to preview** and runs through files. It is creating `_sites/` folder containing your rendered site. Then when it is done, green text saying `Browse at ...`.
 
 ![](preparing_preview.png){fig-alt="Screenshot of the 'Preparing to preview' message in the Terminal."}
 
-Open that link, by doing <kbd>Ctrl</kbd> and click, or by simply copying and pasting the link into your web browser.
+3. You are now viewing a **live preview** of your site in the browser. Nothing is public yet; this preview only runs on your own computer. In other words, you are the only person who can see this site right now, and it will not appear on the internet until you deliberately publish or upload the rendered files somewhere.
 
-This will open a **live preview** of your site in the browser. Keep the browser open while you edit; every time you save a Quarto file, the preview will auto-refresh so you can immediately see your changes without re-running any commands.
+    By default, VSCode will open the preview in-line. This will be quite a small preview - to open it in a new tab, either copy the URL from the Terminal (`http://localhost:...`) or click the "Open in Browser" button in the top right.
 
-Nothing is public yet; this preview only runs on your own computer. In other words, you are the only person who can see this site right now, and it will not appear on the internet until you deliberately publish or upload the rendered files somewhere.
+![](inline.png){fig-alt="Screenshot of preview opened in-line, with cursor hovering over the 'Open in Browser' button."}
 
-![](site.png){fig-alt="Screenshot of the rendered site."}
+<br>
+
+
+
+::: {.callout-note title="Optional extra: rendering via the terminal" collapse="true"}
+
+Alternatively, you can render and preview your site directly via commands in the terminal.
+
+In the bottom panel, ensure you are on the **Terminal** tab. The Terminal is a place where you type commands instead of clicking buttons. We just need to type `quarto preview` then press <kbd>Enter</kbd> on your keyboard.
+
+![](preview_terminal.drawio.png){fig-alt="Screenshot of VSCode with 'quarto preview' command in Terminal circled."}
+
+You can then use the `http://localhost:...` link printed in the Terminal to open your site in the browser.
+
+With this method, the site updates automatically whenever files are saved. In Codespaces, files are auto‑saved very frequently, so the preview will re-render often; for that reason, the **Preview** button described above is usually a calmer option during this workshop.
+
+:::
