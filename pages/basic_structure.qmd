@@ -2,55 +2,27 @@
 title: Basic structure
 ---
 
-## Introduction to RStudio
+::: {.pale-blue}
 
-TODO
+**On this page we will:**
 
-<!-- Rough notes...
+* Understand the two core files in a basic Quarto website.
+* Learn how to render and preview the website.
 
-BE SUPER CLEAR that this is just somewhere to run quarto and that focus of this session is not on code (though will do at the very end).
+:::
 
-If youre not someone who has coded / used R
-no worry
-not needed for session
-and not needed for quarto
+<br>
 
-so why are we using rstudio?
-
-explain- need an IDE - one of the really cool things they can do is include executable code e.g., R and Python - come onto that at the end - but also, can make sites without
-
-best interfaces for making quarto sites? things like rstudio, positron and vscode.
-they just are what exist.
-
-explain basic interface
-- text editor
-- console / terminal / background jobs - explain each
-- environment
-- files, help, plots
-
-we are going to look at files...
--->
-
-## Introduce to Quarto websites
-
-We'll be creating a **Quarto website**, but it's worth knowing that Quarto can produce many things. See the [Quarto documentation](https://quarto.org/docs/guide/) for examples - options include:
-
-* Presentations
-* Dashboards
-* Manuscripts
-* Documents
-* Books
-
-A simple website project just needs **two key files**:
+We'll be creating a **Quarto website**. A simple website project just needs two key files:
 
 1. `_quarto.yml`
 2. `index.qmd`
 
-### `_quarto.yml`
+## `_quarto.yml`
 
 This is file defines your **project settings** and **website structure**.
 
-TODO: Add explanation. A yml file is YAML. plain text format. uses key-value pairs to store settings. YAML ("YAML Ain't Markup Language") is a simple format using key–value pairs, like:
+The file uses YAML, which is just a plain text format for settings, written as **key: value** pairs, for example `title: My website`. Indentation (spaces at the start of a line) shows that something belongs "inside" something else, a bit like folders within folders.
 
 Below is an example from [quarto-template](https://github.com/pythonhealthdatascience/quarto-template){target="_blank"}. Hover over each line to see an explanation:
 
@@ -113,21 +85,15 @@ book:
 
 :::
 
-### `index.qmd`
+## `index.qmd`
 
-A `.qmd` file is a **Quarto Markdown** document.
+A `.qmd` file is a **Quarto Markdown** document. It mixes metadata at the top, text, and (optionally) code. For a website, `index.qmd` is treated as the **homepage:** when someone visits the root of your site, Quarto serves `index.html`, which comes from `index.qmd.
 
 > If you're familiar with R Markdown (`.Rmd`), these are similar, but `.qmd` is more flexible.
 
-`index.qmd` servers as the **homepage** of your website.
+Each `.qmd` file begins with **YAML front matter**, enclosed by three dashes (`---`). This defines metadata such as the page title. Below that is the page. Here we just have one sentence: `This is my homepage.`.
 
-Each `.qmd` file begins with **YAML front matter**, enclosed by three dashes (`---`). This defines metadata such as the page title.
-
-> Alternative way of doing this would be `# My homepage`. TODO: SO WHY DO IT IN YAML?
-
-Below that is the page. Here we just have one sentence: `This is my homepage.`.
-
-```qmd
+```{.r}
 ---
 title: My homepage
 ---
@@ -138,41 +104,24 @@ This is my homepage.
 
 ## Rendering your website
 
-**Rendering** means converting your Quarto source files into the final website - a colelction of `.html` pages that live inside a folder called `_site`.
+**Rendering** means converting your Quarto source files into the final website - a colelction of `.html` pages that live inside a folder called `_site`. There are two ways to do this.
 
-To render in RStudio...
+**Option 1: Preview button.** Open `index.qmd` in the editor, and click the **Preview** button in the top right hand corner
 
-1. Open `index.qmd` in the editor.
+![](basic_structure/preview_button.drawio.png)
 
-[SCREENSHOT]
+**Option 2: Terminal.** In the bottom panel, ensure you are on the **Terminal** tab. The Terminal is a place where you type commands instead of clicking buttons. We just need to type `quarto preview` then press <kbd>Enter</kbd> on your keyboard.
 
-2. Click the blue **Render** button (the arrow icon) at the top of the editor.
+![](basic_structure/preview_terminal.drawio.png)
 
-[SCREENSHOT]
+After either of these, you should see it says **Preparing to preview** and runs through files. It is creating `_sites/` folder containing your rendered site. Then when it is done, green text saying `Browse at ...`.
 
-RStudio will:
+![](basic_structure/preparing_preview.png)
 
-* Create the `_sites/` folder containing your rendered site.
-* Open a **live preview** in your browser.
+Open that link, by doing <kbd>Ctrl</kbd> and click, or by simply copying and pasting the link into your web browser.
 
-TODO: EXPLAIN LIVE PREVIEW url... its local host... display via browser...
+This will open a **live preview** of your site in the browser. Keep the browser open while you edit; every time you save a Quarto file, the preview will auto-refresh so you can immediately see your changes without re-running any commands.
 
-::: {.callout-tip title="Troubleshooting"}
+Nothing is public yet; this preview only runs on your own computer. In other words, you are the only person who can see this site right now, and it will not appear on the internet until you deliberately publish or upload the rendered files somewhere.
 
-The preview may not open automatically if your browser blocks the pop-up. To resolve this, you should either:
-
-* Click to allow pop-ups in your browsers, then click **Render** again.
-* Go to the **Background Jobs** tab in the bottom left. This is where lgos from rendering quarot site are shown. Here, you will find the preview URL. Copy and paste this into browser.
-
-:::
-
-[SCREENSHOT]
-
-### Rendering from the terminal
-
-You can also build your site using command-line tools. The terminal is simply a text-based way to type commands directly, rather than clicking buttons.
-
-Two helpful commands are:
-
-* `quarto render` - builds your website.
-* `quarto preview` - builds and opens a live-updating preview.
+![](basic_structure/site.png)
