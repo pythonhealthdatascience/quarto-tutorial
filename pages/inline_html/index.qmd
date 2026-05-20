@@ -8,6 +8,8 @@ In a Markdown document, you can sometimes mix in small pieces of HTML. This is c
 
 **Caveat:** raw HTML is only kept when the output format supports it (for example, HTML pages). Some tags may be dropped or ignored when rendering to PDF or Word.
 
+You should complete the listed tasks in the `5_inline_html.qmd` file on your Codespace. Once you have worked through these tasks, commit and push your change.
+
 ## Line break
 
 You can insert a line break using `<br>`.

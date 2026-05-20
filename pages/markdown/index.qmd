@@ -14,6 +14,8 @@ A normal Markdown file usually ends in `.md`. In this workshop we mostly used **
 
 On this page you will practice Markdown features that you can use in your Quarto documents.
 
+You should complete the listed tasks in the `2_markdown_basics.qmd` file on your Codespace. Once you have worked through these tasks, commit and push your change.
+
 ## Headings and subheadings
 
 In Markdown, a heading is formatted with the character `#`.

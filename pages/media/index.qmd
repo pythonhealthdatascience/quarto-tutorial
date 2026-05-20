@@ -2,6 +2,8 @@
 title: Images, videos and documents
 ---
 
+You should complete the listed tasks in the `4_images_videos_documents.qmd` file on your Codespace. Once you have worked through these tasks, commit and push your change.
+
 ## Images
 
 You can add images to a Quarto page using Markdown.  

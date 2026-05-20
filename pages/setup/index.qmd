@@ -61,7 +61,7 @@ The layout is split into a few main areas:
 * **Bottom panel:** a shared area that can show different tools.
 * **Build with AI agent:** an optional assistant built into VSCode to help people who are writing code - we do not need this panel, so can close it by clicking the **x** on its tab.
 
-![](codespace_labels.drawio.png)
+![](codespace_labels.drawio.png){fig-alt="Annotated screenshot of VSCode labelling the main areas."}
 
 ## Reopening your Codespace
 

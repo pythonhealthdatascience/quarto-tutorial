@@ -9,6 +9,9 @@ Behind the scenes, Quarto uses a program called Pandoc. Pandoc takes your Markdo
 
 This page gives a quick tour of some of those "Quarto extras" that go beyond plain Markdown.
 
+You should complete the listed tasks in the `3_quarto_features.qmd` file on your Codespace. Once you have worked through these tasks, commit and push your change.
+
+
 ## Callouts
 
 Quarto extends Markdown with **callouts**, which are highlighted boxes you can use for notes, tips, or warnings.
