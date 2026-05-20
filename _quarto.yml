@@ -33,8 +33,11 @@ website:
           - pages/media/index.qmd
           - pages/inline_html/index.qmd
           - pages/customising/index.qmd
+      - pages/task/index.qmd
+      - section: "Optional extras"
+        contents:
           - pages/code/index.qmd
-          - pages/summary/index.qmd
+          - pages/blog/index.qmd
       - pages/examples/index.qmd
   page-footer:
     center:
