@@ -1,0 +1,48 @@
+---
+title: Workshop agenda
+---
+
+This is the companion website for the workshop. You will use it during the exercises, and you can refer back to it afterwards. It contains written instructions that match what we cover in the session, plus some extra material.
+
+To open this site go to:
+
+<https://tinyurl.com/quarto2026>
+
+![](quarto2026-qr.png){fig-alt="QR code"}
+
+## Session plan
+
+1. **Introduction:**
+    Short talk and demo showing how Quarto can be used in research.
+
+2. **Practical set-up and first commit:**
+   - Create or log in to a GitHub account  
+   - Open the Quarto template in GitHub Codespaces  
+   - Render the site, make a small change, and commit it to Git
+
+3. **Break**
+
+4. **Guided exercises:**
+    Work through a series of short exercises to practice:
+   - Markdown basics  
+   - Media (images, videos, documents)  
+   - Customising the appearance of your site  
+   - And a few other core features
+
+
+5. **Hosting:**
+    Finally, we will explain how to host your site online via GitHub Pages.
+
+## What to expect
+
+We have a varied cohort: some of you may already have seen GitHub, Markdown, or Quarto, and for others this will all be completely new. The workshop is designed to be accessible if you are new to these tools, so please do not worry if the terminology is unfamiliar at first.
+
+If you find you move quickly through the core exercises, there are extra pages later in this site where you can explore some more advanced concepts including:
+
+- **Task listings** (e.g. blog‑style or gallery‑style listings)  
+- **Sass and CSS**
+- Running and embedding **code** in Quarto.
+
+These are optional and aimed at those who already feel confident with the basics.
+
+You can also browse the **Examples** page, which shows a range of real Quarto sites. Each example has a link to the live site and, via the GitHub icon in the top right, a link to the source code so you can see how it was built.
