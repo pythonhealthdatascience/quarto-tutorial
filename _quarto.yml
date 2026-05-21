@@ -54,3 +54,5 @@ format:
       - styles/theme.scss
     css:
       - styles/styles.css
+    include-after-body:
+      - styles/slideshow.js
