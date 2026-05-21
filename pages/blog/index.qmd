@@ -1,3 +1,68 @@
 ---
-title: Blog
+title: Listings (e.g., blog)
+listing:
+  - id: links
+    contents: links_real.yml
+    template: links.ejs
 ---
+
+A [listing](https://quarto.org/docs/reference/projects/websites.html#listings) is a Quarto feature that automatically builds a list or grid of items for you.
+
+There are two ways to use listings:
+
+1. To show a list of **pages from your site** (e.g., a blog index listing all your posts).
+2. To show a list of **external things** (e.g., interesting projects or resources you link out to).
+
+## Listing of pages
+
+## Listing of external things
+
+**Note:** This is more advanced. The approach is based on `quarto-dev/quarto-web`'s gallery ([link](https://github.com/quarto-dev/quarto-web/blob/main/docs/gallery/gallery.ejs)).
+
+### Create a YAML file of links
+
+First, create a YAML file (e.g., `links.yml`). This contains the data for your listing page - the content your want to show, such as descriptions, links, and titles - while the page layout is handled separately by Quarto and the template below.
+
+In this example, each top-level `- category:` blcok is one section of the listing. Inside each section, the `tiles:` field contains the individual cards you want to display, and each card can have fields such as `title`, `subtitle`, `href`, and `thumbnail`.
+
+For example:
+
+```{.yaml}
+{{< include links.yml >}}
+```
+
+### Create an EJS file
+
+Next, create an EJS template file (e.g., `links.ejs`). This file tells Quarto **how to display** the data from `links.yml`, so you can think of it as the layout or "recipe" for turning your YAML data into HTML on the page.
+
+For example:
+
+````{.txt}
+{{< include links.ejs >}}
+````
+
+### Create the `.qmd` page
+
+Now create the Quarto page that will display the listing. This page connects the data file (`links.yml`) to the template file (`links.ejs`) and tells Quarto where the finished listing should be inserted.
+
+The `::: {#links}` div is where Quarto injects the rendered listing ofr the listing configuration with the same `id`.
+
+```{.md}
+---
+title: Listing
+listing:
+  - id: links
+    contents: links.yml
+    template: links.ejs
+---
+
+::: {#links}
+:::
+```
+
+To include the page in your site, add the `.qmd` file to `_quarto.yml`
+
+### Example
+
+::: {#links}
+:::
