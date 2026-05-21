@@ -36,8 +36,9 @@ website:
       - pages/task/index.qmd
       - section: "Optional extras"
         contents:
-          - pages/code/index.qmd
           - pages/blog/index.qmd
+          - pages/sass_css/index.qmd
+          - pages/code/index.qmd
       - pages/examples/index.qmd
   page-footer:
     center:
