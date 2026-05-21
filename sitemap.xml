@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/code.html</loc>
-    <lastmod>2026-05-19T13:29:00.868Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/examples/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.774Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/customising.html</loc>
-    <lastmod>2026-05-19T13:29:00.868Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/code/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.704Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/making_a_change.html</loc>
-    <lastmod>2026-05-19T13:29:00.978Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/basic_structure/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.696Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/media.html</loc>
-    <lastmod>2026-05-19T13:29:00.979Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/making_a_change/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.828Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/setup.html</loc>
-    <lastmod>2026-05-19T13:29:00.979Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/sass_css/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/why.html</loc>
-    <lastmod>2026-05-19T13:29:00.982Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/task/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.845Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/inline_html/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.827Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/CONTRIBUTING.html</loc>
-    <lastmod>2026-05-19T13:29:00.862Z</lastmod>
+    <lastmod>2026-05-21T12:00:05.688Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/index.html</loc>
-    <lastmod>2026-05-19T13:29:00.867Z</lastmod>
+    <lastmod>2026-05-21T12:00:05.696Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/examples.html</loc>
-    <lastmod>2026-05-19T13:29:00.868Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/customising/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.706Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/basic_structure.html</loc>
-    <lastmod>2026-05-19T13:29:00.867Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/media/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/quarto_features.html</loc>
-    <lastmod>2026-05-19T13:29:00.979Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/markdown/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.830Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/summary.html</loc>
-    <lastmod>2026-05-19T13:29:00.982Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/setup/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.836Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/markdown.html</loc>
-    <lastmod>2026-05-19T13:29:00.979Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/blog/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.703Z</lastmod>
   </url>
   <url>
-    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/inline_html.html</loc>
-    <lastmod>2026-05-19T13:29:00.978Z</lastmod>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/why/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/quarto-tutorial/pages/quarto_features/index.html</loc>
+    <lastmod>2026-05-21T12:00:05.831Z</lastmod>
   </url>
 </urlset>

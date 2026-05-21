@@ -1,6 +1,10 @@
 [
   {
-    "listing": "/pages/examples.html",
+    "listing": "/pages/examples/index.html",
+    "items": []
+  },
+  {
+    "listing": "/pages/blog/index.html",
     "items": []
   }
 ]
