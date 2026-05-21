@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slideshow</title>
+<style>
+  :root, [data-theme="light"] {
+    --color-bg: #f7f6f2;
+    --color-surface: #f9f8f5;
+    --color-surface-2: #fbfbf9;
+    --color-surface-offset: #f3f0ec;
+    --color-border: #d4d1ca;
+    --color-text: #28251d;
+    --color-text-muted: #7a7974;
+    --color-text-faint: #bab9b4;
+    --color-primary: #01696f;
+    --color-primary-hover: #0c4e54;
+    --shadow-md: 0 4px 12px oklch(0.2 0.01 80 / 0.08);
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-full: 9999px;
+    --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    --font-body: 'Inter', sans-serif;
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+    --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+    --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem;
+  }
+  [data-theme="dark"] {
+    --color-bg: #171614;
+    --color-surface: #1c1b19;
+    --color-surface-2: #201f1d;
+    --color-surface-offset: #1d1c1a;
+    --color-border: #393836;
+    --color-text: #cdccca;
+    --color-text-muted: #797876;
+    --color-text-faint: #5a5957;
+    --color-primary: #4f98a3;
+    --color-primary-hover: #227f8b;
+    --shadow-md: 0 4px 12px oklch(0 0 0 / 0.3);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+      --color-bg: #171614; --color-surface: #1c1b19; --color-surface-2: #201f1d;
+      --color-surface-offset: #1d1c1a; --color-border: #393836;
+      --color-text: #cdccca; --color-text-muted: #797876; --color-text-faint: #5a5957;
+      --color-primary: #4f98a3; --color-primary-hover: #227f8b;
+      --shadow-md: 0 4px 12px oklch(0 0 0 / 0.3);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-body, sans-serif);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-8) var(--space-4);
+    gap: var(--space-6);
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+
+  /* Header bar */
+  .header {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; justify-content: flex-end;
+    padding: var(--space-3) var(--space-6);
+    z-index: 10;
+  }
+  .theme-toggle {
+    width: 36px; height: 36px; border-radius: var(--radius-full);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text-muted);
+    transition: color var(--transition), background var(--transition);
+  }
+  .theme-toggle:hover { color: var(--color-text); background: var(--color-surface-offset); }
+
+  /* Main slideshow */
+  .slideshow {
+    width: 100%; max-width: 800px;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid oklch(from var(--color-text, #28251d) l c h / 0.08);
+  }
+
+  /* Main image area */
+  .slide-stage {
+    position: relative;
+    background: var(--color-surface-2);
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute; inset: 0;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .slide.active { opacity: 1; }
+  .slide img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+
+  /* Arrow buttons */
+  .arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px;
+    border-radius: var(--radius-full);
+    background: oklch(from var(--color-bg, #f7f6f2) l c h / 0.88);
+    border: 1px solid oklch(from var(--color-text, #28251d) l c h / 0.10);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text);
+    backdrop-filter: blur(4px);
+    transition: background var(--transition), box-shadow var(--transition);
+    z-index: 2;
+  }
+  .arrow:hover { background: var(--color-surface-2); box-shadow: var(--shadow-md); }
+  .arrow:active { background: var(--color-surface-offset); }
+  .arrow-left  { left:  var(--space-3); }
+  .arrow-right { right: var(--space-3); }
+
+  /* Caption */
+  .caption-area {
+    padding: var(--space-4) var(--space-6);
+    border-top: 1px solid var(--color-border);
+    min-height: 3.5rem;
+    display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  }
+  .caption-text {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    flex: 1;
+    transition: opacity 250ms ease;
+  }
+  .caption-text.fade { opacity: 0; }
+  .slide-counter {
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Thumbnail strip */
+  .thumbnails {
+    display: flex;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    border-top: 1px solid var(--color-border);
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+  }
+  .thumbnails::-webkit-scrollbar { height: 4px; }
+  .thumbnails::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: var(--radius-full); }
+  .thumb {
+    flex-shrink: 0;
+    width: 64px; height: 40px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    transition: opacity var(--transition), border-color var(--transition), transform var(--transition);
+  }
+  .thumb:hover { opacity: 0.8; transform: translateY(-1px); }
+  .thumb.active { opacity: 1; border-color: var(--color-primary); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+</header>
+
+<div class="slideshow" role="region" aria-label="Image slideshow">
+  <!-- Main image stage -->
+  <div class="slide-stage">
+
+    <!-- Slides — add/remove as needed -->
+    <div class="slide active" data-caption="Mountain peaks at golden hour, casting long shadows across the valley">
+      <img src="https://picsum.photos/seed/mountains/800/450" alt="Mountain peaks at golden hour" width="800" height="450" loading="eager">
+    </div>
+    <div class="slide" data-caption="Misty forest path in early morning, light filtering through ancient trees">
+      <img src="https://picsum.photos/seed/forest123/800/450" alt="Misty forest path" width="800" height="450" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Coastal cliffs overlooking the sea, waves breaking on the rocks below">
+      <img src="https://picsum.photos/seed/coastline/800/450" alt="Coastal cliffs" width="800" height="450" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Desert sand dunes at dusk, rippled surface stretching to the horizon">
+      <img src="https://picsum.photos/seed/desert42/800/450" alt="Desert sand dunes at dusk" width="800" height="450" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Snow-capped peaks reflected perfectly in a still alpine lake">
+      <img src="https://picsum.photos/seed/alpine7/800/450" alt="Alpine lake reflection" width="800" height="450" loading="lazy">
+    </div>
+
+  </div>
+
+  <!-- Caption + counter -->
+  <div class="caption-area">
+    <p class="caption-text" id="caption" aria-live="polite"></p>
+    <span class="slide-counter" id="counter" aria-live="polite"></span>
+  </div>
+
+  <!-- Thumbnail strip -->
+  <div class="thumbnails" role="list" aria-label="Slide thumbnails">
+    <!-- Thumbnails are generated by JS -->
+  </div>
+</div>
+
+<script>
+(function () {
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const captionEl = document.getElementById('caption');
+  const counterEl = document.getElementById('counter');
+  const thumbsContainer = document.querySelector('.thumbnails');
+  const stage = document.querySelector('.slide-stage');
+  let current = 0;
+
+  // Build arrow buttons
+  function makeArrow(dir) {
+    const btn = document.createElement('button');
+    btn.className = `arrow arrow-${dir}`;
+    btn.setAttribute('aria-label', dir === 'left' ? 'Previous slide' : 'Next slide');
+    btn.innerHTML = dir === 'left'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+    btn.addEventListener('click', () => goTo(dir === 'left' ? current - 1 : current + 1));
+    return btn;
+  }
+  stage.appendChild(makeArrow('left'));
+  stage.appendChild(makeArrow('right'));
+
+  // Build thumbnails
+  const thumbEls = slides.map((slide, i) => {
+    const li = document.createElement('div');
+    li.className = 'thumb' + (i === 0 ? ' active' : '');
+    li.setAttribute('role', 'listitem');
+    li.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    const img = document.createElement('img');
+    img.src = slide.querySelector('img').src;
+    img.alt = '';
+    img.loading = 'lazy';
+    li.appendChild(img);
+    li.addEventListener('click', () => goTo(i));
+    thumbsContainer.appendChild(li);
+    return li;
+  });
+
+  function goTo(index) {
+    const n = ((index % slides.length) + slides.length) % slides.length;
+    slides[current].classList.remove('active');
+    thumbEls[current].classList.remove('active');
+    current = n;
+    slides[current].classList.add('active');
+    thumbEls[current].classList.add('active');
+
+    // Fade caption
+    captionEl.classList.add('fade');
+    setTimeout(() => {
+      captionEl.textContent = slides[current].dataset.caption || '';
+      counterEl.textContent = (current + 1) + ' / ' + slides.length;
+      captionEl.classList.remove('fade');
+    }, 150);
+
+    // Scroll thumb into view
+    thumbEls[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  // Init
+  captionEl.textContent = slides[0].dataset.caption || '';
+  counterEl.textContent = '1 / ' + slides.length;
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft')  goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  // Theme toggle
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const root = document.documentElement;
+  let theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  root.setAttribute('data-theme', theme);
+  updateToggleIcon();
+
+  toggle.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+    updateToggleIcon();
+  });
+
+  function updateToggleIcon() {
+    toggle.innerHTML = theme === 'dark'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+})();
+</script>
+</body>
+</html>

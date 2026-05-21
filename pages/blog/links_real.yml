@@ -1,0 +1,23 @@
+- category: Training courses
+  description: |
+    Examples of training courses developed using Quarto.
+  tiles:
+    - title: "DES RAP Book"
+      subtitle: "Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline."
+      href: "https://pythonhealthdatascience.github.io/des_rap_book/"
+      thumbnail: /pages/examples/des_rap_book.png
+    - title: "Testing in Research Workflow"
+      subtitle: "Tutorial on testing in Python and R, accompanies HDR UK Futures training videos."
+      href: "https://pythonhealthdatascience.github.io/stars-testing-intro/"
+      thumbnail: /pages/examples/testing_in_research.png
+
+- category: Researcher profiles
+  description: |
+    Examples of researcher profiles developed using Quarto.
+  tiles:
+    - title: "Amy Heather"
+      href: "https://amyheather.github.io/"
+      thumbnail: /pages/examples/amy_heather.png
+    - title: "Sammi Rosser"
+      href: "https://sammirosser.com/"
+      thumbnail: /pages/examples/sammi_rosser.png

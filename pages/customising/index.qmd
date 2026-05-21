@@ -1,0 +1,288 @@
+---
+title: "Exercise 6. Customising the site appearance"
+---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* Tweak the look and feel of your Quarto site.
+* Connect settings in `_quarto.yml` with CSS styles.
+* Experiment with colours, headings, and page width.
+
+:::
+
+There are endless ways to customise how your Quarto site looks and behaves. This page introduces a few common options (like favicons, navigation, themes, and layout), but there is much more you can explore in the Quarto documentation, by looking at example sites, or by asking for help (including from AI tools) with small bits of HTML, CSS, or JavaScript. As you experiment, remember the goal here is not to write lots of code, but to make a few simple, readable tweaks that improve how your site feels for you and your readers.
+
+## Favicon
+
+A **favicon** is the small icon that appears in the browser tab next to your site title.
+
+For a Quarto website, you set this in `_quarto.yml` using the `favicon` option inside the `website:` section. For example:
+
+```{.yaml}
+website:
+  title: "Site title"
+  favicon: images/favicon.png
+```
+
+Favicons are usually **square** images (e.g., 16x16, 32x32, or 48x48 pixels), saved as **PNG** so transparent backgrounds are supported. They do not need to be large; browsers will scale them down to a tiny size for the tab icon.
+
+::: {.pale-blue}
+
+**Task**:
+
+* [ ] Set the favicon to `images/exeter.png` in `_quarto.yml`.
+* [ ] Render the site and check that the icon appears in the browser tab.
+
+:::
+
+## Navbar
+
+So far, your pages have mainly appeared in the **sidebar**. You can also add links to the **navbar** across the top of the site by configuring the `navbar` section under `website:` in `_quarto.yml`
+
+Right now, the navbar only shows a link to the GitHub repository and a search icon. To add pages, you choose whether links appear on the `left` or `right`, then list the pages you want there.
+
+For example, this creates a navbar link to an About page:
+
+```{.yaml}
+website:
+  navbar:
+    left:
+      - about.qmd
+```
+
+In this case, Quarto will use the page’s title (from its YAML front matter) as the label in the navbar. If you want to control the label explicitly, use `href` for the file path and `text` for the label:
+
+```{.yaml}
+website:
+  navbar:
+    left:
+      - href: about.qmd
+        text: About
+```
+
+::: {.pale-blue}
+
+**Task:**
+
+* [ ] Create a new page called `about.qmd`.
+* [ ] Add that page to the navbar in `_quarto.yml`.
+* [ ] Render the site and check that the new link appears in the top navigation and works.
+
+:::
+
+## Announcement
+
+An **announcement bar** is a horizontal strip at the top of your site that shows an important message. It’s useful for things like:
+
+* A status message (e.g., "This site is a work in progress").
+* A short disclaimer (e.g., a research project site that shows a note on every page about generalisability and how the results can be reused - [example](https://ambmodels.github.io/ambdes/)).
+* Course or event information (e.g., a training course site that uses it to provide information on upcoming HSMA dates and registration details - [example](https://hsma.co.uk/)).
+
+You can configure it in `_quarto.yml` under `website:` → `announcement:`. For example:
+
+```{.yaml}
+website:
+  announcement:
+    content: "**Note:** This site is a work in progress." # <1>
+    dismissable: false # <2>
+    position: below-navbar # <3>
+```
+
+1. **Content:** The text shown in the bar. You can use simple Markdown for bold (`** **`) or links (`[]()`).
+2. **Dismissable:** If `true`, visitor will see a little "x" and can close the bar. If `false`, it always stays visible.
+3. **Position:** Where the bar appears - e.g., `below-navbar`, `above-navbar`.
+
+You can find more announcement options (such as icons and types like "info" or "warning") in the [Quarto documentation](https://quarto.org/docs/reference/projects/websites.html#announcement).
+
+::: {.pale-blue}
+
+**Task:**
+
+* [ ] Add an announcement bar to your site.
+
+:::
+
+## Footer
+
+A **footer** is a small block of text that appears at the bottom of each page, often used for things like copyright, licences, or contact links.
+
+In Quarto websites, you can add footer content using `page-footer` within the `website:` section in `_quarto.yml`. For example:
+
+```{.yaml}
+website:
+  page-footer:
+    left: "This work was funded by XYZ."
+    center: "Licence: CC-BY-SA 4.0."
+    right: "Contact us at email@email.com."
+```
+
+This creates a three-part footer: text on the left, centre, and right of the footer area. See the [Quarto documentation](https://quarto.org/docs/reference/projects/websites.html#footer) for more customisation options.
+
+::: {.pale-blue}
+
+**Task:**
+
+* [ ] Add a footer to your site.
+
+:::
+
+## Themes
+
+Quarto websites use a **theme** to control the general look (fonts, colours, spacing). You can view a list of available themes at <https://quarto.org/docs/output-formats/html-themes.html>.
+
+You can also browse through them below:
+
+```{=html}
+<div class="slideshow" role="region" aria-label="Image slideshow">
+  <!-- Main image stage -->
+  <div class="slide-stage">
+
+    <div class="slide active" data-caption="Theme: default">
+      <img src="default.png" alt="default" loading="eager">
+    </div>
+    <div class="slide" data-caption="Theme: cerulean">
+      <img src="cerulean.png" alt="cerulean" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: cosmo">
+      <img src="cosmo.png" alt="cosmo" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: cyborg">
+      <img src="cyborg.png" alt="cyborg" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: darkly">
+      <img src="darkly.png" alt="darkly" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: flatly">
+      <img src="flatly.png" alt="flatly" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: journal">
+      <img src="journal.png" alt="journal" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: litera">
+      <img src="litera.png" alt="litera" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: lumen">
+      <img src="lumen.png" alt="lumen" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: lux">
+      <img src="lux.png" alt="lux" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: materia">
+      <img src="materia.png" alt="materia" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: minty">
+      <img src="minty.png" alt="minty" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: morph">
+      <img src="morph.png" alt="morph" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: pulse">
+      <img src="pulse.png" alt="pulse" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: quartz">
+      <img src="quartz.png" alt="quartz" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: sandstone">
+      <img src="sandstone.png" alt="sandstone" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: simplex">
+      <img src="simplex.png" alt="simplex" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: sketchy">
+      <img src="sketchy.png" alt="sketchy" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: slate">
+      <img src="slate.png" alt="slate" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: solar">
+      <img src="solar.png" alt="solar" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: spacelab">
+      <img src="spacelab.png" alt="spacelab" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: superhero">
+      <img src="superhero.png" alt="superhero" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: united">
+      <img src="united.png" alt="united" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: vapor">
+      <img src="vapor.png" alt="vapor" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: yeti">
+      <img src="yeti.png" alt="yeti" loading="lazy">
+    </div>
+    <div class="slide" data-caption="Theme: zephyr">
+      <img src="zephyr.png" alt="zephyr" loading="lazy">
+    </div>
+
+  </div>
+
+  <!-- Caption + counter -->
+  <div class="caption-area">
+    <p class="caption-text" id="caption" aria-live="polite"></p>
+    <span class="slide-counter" id="counter" aria-live="polite"></span>
+  </div>
+
+  <!-- Thumbnail strip -->
+  <div class="thumbnails" role="list" aria-label="Slide thumbnails">
+    <!-- Thumbnails are generated by JS -->
+  </div>
+</div>
+```
+
+::: {.pale-blue}
+
+**Task**:
+
+* [ ] Change your site's theme.
+
+:::
+
+## Page width
+
+By default, Quarto uses a content width that is comfortable for reading. You can change this layout using the [`page-layout` option](https://quarto.org/docs/output-formats/page-layout.html).
+
+For example, to make the content span the full width of the page:
+
+```{.bash}
+format: 
+  html:
+    page-layout: full
+```
+
+You can set this:
+
+* In a single page (inside that page's YAML front matter, alongside title).  
+* Or for the whole site (inside `_quarto.yml` under `format:` → `html:`).
+
+::: {.pale-blue}
+
+**Task**:
+
+* [ ] Set `page-layout: full` for either one page or the whole site.  
+* [ ] Render and compare how the content looks before and after.
+
+:::
+
+## Styled spans
+
+Sometimes you want to highlight just a few words inside a sentence.
+
+You can use inline HTML with a `style` attribute:
+
+```markdown
+Highlight <span style="background: yellow;">this bit</span>.
+```
+
+**Output:** Highlight <span style="background: yellow;">this bit</span>.
+
+::: {.pale-blue}
+
+**Task:**
+
+* [ ] Add one sentence that uses a `<span>` with a custom inline style (for example, a highlighted phrase).
+
+:::

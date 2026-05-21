@@ -21,20 +21,25 @@ website:
     contents:
       - text: Welcome
         href: index.qmd
-      - pages/why.qmd
+      - text: "Slides: Why make a website for your research?"
+        href: pages/why/index.qmd
       - section: "Tutorial"
         contents:
-          - pages/setup.qmd
-          - pages/basic_structure.qmd
-          - pages/making_a_change.qmd
-          - pages/markdown.qmd
-          - pages/quarto_features.qmd
-          - pages/media.qmd
-          - pages/inline_html.qmd
-          - pages/customising.qmd
-          - pages/code.qmd
-          - pages/summary.qmd
-      - pages/examples.qmd
+          - pages/setup/index.qmd
+          - pages/basic_structure/index.qmd
+          - pages/making_a_change/index.qmd
+          - pages/markdown/index.qmd
+          - pages/quarto_features/index.qmd
+          - pages/media/index.qmd
+          - pages/inline_html/index.qmd
+          - pages/customising/index.qmd
+      - pages/task/index.qmd
+      - section: "Optional extras"
+        contents:
+          - pages/blog/index.qmd
+          - pages/sass_css/index.qmd
+          - pages/code/index.qmd
+      - pages/examples/index.qmd
   page-footer:
     center:
       - text: |
@@ -44,10 +49,11 @@ website:
 format:
   html:
     number-sections: true
+    lightbox: true
     theme:
       - cosmo
       - styles/theme.scss
     css:
       - styles/styles.css
     include-after-body:
-      - styles/autopreview.html
+      - styles/slideshow.js

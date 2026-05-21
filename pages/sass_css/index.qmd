@@ -1,0 +1,106 @@
+---
+title: SASS and CSS
+---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+- Understand, in simple terms, what Sass and CSS are.
+- See when you might use each in a Quarto site.
+- Make changes using a `.scss` file and a `.css` file.
+
+:::
+
+When you customise the look of a Quarto site, you are changing how the **web page is styled**.
+
+Web pages are styled with **CSS**, which stands for "Cascading Style Sheets". CSS is a simple styling language that tells the browser things like:
+
+* "Make all main headings this colour".
+* "Add extra space around this box".
+* "Use this font for the body text".
+
+There is also **Sass**, which you can think of as a **helper language for writing CSS**. Sass lets you define variables (for example, `$navbar-bg` for the navbar background colour). Quarto themes come with a set of Sass variables you can override, so you can change key theme‑level settings without writing lots of detailed rules. 
+
+In practice in a Quarto site:
+
+* Use **Sass** when want to change **theme-level settings** (and there is a Sass variable for it), such as overall background, text, or navbar colours.
+* Use **CSS** when want to **add or adjust specific styles**, such as a custom class for a callout, extra spacing, or the look of a particular box or heading.
+
+## Sass
+
+You use Sass in Quarto by creating an `.scss` file and listing it under `theme:`.
+
+Quarto HTML themes expose many Sass variables you can override (for example, `$body-bg`, `$body-color`, `$navbar-bg`). You can see a fuller list in the [Quarto documentation](https://quarto.org/docs/output-formats/html-themes.html#sass-variables).
+
+Example SCSS theme file:
+
+```scss
+$body-bg: #fdf6e3;
+$body-color: #002b36;
+$navbar-bg: #d33682;
+```
+
+> Here the values like `#d33682` are **hex colour codes**. A hex code is a way of writing a colour using six characters after a `#`. You can find these by searching online, or can pick them from an image using a [hex colour picker](https://imagecolorpicker.com/).
+
+Then in `_quarto.yml`:
+
+```{.yaml}
+format:
+  html:
+    theme: [default, styles.scss]
+```
+
+This says, start with `default` theme, then apply my overrides from `styles.scss`.
+
+::: {.pale-blue}
+
+**Task**:
+
+* [ ] Create a `styles.scss` file with at least one Sass variable (for example, change `$navbar-bg` or `$body-bg`).  
+* [ ] Add the SCSS file to your theme configuration in `_quarto.yml`.  
+* [ ] Render the site and check the colour changes.
+:::
+
+## CSS
+
+You use CSS in Quarto by creating a `.css` file and listing it under `format:` → `html:` → `css:` in `_quarto.yml` (or in an individual page's YAML):
+
+```{.yaml}
+format:
+  html:
+    css: custom.css
+```
+
+Inside `custom.css`, you write rules like:
+
+```{.css}
+h1, h2 {
+  letter-spacing: 0.03em;
+}
+
+.pale-blue {
+  background-color: #e6f2fa;
+  color: black;
+  border: 2px solid #9ecae1;
+  border-radius: 8px;
+  padding: 1.2em 1em 0.5em 1em;
+  margin: 1.5em 0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+```
+
+- The `h1, h2` rule changes the spacing between letters for level‑1 and level‑2 headings.  
+- The `.pale-blue` rule controls how any element with class `pale-blue` is styled - this example is the blue boxes we used for tasks on this site.
+
+::: {.pale-blue}
+
+**Task:**
+
+- [ ] Create a `custom.css` file in your project.  
+- [ ] Add at least one simple rule (for example, change heading letter‑spacing, or adjust the `.pale-blue` box styling).  
+- [ ] Add `css: custom.css` under `format: html:` in `_quarto.yml`.  
+- [ ] Render the site and confirm that your CSS change appears.
+
+:::

@@ -1,0 +1,661 @@
+---
+title: "Exercise 3. Quarto features"
+bibliography: references.bib
+---
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* See how Quarto builds on Markdown with extra features.
+* Create callouts and columns using fenced blocks.
+* Add links that open in a new tab, footnotes, and definition lists.
+* Practice citations, cross‑references, math, and line blocks.
+* Reuse content with includes.
+
+:::
+
+In the last page, you worked with Markdown, which is a simple way to format text that works in lots of tools. Quarto lets you keep using that same Markdown, but it also adds extra features on top.
+
+Behind the scenes, Quarto uses a program called Pandoc. Pandoc takes your Markdown and converts it into many different formats (for example, HTML, PDF, Word, or slides). On top of Pandoc, Quarto adds its own features and settings (for example, callouts, columns, citations, and cross‑references) that you control from a single `.qmd` file.
+
+This page gives a quick tour of some of those "Quarto extras" that go beyond plain Markdown.
+
+You should complete the listed tasks in the `3_quarto_features.qmd` file on your Codespace. Once you have worked through these tasks, commit and push your change.
+
+
+## Callouts
+
+Quarto extends Markdown with **callouts**, which are highlighted boxes you can use for notes, tips, or warnings.
+
+Callouts use a small bit of extra syntax that Quarto understands as a "special box" rather than normal text. In Markdown, `::: ... :::` defines a block (a kind of container) that Quarto treats like an HTML `<div>`. By adding a class to that block, you tell Quarto what kind of callout it is.
+
+A simple callout note looks like this:
+
+* `:::` starts the block.
+* `{.callout-note}` says that this is a class "callout-note" (just like HTML `<div class="callout-note">`)/
+* Everything until the closing `:::` is the content of the callout.
+* The final `:::` closes the block.
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+Markdown:
+
+```markdown
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+Output:
+
+::: {.callout-note}
+This is a callout.
+You can use it to draw attention to important information.
+:::
+
+::::
+
+:::::
+
+You can change the type:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip}
+This is a tip.
+:::
+```
+
+```markdown
+::: {.callout-warning}
+This is a warning.
+:::
+```
+
+```markdown
+::: {.callout-important}
+This is important information.
+:::
+```
+
+```markdown
+::: {.callout-caution}
+This is a caution.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip}
+This is a tip.
+:::
+
+::: {.callout-warning}
+This is a warning.
+:::
+
+::: {.callout-important}
+This is important information.
+:::
+
+::: {.callout-caution}
+This is a caution.
+:::
+
+::::
+
+:::::
+
+You can add a title:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-tip title="Helpful tip"}
+Remember to save your file before you render.
+:::
+
+::::
+
+:::::
+
+You can also set the callout to collapse:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note title="More details" collapse="true"}
+This extra information is hidden until you click the arrow.
+:::
+
+::::
+
+:::::
+
+You can change the appearance style to `simple` or `minimal`:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+```
+
+```markdown
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note appearance="simple"}
+This is a simple callout.
+:::
+
+::: {.callout-note appearance="minimal"}
+This is a minimal callout.
+:::
+
+::::
+
+:::::
+
+You can also hide the icon:
+
+::::: {.columns}
+
+:::: {.column width=60%}
+
+```markdown
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+
+::::
+
+:::: {.column width=35%}
+
+::: {.callout-note icon="false"}
+Default callout with icon removed
+:::
+
+::::
+
+:::::
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Add a callout of type `tip` with a short title (e.g., "Helpful tip").
+* [ ] Inside the callout, write one sentence of advice (e.g., "Take short breaks when you are concentrating.").
+* [ ] Add another callout with `collapse="true"` (e.g., with title "More information" and with content "You can come back to this note later if you need it.").
+
+:::
+
+## Columns
+
+You can create columns using the same `::: ... :::` fenced blocks, with a `.columns` container and one or more `.column` blocks inside.
+
+For example:
+
+```markdown
+:::: {.columns}
+
+::: {.column}
+![](/images/south_cloisters.jpg){fig-alt="Photograph of South Cloisters"}
+:::
+
+::: {.column}
+**South Cloisters**, University of Exeter, St Luke's Campus, Heavitree Road, Exeter EX1 2LU
+:::
+
+::::
+```
+
+:::: {.columns}
+
+::: {.column}
+
+![](/images/south_cloisters.jpg){fig-alt="Photograph of South Cloisters"}
+
+:::
+
+::: {.column}
+
+**South Cloisters**, University of Exeter, St Luke's Campus, Heavitree Road, Exeter EX1 2LU
+
+:::
+
+::::
+
+By default, columns share the space equally. You can control their width by adding `width=` percentages to each column. For example:
+
+```markdown
+:::: {.columns}
+
+::: {.column width=60%}
+:::
+
+::: {.column width=5%}
+:::
+
+::: {.column width=35%}
+:::
+
+::::
+```
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create two columns with some text in each.
+* [ ] Change one column to 70% width and the other to 30% width.
+
+:::
+
+## Link that opens in a new tab by default
+
+You'll recall from the [Markdown](/pages/markdown/index.qmd) page that we can create a link using `[text](link)`.
+
+In Quarto, we can amend the link so it opens in a new tab by default by adding `{target="_blank"}` to the end.
+
+For example:
+
+```markdown
+[Visit the University of Exeter website](https://www.exeter.ac.uk){target="_blank"}
+```
+
+[Visit the University of Exeter website](https://www.exeter.ac.uk){target="_blank"}
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create a link that opens in a new tab by default.
+
+:::
+
+## Footnotes {#sec-footnotes}
+
+```markdown
+Here is some text with a footnote.[^1]
+
+[^1]: This is the content of the footnote.
+
+    You can include additional details by going two line below and tab indent.
+```
+
+Here is some text with a footnote.[^1]
+
+[^1]: This is the content of the footnote.
+
+    You can include additional details by going two line below and tab indent.
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Add one footnote to a sentence and put a little extra detail into the footnote text.
+
+:::
+
+## Citations
+
+With a bibliography file (e.g., `references.bib`), Quarto can automatically format citations and a reference list.
+
+A bibliography file (with extension `.bib`) is a text file that stores information about your sources (for example, author, year, title, journal). Each source has a short key, like `@feng_ultrasonic_2006`, that you can use in your writing. Reference managers such as [Zotero](https://www.zotero.org/) can export your library to a `.bib` file, so you do not have to type these entries by hand.
+
+::: {.callout-note title="View `references.bib`" collapse="true"}
+```bib
+{{< include references.bib >}}
+```
+:::
+
+Provide the path to your bibliography in the YAML metadata for the page e.g.,:
+
+```yaml
+---
+title: "My Document"
+bibliography: references.bib
+---
+```
+
+A simple in-text citation looks like this...
+can wrap in () and [] if want...
+use @ and identifier...
+
+:::: {.columns}
+::: {.column width=47%}
+```markdown
+Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).
+```
+:::
+::: {.column width=6%}
+:::
+::: {.column width=47%}
+Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).
+:::
+::::
+
+Multiple citations can be combined, use semicolon to separate
+
+:::: {.columns}
+::: {.column width=47%}
+```markdown
+Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).
+```
+:::
+::: {.column width=6%}
+:::
+::: {.column width=47%}
+Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).
+:::
+::::
+
+By default, a list of works cited will be placed at the end of the document. You can change where this is by provided `refs` div -
+
+::::: {.columns}
+:::: {.column width=30%}
+
+```markdown
+::: {#refs}
+:::
+```
+
+::::
+
+:::: {.column width=5%}
+::::
+
+:::: {.column width=65%}
+
+::: {#refs}
+:::
+
+::::
+:::::
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] A bib file is provided... add citation using key from file...
+
+:::
+
+## Cross-references
+
+Quarto can automatically number and cross‑reference figures, tables, sections, and equations.
+
+To make something cross‑referenceable, you give it an identifier, then refer to it with `@id`.
+
+For example, you can refer to tables by adding a caption and then including a `#tbl-` label in braces at the end of the caption
+
+:::: {.columns}
+::: {.column width=45%}
+```markdown
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
+
+: Table with ABC and 123 {#tbl-letters}
+
+See @tbl-letters
+```
+:::
+::: {.column width=10%}
+:::
+::: {.column width=45%}
+| Letter | Number |
+| - | - |
+| A | 1 |
+| B | 2 |
+| C | 3 |
+
+: Table with ABC and 123 {#tbl-letters}
+
+See @tbl-letters
+:::
+::::
+
+See the page on [Cross-references](https://quarto.org/docs/authoring/cross-references.html) from the Quarto documentation for instructions on how to reference other things (e.g., lists, figures, code listings, callouts, sections).
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Add an ID to one heading then write a sentence later that references it.
+
+:::
+
+## Math
+
+Quarto supports LaTeX‑style math notation for inline and display equations.
+
+LaTeX is a markup language commonly used for writing mathematics. Quarto understands a subset of LaTeX math syntax so you can write formulas directly in your text. Inline math appears inside a sentence (for example, `$y = mx + c$`), and display math appears on its own line, centred and spaced out, using `$$ ... $$`.
+
+In-line math:
+
+:::: {.columns}
+::: {.column width=60%}
+```markdown
+The solution is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+```
+:::
+::: {.column width=5%}
+:::
+::: {.column width=35%}
+The solution is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+:::
+::::
+
+Display math:
+
+:::: {.columns}
+::: {.column width=60%}
+```markdown
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+```
+:::
+::: {.column width=5%}
+:::
+::: {.column width=35%}
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+:::
+::::
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Add one short inline formula and one display formula (e.g., `y = mx + c`)
+
+:::
+
+## Definition lists
+
+Definition lists are useful for small glossaries or when you want to introduce a few key concepts with short explanations. To creat them, write therm term on online line, then start the defintion on the next line with a colon `:` and space.
+
+:::: {.columns}
+::: {.column width=40%}
+```markdown
+Thing 1
+: Definition of thing 1
+
+Thing 2
+: Definition of thing 2
+```
+:::
+::: {.column width=5%}
+:::
+::: {.column width=55%}
+<br>
+
+Thing 1
+: Definition of thing 1
+
+Thing 2
+: Definition of thing 2
+:::
+::::
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create a short definition list with two terms and one-sentence definitions for each.
+
+:::
+
+## Line blocks
+
+By default, Markdown ignores most extra spaces at the start of a line and treats single line breaks as part of the same paragraph. Line blocks give you precise control: they keep each line and its leading spaces exactly as you typed them.
+
+Default:
+
+:::: {.columns}
+::: {.column width=45%}
+```markdown
+South Cloisters,
+    University of Exeter,
+    St Luke's Campus,
+    Heavitree Road,
+    Exeter EX1 2LU
+```
+:::
+::: {.column width=10%}
+:::
+::: {.column width=45%}
+South Cloisters,
+    University of Exeter,
+    St Luke's Campus,
+    Heavitree Road,
+    Exeter EX1 2LU
+:::
+::::
+
+Line block:
+
+:::: {.columns}
+::: {.column width=45%}
+```markdown
+| South Cloisters,
+|     University of Exeter,
+|     St Luke's Campus,
+|     Heavitree Road,
+|     Exeter EX1 2LU
+```
+:::
+::: {.column width=10%}
+:::
+::: {.column width=45%}
+| South Cloisters,
+|     University of Exeter,
+|     St Luke's Campus,
+|     Heavitree Road,
+|     Exeter EX1 2LU
+:::
+::::
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Write a three‑line address or short poem using a line block and check that the line breaks are preserved after rendering.
+
+:::
+
+## Includes
+
+Sometimes you want to **reuse** the same content in more than one page (e.g., a short disclaimer, a project description, or a list of learning outcomes). Quarto lets you "include" another file so that its contents are pulled in when you render.
+
+For example, if you have a file called `snippet.md` in the same folder:
+
+```markdown
+{{{< include snippet.md >}}}
+```
+
+When you render, the text from `snippet.md` will appear at that point in the page
+
+::: {.pale-blue}
+
+**Task:** In `quarto_features.qmd`:
+
+* [ ] Create a small file called `snippet.md` with one or two lines of text.
+* [ ] Include it in `quarto_features.qmd` using `{{< include snippet.md >}}` and render the page.
+
+:::
