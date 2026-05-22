@@ -1,0 +1,7 @@
+---
+title: Example 1
+---
+
+This page has a picture of a butterfly.
+
+![Butterfly](butterfly.jpg)
