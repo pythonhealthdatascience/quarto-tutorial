@@ -736,12 +736,13 @@ Note
 </div>
 </div>
 </div>
-<p>Provide the path to your bibliography in the YAML metadata for the page e.g.,:</p>
+<p>First, tell Quarto which bibliography file to use by adding it in the YAML at the top of your page:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A simple in-text citation looks like this… can wrap in () and [] if want… use @ and identifier…</p>
+<p>To cite a source in your text, type <code>@</code> followed by the citation key. You can put this inside a sentence or inside parentheses.</p>
+<p>Single citation:</p>
 <div class="columns">
 <div class="column" style="width:47%;">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (@feng_ultrasonic_2006).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -751,7 +752,7 @@ Note
 <p>Some frogs can communicate using ultrasonic calls that are far above the range of human hearing (<span class="citation" data-cites="feng_ultrasonic_2006">Feng et al. (<a href="#ref-feng_ultrasonic_2006" role="doc-biblioref">2006</a>)</span>).</p>
 </div>
 </div>
-<p>Multiple citations can be combined, use semicolon to separate</p>
+<p>Multiple citations (separated by a semicolon):</p>
 <div class="columns">
 <div class="column" style="width:47%;">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (@feng_ultrasonic_2006; @starnberger_uni-_2014).</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -761,7 +762,7 @@ Note
 <p>Ultrasonic communication in frogs shows that amphibian hearing and vocal behaviour are more flexible than scientists once thought (<span class="citation" data-cites="feng_ultrasonic_2006">Feng et al. (<a href="#ref-feng_ultrasonic_2006" role="doc-biblioref">2006</a>)</span>; <span class="citation" data-cites="starnberger_uni-_2014">Starnberger et al. (<a href="#ref-starnberger_uni-_2014" role="doc-biblioref">2014</a>)</span>).</p>
 </div>
 </div>
-<p>By default, a list of works cited will be placed at the end of the document. You can change where this is by provided <code>refs</code> div -</p>
+<p>By default, Quarto adds a list of works cited at the end of the document. If you want to control where this appears, you can add a <code>refs</code> div at the point where you want the reference list:</p>
 <div class="columns">
 <div class="column" style="width:30%;">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
@@ -782,7 +783,7 @@ Starnberger, Iris, Doris Preininger, and Walter Hödl. 2014. <span>“From Uni- 
 <div class="pale-blue">
 <p><strong>Task:</strong> In <code>quarto_features.qmd</code>:</p>
 <ul class="task-list">
-<li><label><input type="checkbox">A bib file is provided… add citation using key from file…</label></li>
+<li><label><input type="checkbox">A <code>.bib</code> file is provided in the template site (<code>pages/references.bib</code>). Add this file to the YAML front matter using the <code>bibliography:</code> option, then add at least one in‑text citation to your page using a key from that file.</label></li>
 </ul>
 </div>
 </section>
