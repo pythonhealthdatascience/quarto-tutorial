@@ -15,7 +15,7 @@
     "href": "pages/code/index.html",
     "title": "Code",
     "section": "",
-    "text": "In a Quarto document, you can include code cells and choose whether they run when you render the site.\n\n\nA code cell is a fenced block like:\n```{python}\nprint(\"Hello from Python\")\n```\nIf the cell has a language (for example {python}, {r}, {bash}), Quarto can execute it when you render.\nThat means Quarto actually runs the code, captures the output (and any figures), and inserts those results into the page. This is powerful, because your website and your analysis stay in sync - if the code or data change, you just re‑render.\nBelow are some examples from the Quarto documentation showing a map and an interactive Plotly plot:\n\n\n\n\n\nIf you just want to show code (not run it), you can either:\n\nAdd a dot before the language.\n\n{.python} print(\"Hello from Python\")\n\nMake the cell as eval: false.\n\n```{python}\n#| eval: false\nprint(\"Hello from Python\")\n```\n\nSet all cells in a Quarto document to eval: false in the YAML:\n\n---\ntitle: \"Title\"\nexecute:\n  eval: false\n---",
+    "text": "On this page we will:\n\nSee how to add code cells to a Quarto document.\nLearn how to deploy sites via GitHub actions when they contain executable code.",
     "crumbs": [
       "GitHub",
       "Optional extras",
@@ -26,8 +26,8 @@
     "objectID": "pages/code/index.html#code-in-quarto-pages",
     "href": "pages/code/index.html#code-in-quarto-pages",
     "title": "Code",
-    "section": "",
-    "text": "In a Quarto document, you can include code cells and choose whether they run when you render the site.\n\n\nA code cell is a fenced block like:\n```{python}\nprint(\"Hello from Python\")\n```\nIf the cell has a language (for example {python}, {r}, {bash}), Quarto can execute it when you render.\nThat means Quarto actually runs the code, captures the output (and any figures), and inserts those results into the page. This is powerful, because your website and your analysis stay in sync - if the code or data change, you just re‑render.\nBelow are some examples from the Quarto documentation showing a map and an interactive Plotly plot:\n\n\n\n\n\nIf you just want to show code (not run it), you can either:\n\nAdd a dot before the language.\n\n{.python} print(\"Hello from Python\")\n\nMake the cell as eval: false.\n\n```{python}\n#| eval: false\nprint(\"Hello from Python\")\n```\n\nSet all cells in a Quarto document to eval: false in the YAML:\n\n---\ntitle: \"Title\"\nexecute:\n  eval: false\n---",
+    "section": "1 Code in Quarto pages",
+    "text": "1 Code in Quarto pages\nIn a Quarto document, you can include code cells and choose whether they run when you render the site.\n\n1.1 Executable code\nA code cell is a fenced block like:\n```{python}\nprint(\"Hello from Python\")\n```\nIf the cell has a language (for example {python}, {r}, {bash}), Quarto can execute it when you render.\nThat means Quarto actually runs the code, captures the output (and any figures), and inserts those results into the page. This is powerful, because your website and your analysis stay in sync - if the code or data change, you just re‑render.\nBelow are some examples from the Quarto documentation showing a map and an interactive Plotly plot:\n\n\n\n\n1.2 Non-executable code\nIf you just want to show code (not run it), you can either:\n\nAdd a dot before the language.\n\n{.python} print(\"Hello from Python\")\n\nMake the cell as eval: false.\n\n```{python}\n#| eval: false\nprint(\"Hello from Python\")\n```\n\nSet all cells in a Quarto document to eval: false in the YAML:\n\n---\ntitle: \"Title\"\nexecute:\n  eval: false\n---",
     "crumbs": [
       "GitHub",
       "Optional extras",
@@ -106,7 +106,7 @@
     "href": "pages/blog/index.html",
     "title": "Listings (e.g., blog)",
     "section": "",
-    "text": "A listing is a Quarto feature that automatically builds a list or grid of items for you.\nThere are two ways to use listings:",
+    "text": "On this page we will:\n\nCreate a simple listing of pages (e.g., for a blog).\nCreate a grouped listing of pages.\nBuild a more advanced listing to external pages using a YAML file and EJS template.\nA listing is a Quarto feature that automatically builds a list or grid of items for you.\nThere are two ways to use listings:",
     "crumbs": [
       "GitHub",
       "Optional extras",
