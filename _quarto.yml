@@ -21,6 +21,7 @@ website:
     contents:
       - text: Welcome
         href: index.qmd
+      - pages/agenda/index.qmd
       - text: "Slides: Why make a website for your research?"
         href: pages/why/index.qmd
       - section: "Tutorial"
@@ -33,6 +34,7 @@ website:
           - pages/media/index.qmd
           - pages/inline_html/index.qmd
           - pages/customising/index.qmd
+          - pages/hosting/index.qmd
       - pages/task/index.qmd
       - section: "Optional extras"
         contents:

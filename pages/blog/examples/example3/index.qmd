@@ -1,0 +1,7 @@
+---
+title: Example 3
+---
+
+This page has a picture of a cat.
+
+![Cat](cat.jpg)

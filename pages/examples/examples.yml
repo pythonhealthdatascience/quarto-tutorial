@@ -163,7 +163,7 @@
       code: https://github.com/pythonhealthdatascience/des_rap_book
       thumbnail: des_rap_book.png
       categories: [University of Exeter]
-    - title: Testing in Research Workflow
+    - title: Testing in Research Workflows
       subtitle: Tutorial on testing in Python and R, accompanies HDR UK Futures training videos.
       href: https://pythonhealthdatascience.github.io/stars-testing-intro/
       code: https://github.com/pythonhealthdatascience/stars-testing-intro

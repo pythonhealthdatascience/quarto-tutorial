@@ -1,6 +1,10 @@
 ---
 title: Listings (e.g., blog)
 listing:
+  - id: simple
+    contents: examples
+    type: grid
+    grid-columns: 3
   - id: links
     contents: links_real.yml
     template: links.ejs
@@ -14,6 +18,93 @@ There are two ways to use listings:
 2. To show a list of **external things** (e.g., interesting projects or resources you link out to).
 
 ## Listing of pages
+
+### Simple listing of pages
+
+A common use case is a blog or "Projects" page that lists documents from a folder. We create it with `listing:` in the YAML. At a minimum, you specify `contents`, which determines which documents to include.
+
+For example, this will create a listing from files within the `pages/` folder:
+
+```{.markdown}
+---
+title: Projects
+listing:
+  contents: pages
+---
+```
+
+In this example, we have add more criteria:
+
+* `type:` how to display the items (for example, `default` list or `grid`).
+* `grid-columns:` number of columns when using a grid layout.
+* `fields:` which pieces of metadata to show for each item (for example, `title`, `subtitle`, `image`).
+* `image-height:` how tall to show any image field.
+
+```{.markdown}
+---
+title: Projects
+listing:
+  contents: pages
+  type: grid
+  grid-columns: 3
+  fields: [title, subtitle, image]
+  image-height: "100"
+---
+```
+
+Example:
+
+::: {#simple}
+:::
+
+### Grouped listing of pages
+
+You can also define **multiple listings** on the same page and group them.
+
+This approach assumes that the pages in `pages/` have a `year:` field in their YAML. Each listing block uses `include:` to filter by `year`, and an `id` that matches a placeholder div later in the document.
+
+```{.markdown}
+---
+title: Projects
+listing:
+  - id: projects-2026
+    contents: pages
+    include:
+      year: 2026
+    fields: [title, subtitle, image]
+
+  - id: projects-2025
+    contents: pages
+    include:
+      year: 2025
+    fields: [title, subtitle, image]
+
+  - id: projects-2024
+    contents: pages
+    include:
+      year: 2024
+    fields: [title, subtitle, image]
+
+format:
+  html:
+    page-layout: article
+---
+
+## 2026
+
+::: {#projects-2026}
+:::
+
+## 2025
+
+::: {#projects-2025}
+:::
+
+## 2024
+
+::: {#projects-2024}
+:::
+```
 
 ## Listing of external things
 
