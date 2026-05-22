@@ -6,7 +6,7 @@
       subtitle: "Self-paced training resource on creating discrete-event simulation models in Python and R as part of a reproducible analytical pipeline."
       href: "https://pythonhealthdatascience.github.io/des_rap_book/"
       thumbnail: /images/listings/des_rap_book.png
-    - title: "Testing in Research Workflow"
+    - title: "Testing in Research Workflows"
       subtitle: "Tutorial on testing in Python and R, accompanies HDR UK Futures training videos."
       href: "https://pythonhealthdatascience.github.io/stars-testing-intro/"
       thumbnail: /images/listings/testing_in_research.png
