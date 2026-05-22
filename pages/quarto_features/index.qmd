@@ -379,7 +379,7 @@ A bibliography file (with extension `.bib`) is a text file that stores informati
 ```
 :::
 
-Provide the path to your bibliography in the YAML metadata for the page e.g.,:
+First, tell Quarto which bibliography file to use by adding it in the YAML at the top of your page:
 
 ```yaml
 ---
@@ -388,9 +388,9 @@ bibliography: references.bib
 ---
 ```
 
-A simple in-text citation looks like this...
-can wrap in () and [] if want...
-use @ and identifier...
+To cite a source in your text, type `@` followed by the citation key. You can put this inside a sentence or inside parentheses.
+
+Single citation:
 
 :::: {.columns}
 ::: {.column width=47%}
@@ -405,7 +405,7 @@ Some frogs can communicate using ultrasonic calls that are far above the range o
 :::
 ::::
 
-Multiple citations can be combined, use semicolon to separate
+Multiple citations (separated by a semicolon):
 
 :::: {.columns}
 ::: {.column width=47%}
@@ -420,7 +420,7 @@ Ultrasonic communication in frogs shows that amphibian hearing and vocal behavio
 :::
 ::::
 
-By default, a list of works cited will be placed at the end of the document. You can change where this is by provided `refs` div -
+By default, Quarto adds a list of works cited at the end of the document. If you want to control where this appears, you can add a `refs` div at the point where you want the reference list:
 
 ::::: {.columns}
 :::: {.column width=30%}
@@ -447,7 +447,7 @@ By default, a list of works cited will be placed at the end of the document. You
 
 **Task:** In `quarto_features.qmd`:
 
-* [ ] A bib file is provided... add citation using key from file...
+* [ ] A `.bib` file is provided in the template site (`pages/references.bib`). Add this file to the YAML front matter using the `bibliography:` option, then add at least one in‑text citation to your page using a key from that file.
 
 :::
 
