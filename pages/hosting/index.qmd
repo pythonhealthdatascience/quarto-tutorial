@@ -71,7 +71,7 @@ Then click on the `build-deploy` job to watch the steps. Near the end, you shoul
 
 Sometimes, you may briefly see a 404 error while GitHub finishes publishing. If that happens, wait a few moments and refresh the page.
 
-![](404_error.png)
+![](404_error.png){fig-alt="Screenshot of 404 error message."}
 
 ## Update the repository "About" url
 
