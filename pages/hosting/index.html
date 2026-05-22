@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Set-up – Introduction to Quarto for Research Projects</title>
+<title>Hosting – Introduction to Quarto for Research Projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../pages/basic_structure/index.html" rel="next">
-<link href="../../pages/why/index.html" rel="prev">
+<link href="../../pages/task/index.html" rel="next">
+<link href="../../pages/customising/index.html" rel="prev">
 <link href="../../images/daffodil_head.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -114,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Set-up</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../../pages/hosting/index.html">Hosting</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -158,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/setup/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../pages/setup/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Set-up</span></a>
   </div>
 </li>
@@ -206,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/hosting/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/hosting/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Hosting</span></a>
   </div>
 </li>
@@ -262,9 +297,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Set-up</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/setup/index.html">Tutorial</a></li><li class="breadcrumb-item"><a href="../../pages/hosting/index.html">Hosting</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Set-up</h1>
+<h1 class="title">Hosting</h1>
 </div>
 
 
@@ -284,78 +319,132 @@ ul.task-list li input[type="checkbox"] {
 <div class="pale-blue">
 <p><strong>On this page we will:</strong></p>
 <ul>
-<li>Create a GitHub account.</li>
-<li>Open the Quarto website template in a web browser.</li>
-<li>Start a GitHub Codespace from the template.</li>
-<li>Introduce VSCode.</li>
+<li>Enable the GitHub action to automatically render and publish your site.</li>
+<li>Trigger a build and visit your live site.</li>
 </ul>
 </div>
-<section id="create-a-github-account" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="create-a-github-account"><span class="header-section-number">1</span> Create a GitHub account</h2>
-<p><strong>GitHub</strong> is a website where you can save files, track changes over time, and work together with other people on the same material. It is very popular for code, but you can also use it for documents, data, and teaching materials.</p>
-<p>When your work is on GitHub, it is backed up in the cloud and you can access it from any computer with a web browser.</p>
-<p>Sign up for an account here: <a href="https://github.com/signup" class="uri">https://github.com/signup</a></p>
-<p><a href="https://github.com/signup"><img src="github_account.png" class="img-fluid" alt="Screenshot from GitHub page to create a new account."></a></p>
+<p>You can host your Quarto site for free using <strong>GitHub Pages</strong>. GitHub Pages takes the HTML files that Quarto creates and puts them on the web so that anyone with the link can see your site.</p>
+<section id="go-to-actions-tab" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="go-to-actions-tab"><span class="header-section-number">1</span> Go to Actions tab</h2>
+<p>Open your fork of the <code>quarto-template</code> repository on GitHub. If you need to find it, go to GitHub → Repositories → <code>quarto-template</code>.</p>
+<p>Click on the <strong>Actions</strong> tab.</p>
+<p><a href="actions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="actions.png" class="img-fluid" alt="Screenshot of cursor hovering on Actions tab."></a></p>
 </section>
-<section id="go-to-our-template-repository" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="go-to-our-template-repository"><span class="header-section-number">2</span> Go to our template repository</h2>
-<p>A <strong>repository</strong> (or <strong>repo</strong>) is just a folder on GitHub that holds all the files for one project, plus the full history of changes.</p>
-<p>Our template repository is a ready-made project you can copy, so you start with all the right files and settings instead of building everything from scratch.</p>
-<p>Go to our template repository here: <a href="https://github.com/pythonhealthdatascience/quarto-template" class="uri">https://github.com/pythonhealthdatascience/quarto-template</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="quarto-template.png" class="img-fluid figure-img" alt="Screenshot of quarto-template GitHub repository"></p>
-<figcaption>It may look a little different from this screenshot if we have changed the repository since writing this page!</figcaption>
-</figure>
-</div>
+<section id="enable-workflows" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="enable-workflows"><span class="header-section-number">2</span> Enable workflows</h2>
+<p>GitHub will show a message that workflows aren’t being run on this forked repository.</p>
+<p>This is just a safety check. We know what the workflow does (it builds and publishes the Quarto site), so it is safe to enable it for this workshop.</p>
+<p>Click the green button to enable Actions for this repository.</p>
+<p><a href="enable.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="enable.png" class="img-fluid" alt="Screenshot of 'Workflows aren't being run' message."></a></p>
+<p>After you click, you should see that Actions are now enabled:</p>
+<p><a href="now_enabled.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="now_enabled.png" class="img-fluid" alt="Screenshot of screen after clicking to enable actions."></a></p>
 </section>
-<section id="open-github-codespaces" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="open-github-codespaces"><span class="header-section-number">3</span> Open GitHub codespaces</h2>
-<p><strong>GitHub Codespaces</strong> gives you a ready-to-use workspace in your browser, so you do not need to install any software on your own computer. We will use it only to open and edit the text files that make up your Quarto website - you will not need to write any code.</p>
-<p>To open a codespace from the template repository, click the green <strong>Code</strong> button, then choose the <strong>Codespaces</strong> tab, and click <strong>Create codespace on main</strong>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="create_codespace.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="create_codespace.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Screenshot of repository showing Code > Codespaces > Create codespace on main"></a></p>
-</figure>
-</div>
+<section id="set-the-github-pages-branch" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="set-the-github-pages-branch"><span class="header-section-number">3</span> Set the GitHub Pages branch</h2>
+<p>Next, tell GitHub Pages which branch to use for the website.</p>
+<p>In your repository on GitHub, click on the <strong>Settings</strong> tab. In the left sidebar, click <strong>Pages</strong>.</p>
+<p>Under <strong>Branch</strong>, change the source from <code>None</code> to <code>gh-pages</code>. Click <strong>Save</strong>.</p>
 <blockquote class="blockquote">
-<p>You may see a message that Codespace usage for this repository is paid for by your account. For personal GitHub Free accounts, you get 120 hours of Codespaces time and 15 GB of storage each month at no cost. If you ever reach that free limit and have not added any card or payment method, GitHub will simply stop your Codespaces until the next month; you will not be charged.</p>
+<p><strong>Why <code>gh-pages</code>?</strong></p>
+<p>A Git repository can have more than one <strong>branch</strong>. You can think of branches as different versions or lines of development in the same project.<br>
+For this template, the main branch (<code>main</code>) holds your source files (the <code>.qmd</code> files, <code>_quarto.yml</code>, etc.), and the workflow puts the <strong>built website</strong> into a special branch called <code>gh-pages</code>.<br>
+GitHub Pages is then told, “Use the files from the <code>gh-pages</code> branch as the live website.””</p>
 </blockquote>
-<p>GitHub will take a minute to prepare your Codespace, then open an editor in the browser with your project files on the left and a main editing area in the centre.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="open_codespace.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="It may look a little different from this screenshot if we have changed the repository since writing this page!"><img src="open_codespace.png" class="img-fluid figure-img" alt="Screenshot of the generated GitHub codespace."></a></p>
-<figcaption>It may look a little different from this screenshot if we have changed the repository since writing this page!</figcaption>
-</figure>
-</div>
+<p><a href="settings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="settings.png" class="img-fluid" alt="Screenshot of GitHub Pages settings page."></a></p>
 </section>
-<section id="welcome-to-vscode" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="welcome-to-vscode"><span class="header-section-number">4</span> Welcome to VSCode</h2>
-<p>When your Codespace opens, you are using <strong>VSCode (Visual Studio Code)</strong> in your web browser.</p>
-<p>VSCode is an <strong>IDE (Integrated Development Environment)</strong>. That sounds technical, but in simple terms it is just an application that helps you work with files in one place. You can open, edit, and organise your project without needing lots of different tools.</p>
-<p>The layout is split into a few main areas:</p>
-<ul>
-<li><strong>File explorer (left side)</strong>: shows all the files in your project, you can click any file to open it.</li>
-<li><strong>Editor (centre):</strong> this is where you read and edit your files.</li>
-<li><strong>Top tabs:</strong> each open file appears as a tab, so you can switch between them.</li>
-<li><strong>Bottom panel:</strong> a shared area that can show different tools.</li>
-<li><strong>Build with AI agent:</strong> an optional assistant built into VSCode to help people who are writing code - we do not need this panel, so can close it by clicking the <strong>x</strong> on its tab.</li>
-</ul>
-<p><a href="codespace_labels.drawio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="codespace_labels.drawio.png" class="img-fluid" alt="Annotated screenshot of VSCode labelling the main areas."></a></p>
+<section id="make-a-commit-to-trigger-the-build" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="make-a-commit-to-trigger-the-build"><span class="header-section-number">4</span> Make a commit to trigger the build</h2>
+<p>The workflow runs <strong>each time you push a commit</strong> to GitHub on the <code>main</code> branch. That is how your site will stay up to date.</p>
+<p>Go back to your Codespace and make a small change to your site (e.g., edit some text on the homepage), then <strong>commit and push</strong> you change.</p>
+<p>Then, return to your GitHub repository <strong>Actions</strong> tab, and you should see a new workflow run starting.</p>
+<p><a href="action_triggered.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="action_triggered.png" class="img-fluid" alt="Screenshot showing a workflow run in the Actions list."></a></p>
+<p>Then click on the <code>build-deploy</code> job to watch the steps. Near the end of the “Render and publish to GitHub pages” step, you should see a line with the URL of your site. Click that link (or copy and paste it into your browser).</p>
+<p><a href="view_action_running.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="view_action_running.png" class="img-fluid" alt="Screenshot of a running workflow with build-deploy job."></a></p>
+<p>Then click on the <code>build-deploy</code> job to watch the steps. Near the end, you should see a line with the URL of your site. Click that link (or copy and paste it into your browser).</p>
+<p><a href="view_url.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="view_url.png" class="img-fluid" alt="Screenshot showing the GitHub Pages URL in the workflow output."></a></p>
+<p>Sometimes, you may briefly see a 404 error while GitHub finishes publishing. If that happens, wait a few moments and refresh the page.</p>
+<p><a href="404_error.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="404_error.png" class="img-fluid" alt="Screenshot of 404 error message."></a></p>
 </section>
-<section id="reopening-your-codespace" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="reopening-your-codespace"><span class="header-section-number">5</span> Reopening your Codespace</h2>
-<p>If you close your Codespace and want to get back to it later (with all your changes still there), just return to the same GitHub repository.</p>
-<p>Click the <kbd>&lt;&gt; Code</kbd> button, open the <kbd>Codespaces</kbd> tab, and select your existing Codespace from the list.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="reopen_codespace.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="reopen_codespace.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Screenshot of existing Codespace list."></a></p>
-</figure>
-</div>
-<p>Your codespace will automatically shut down after a period of inactivity (<strong>30 minutes</strong> by default) to save resources, but any edits you’ve saved will still be there when you reopen it.</p>
-<p>By default, inactive codespaces are deleted after <strong>30 days</strong>.</p>
-<p><br><br></p>
-<p>For this workshop, we’re using GitHub Codespaces because it’s quick and easy to get started without installing anything. However, if you plan to work on similar projects regularly, we recommend <strong>installing the required tools</strong> (e.g., R and RStudio) on your own computer for more flexibility and long-term use.</p>
+<section id="update-the-repository-about-url" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="update-the-repository-about-url"><span class="header-section-number">5</span> Update the repository “About” url</h2>
+<p>To make the site easy to find later, add the GitHub Pages URL to the repository’s “About” section.</p>
+<p>On the main page of your repository on GitHub, look at the <strong>About</strong> box on the right, and click the small <strong>settings</strong> (gear) icon next to it.</p>
+<p><a href="about_pane.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="about_pane.png" class="img-fluid" alt="Screenshot of the About pane with the settings icon."></a></p>
+<p>Paste your GitHub Pages URL into the <strong>Website</strong> field then click <strong>save changes</strong>.</p>
+<p><a href="replace_url.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="replace_url.png" class="img-fluid" alt="Screenshot showing the Website field."></a></p>
+<p><br></p>
+<hr>
+</section>
+<section id="how-did-that-work" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="how-did-that-work"><span class="header-section-number">6</span> How did that work?</h2>
+<p>The publishing is handled by a <strong>GitHub Actions workflow</strong>. GitHub Actions is a service that can run steps for you in the cloud when certain events happen (for example, when you push a commit).</p>
+<p>The instructions live in a workflow file in <code>.github/workflows/</code>. For this template, it looks like:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-1"><pre class="sourceCode yaml code-annotation-code code-with-copy code-annotated"><code class="sourceCode yaml"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Render quarto site and publish on GitHub pages</span></span>
+<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">run-name</span><span class="kw">:</span><span class="at"> Render quarto site and publish on GitHub pages</span></span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-1-4" class="code-annotation-target"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="annotated-cell-1-7"><a href="#annotated-cell-1-7" aria-hidden="true" tabindex="-1"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-1-8" class="code-annotation-target"><a href="#annotated-cell-1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="4" onclick="event.preventDefault();">4</a><span id="annotated-cell-1-10" class="code-annotation-target"><a href="#annotated-cell-1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="5" onclick="event.preventDefault();">5</a><span id="annotated-cell-1-11" class="code-annotation-target"><a href="#annotated-cell-1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-12"><a href="#annotated-cell-1-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="6" onclick="event.preventDefault();">6</a><span id="annotated-cell-1-13" class="code-annotation-target"><a href="#annotated-cell-1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="7" onclick="event.preventDefault();">7</a><span id="annotated-cell-1-14" class="code-annotation-target"><a href="#annotated-cell-1-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="annotated-cell-1-15"><a href="#annotated-cell-1-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="annotated-cell-1-16"><a href="#annotated-cell-1-16" aria-hidden="true" tabindex="-1"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="8" onclick="event.preventDefault();">8</a><span id="annotated-cell-1-17" class="code-annotation-target"><a href="#annotated-cell-1-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="annotated-cell-1-18"><a href="#annotated-cell-1-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="annotated-cell-1-19"><a href="#annotated-cell-1-19" aria-hidden="true" tabindex="-1"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="9" onclick="event.preventDefault();">9</a><span id="annotated-cell-1-20" class="code-annotation-target"><a href="#annotated-cell-1-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and publish to GitHub pages</span></span>
+<span id="annotated-cell-1-21"><a href="#annotated-cell-1-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="annotated-cell-1-22"><a href="#annotated-cell-1-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-23"><a href="#annotated-cell-1-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="annotated-cell-1-24"><a href="#annotated-cell-1-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="annotated-cell-1-25"><a href="#annotated-cell-1-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="1,2" data-code-annotation="1"><strong>name/run-name</strong>: Labels for the workflow and its runs, so you can recognise them in the Actions tab.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="4,5,6" data-code-annotation="2"><strong>on: push: branches: main:</strong> Tells GitHub to run this workflow whenever you push a commit to the <code>main</code> branch.<br>
+</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="8,9" data-code-annotation="3"><strong>jobs / build-deploy:</strong> Defines a job called <code>build-deploy</code> that does the work.<br>
+</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="10" data-code-annotation="4"><strong>runs-on: ubuntu-latest:</strong> Uses a fresh Linux (Ubuntu) virtual machine in the cloud to run the job.<br>
+</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="5">5</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="11,12" data-code-annotation="5"><strong>permissions: contents: write:</strong> Allows the job to write back to the repository (needed to update the <code>gh-pages</code> branch).</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="6">6</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="13" data-code-annotation="6"><strong>steps:</strong> The list of actions to perform.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="7">7</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="14,15" data-code-annotation="7"><strong>Check out repository:</strong> Downloads the code from your repository into the runner.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="8">8</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="17,18" data-code-annotation="8"><strong>Set up Quarto:</strong> Installs Quarto so it can render the site.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="9">9</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="20,21,22,23,24,25" data-code-annotation="9"><strong>Render and publish to GitHub Pages:</strong> Renders the Quarto project and pushes the built site to the <code>gh-pages</code> branch using the <code>quarto-actions/publish</code> action. <code>GITHUB_TOKEN</code> is a special token that GitHub provides so the workflow can authenticate and push to your repository securely.</span>
+</dd>
+</dl>
 
 
 </section>
@@ -853,13 +942,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../pages/why/index.html" class="pagination-link" aria-label="Slides: Why make a website for your research?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Slides: Why make a website for your research?</span>
+      <a href="../../pages/customising/index.html" class="pagination-link" aria-label="Exercise 6. Customising the site appearance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 6. Customising the site appearance</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../pages/basic_structure/index.html" class="pagination-link" aria-label="Basic structure">
-        <span class="nav-page-text">Basic structure</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../pages/task/index.html" class="pagination-link" aria-label="Task: Create a site for your research">
+        <span class="nav-page-text">Task: Create a site for your research</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

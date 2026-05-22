@@ -5,6 +5,10 @@
   },
   {
     "listing": "/pages/blog/index.html",
-    "items": []
+    "items": [
+      "/pages/blog/examples/example1/index.html",
+      "/pages/blog/examples/example2/index.html",
+      "/pages/blog/examples/example3/index.html"
+    ]
   }
 ]
