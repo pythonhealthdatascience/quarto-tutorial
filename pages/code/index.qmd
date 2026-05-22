@@ -2,6 +2,15 @@
 title: Code
 ---
 
+::: {.pale-blue}
+
+**On this page we will:**
+
+* See how to add code cells to a Quarto document.
+* Learn how to deploy sites via GitHub actions when they contain executable code.
+
+:::
+
 ## Code in Quarto pages
 
 In a Quarto document, you can include **code cells** and choose whether they run when you render the site.

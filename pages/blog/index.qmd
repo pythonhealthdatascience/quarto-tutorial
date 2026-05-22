@@ -10,6 +10,17 @@ listing:
     template: links.ejs
 ---
 
+
+::: {.pale-blue}
+
+**On this page we will:**
+
+* Create a simple listing of pages (e.g., for a blog).
+* Create a grouped listing of pages.
+* Build a more advanced listing to external pages using a YAML file and EJS template.
+
+:::
+
 A [listing](https://quarto.org/docs/reference/projects/websites.html#listings) is a Quarto feature that automatically builds a list or grid of items for you.
 
 There are two ways to use listings:
