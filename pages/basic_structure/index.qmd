@@ -80,7 +80,7 @@ book:
   chapters:
     - text: Overview
       href: index.qmd
-    - pages/TODO.qmd
+    - pages/pagename.qmd
   navbar:
     right:
       - icon: github
@@ -98,11 +98,19 @@ A `.qmd` file is a **Quarto Markdown** document. It mixes metadata at the top, t
 
 > If you're familiar with R Markdown (`.Rmd`), these are similar, but `.qmd` is more flexible.
 
-Each `.qmd` file begins with **YAML front matter**, enclosed by three dashes (`---`). This defines metadata such as the page title. Below that is the page. Here we just have one sentence: `This is my homepage.`.
+Each `.qmd` file begins with **YAML front matter**, enclosed by three dashes (`---`). This defines metadata such as the page title, author information and date. Below that is the main content of the page. Here we just have one sentence: `This is my homepage.`.
 
-```{.r}
+```{.yaml}
 ---
 title: My homepage
+author:
+  - name: Amy Heather
+    orcid: 0000-0002-6596-3479
+    affiliations: University of Exeter
+  - name: Thomas Monks
+    orcid: 0000-0003-2631-4481
+    affiliations: University of Exeter
+date: 06-01-2026
 ---
 
 
