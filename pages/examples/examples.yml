@@ -318,9 +318,9 @@
       code: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
       thumbnail: 2021cloud.png
 
-- category: Package documentation
+- category: Package and app documentation
   description: |
-    Use Quarto (with tools like quartodoc) to build clean, navigable documentation sites for your Python or R packages, including API reference, usage guides, and examples.
+    Use Quarto (with tools like quartodoc) to build clean, navigable documentation sites for your Python or R packages and applications, including API reference, usage guides, and examples.
   tiles:
     - title: lintquarto
       subtitle: Python package which runs linters and type checkers on code embedded in Quarto .qmd files.
@@ -334,11 +334,22 @@
       code: https://github.com/hsma-tools/vidigi/
       thumbnail: vidigi.png
       categories: [University of Exeter]
+    - title: NHSQuicker
+      subtitle: Documentation for free app providing live wait times for NHS services in Devon, Cornwall and Somerset.
+      href: https://navonilnm.github.io/NHSquicker/
+      code: https://github.com/navonilnm/NHSquicker
+      categories: [University of Exeter]
+      thumbnail: nhsquicker.png
     - title: skimpy
       subtitle: Python package providing summary statistics from dataframes.
       href: https://aeturrell.github.io/skimpy/
       code: https://github.com/aeturrell/skimpy
       thumbnail: skimpy.png
+    - title: Quarto
+      subtitle: Quarto's own documentation is of course created using Quarto!
+      href: https://quarto.org/
+      code: https://github.com/quarto-dev/quarto-web
+      thumbnail: quarto.png
 
 - category: Other cool examples
   description: |
